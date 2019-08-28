@@ -1,0 +1,84 @@
+﻿new_column_name,sub_category,person3,person2,person1,true_codes,label
+Q01,Respectful_Environment,33,34,34,34,"A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+Q02,Respectful_Environment,35,35,35,35,My work unit values diversity in people and backgrounds.
+Q03,Respectful_Environment,35,35,72,35,My work unit values diversity in ideas.
+Q04,Respectful_Environment,32,"32, 34",32,32,My work unit is free from discrimination and harassment.
+Q05,,,,33,NA,Employees in my work unit are clear on the ethical values expected in performing their work.
+Q06,,,,84,NA,"If I am faced with an ethical question or concern, I know where I can go for help in resolving the situation."
+Q07,Empowerment,72,14,72,72,I have opportunities to provide input into decisions that affect my work.
+Q08,Empowerment,71,71,71,71,I have the freedom to make the decisions necessary to do my job well.
+Q09,,74,,72,NA,Innovation is valued in my work.
+Q10,Empowerment,71,72,72,72,I have the opportunities I need to implement new ideas.
+Q11,,,,73,NA,I am inspired to give my very best.
+Q12,,,,,NA,I feel energized by my work.
+Q13,,,42,42,42,My work unit is well supported during times of change.
+Q14,,82,82,,82,Employees are held accountable in my work unit.
+Q15,,,,101,NA,I feel my job is secure.
+Q16,Staffing_Practices,61,61,61,61,"In my work unit, the selection of a person for a position is based on merit."
+Q17,Staffing_Practices,61,61,61,61,"In my work unit, the process of selecting a person for a position is fair."
+Q18,Recognition,74,74,74,74,I receive meaningful recognition for work well done.
+Q19,Recognition,,74,74,74,"In my work unit, recognition is based on performance."
+Q20,Pay_Benefits,24,24,21,24,I am fairly paid for the work I do.
+Q21,Pay_Benefits,23,23,23,23,My benefits meet my (and my family's) needs well.
+Q22,Pay_Benefits,21,22,21,21,My pay is competitive with similar jobs in the region.
+Q23,Job_Suitability,,,,NA,My work is meaningful.
+Q24,Job_Suitability,73,73,73,73,My job is a good fit with my skills and interests.
+Q25,,122,,,NA,I enjoy the type of work I do.
+Q26,,92,92,92,92,My workplace processes and procedures enable me to work as effectively as possible.
+Q27,,,,,NA,I regularly go above and beyond the requirements of my role to help my work unit or organization succeed.
+Q28,,93,,93,93,Work is distributed fairly in my work unit.
+Q29,Stress_Workload,93,93,93,93,My workload is manageable.
+Q30,Stress_Workload,93,94,94,NA or maybe,My work-related stress is manageable.
+Q31,,93,94,94,94,My work tends to leave me feeling mentally drained or exhausted.
+Q32,,,,93,NA,My job provides me with the right amount of challenge.
+Q33,,"43, 83",94,92,NA,I have support at work to provide a high level of service.
+Q34,,94,94,94,94,I have support at work to balance my work and personal life.
+Q35,,,,,NA,I am proud to tell others about the type of work I do.
+Q36,,,,,NA,I find my work inspiring.
+Q37,,,,114,NA,It is important to me that the BC Public Service has giving and volunteer programs.
+Q38,,,,41,NA,"In general, I am well-informed about the BC Public Service's giving and volunteer programs."
+Q39,Tools_Workspace,"102, 104",102,102,"102, 104","My physical work environment (e.g., sound level, lighting, heat, ergonomics, etc.) enables me to work well."
+Q40,,101,101,101,101,The necessary processes and procedures are in place to ensure my safety at work.
+Q41,Tools_Workspace,"105, 106",105,105,"105, 106","The computer based tools (e.g., hardware, software) I have access to help me excel in my job."
+Q42,Tools_Workspace,103,104,104,103,"The non-computer based tools (e.g., office or outdoor equipment) I have access to help me excel in my job."
+Q43,Professional_Development,13,13,13,13,My organization supports my work related learning and development.
+Q44,Professional_Development,13,13,13,13,The quality of training and development I have received is satisfactory.
+Q45,Professional_Development,13,14,13,13,I have adequate opportunities to develop my skills.
+Q46,,14,14,14,14,I have opportunities for career growth within the BC Public Service.
+Q47,,12,84,84,12,The person I report to provides the feedback I need to do my job well.
+Q48,,12,84,84,12,The person I report to provides the support I need to help me achieve my long-term career goals.
+Q49,Teamwork,,81,,81,"When needed, members of my team help me get the job done."
+Q50,,,34,34,34,I am treated respectfully at work.
+Q51,Teamwork,,81,81,81,Members of my team communicate effectively with each other.
+Q52,Teamwork,,33,,33,I have positive working relationships with my co-workers.
+Q53,Supervisory_Level,84,84,84,84,The person I report to provides clear expectations regarding my work.
+Q54,Supervisory_Level,84,84,72,72,The person I report to consults me on decisions that affect me.
+Q55,Supervisory_Level,84,84,84,84,The person I report to keeps me informed of things I need to know.
+Q56,Supervisory_Level,84,84,84,84,I feel I am able to have a conversation with the person I report to when I need their perspective or advice.
+Q57,Supervisory_Level,83,84,84,83,The person I report to leads with an understanding of others' perspectives.
+Q58,,83,83,84,83,The person I report to maintains high standards of honesty and integrity.
+Q59,,83,83,84,83,The person I report to supports me and my co-workers in conducting our work in an ethical manner.
+Q60,,83,83,83,83,I am satisfied with the quality of supervision I receive.
+Q61,Executive_Level,41,41,41,41,Executives in my organization communicate decisions in a timely manner.
+Q62,,41,41,41,41,Executives in my organization clearly communicate strategic changes and/or changes in priorities.
+Q63,Executive_Level,43,41,41,43,Executives in my organization provide clear direction for the future.
+Q64,,41,41,41,41,Essential information flows effectively from senior leadership to staff.
+Q65,,43,43,43,43,I have confidence in the senior leadership of my organization.
+Q66,Vision_Mission_Goals,111,111,111,111,"My organization is taking steps to ensure the long-term success of its vision, mission and goals."
+Q67,Vision_Mission_Goals,111,112,112,111,"The vision, mission and goals of my organization are communicated well."
+Q68,,111,112,,NA,I know how my work contributes to the achievement of my organization's goals.
+Q69,,,112,,NA,I am motivated by my organization to help achieve its objectives.
+Q70,,,,,NA,I find my organization inspiring to work for.
+Q71,Job_Satisfaction,,,,NA,I am satisfied with my job.
+Q72,,,,,NA,I am satisfied with my work unit.
+Q73,,,,,NA,"I would prefer to remain with my work unit, even if a comparable job was available elsewhere in the BC Public Service."
+Q74,Org_Satisfaction,,,,NA,I am satisfied with my organization.
+Q75,,,,,NA,"I would prefer to remain with my organization, even if a comparable job was available elsewhere in the BC Public Service."
+Q76,Commitment,,,,NA,"Overall, I am satisfied in my work as a BC Public Service employee."
+Q77,,,,,NA,"Overall, I feel valued as a BC Public Service employee."
+Q78,,,,,NA,I am proud to tell people I work for the BC Public Service.
+Q79,Commitment,,,,NA,"I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+Q80,,,,,NA,I would recommend the BC Public Service as a great place to work.
+Q83,,31,,123,NA,I have seen improvements in my current workplace since the last Work Environment Survey.
+Q85,,,,51,NA,Are you currently working in an LWS workplace?
+Q86,,,,52,NA,"There are various workstyles, ranging from assigned residents to fully mobile workers. For this survey, four main workstyles are identified. Please indicate your current workstyle."

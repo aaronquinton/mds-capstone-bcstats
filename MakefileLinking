@@ -1,0 +1,179 @@
+# Driver Script
+# Aaron Quinton, Ayla Pearson and Fan Nie
+# June 2019
+
+# Purpose: This driver script opens runs the linking qualitative to quantitative analysis
+#
+# Usage: Navigate to project root and run from bash:
+#	 To run the entire analysis     `make all -f MakefileLinking`
+#	 To clean all items             `make clean -f MakefileLinking`
+#	 To clean only the figures      `make clean_figures -f MakefileLinking`
+#	 To clean only the interim data `make clean_cleandata -f MakefileLinking`
+
+###############################################################################
+# Run all scripts at once   																									#
+###############################################################################
+
+all: reports/linking_methodology.html
+
+###############################################################################
+# Order of Scripts to Reproduce Analysis	    																#
+###############################################################################
+
+# step 1: create reference doc with theme and subtheme names
+references/data-dictionaries/theme_subtheme_names.csv : \
+data/raw/2018\ WES\ Qual\ Coded\ -\ Final\ Comments\ and\ Codes.xlsx \
+src/data/theme_subtheme_names.R
+	Rscript src/data/theme_subtheme_names.R \
+data/raw/2018\ WES\ Qual\ Coded\ -\ Final\ Comments\ and\ Codes.xlsx \
+references/data-dictionaries/theme_subtheme_names.csv
+
+# step 2: create desensitized comments
+data/interim/desensitized_qualitative-data2018.csv : \
+data/raw/2018\ WES\ Qual\ Coded\ -\ Final\ Comments\ and\ Codes.xlsx \
+src/data/sensitive_text.py
+	python src/data/sensitive_text.py \
+-i data/raw/2018\ WES\ Qual\ Coded\ -\ Final\ Comments\ and\ Codes.xlsx \
+-o data/interim/desensitized_qualitative-data2018.csv \
+-s 1
+
+# step 3: tidy quantitative data
+data/interim/tidy_quant_questions.csv : \
+data/raw/WES\ 2007-2018\ LONGITUDINAL\ DATA.sav \
+references/data-dictionaries/survey_mc_legend.csv \
+src/data/tidy_quantitative_data.R
+	Rscript src/data/tidy_quantitative_data.R  \
+data/raw/WES\ 2007-2018\ LONGITUDINAL\ DATA.sav \
+references/data-dictionaries/survey_mc_legend.csv \
+data/interim/tidy_quant_questions.csv
+
+# step 4: calculate inter-rater reliability
+data/processed/linking_inter_rater_agreement.csv : \
+references/data-dictionaries/survey_mc_legend_inter-rater.csv \
+src/analysis/linking_inter_rater_agreement.R
+	Rscript src/analysis/linking_inter_rater_agreement.R  \
+references/data-dictionaries/survey_mc_legend_inter-rater.csv \
+data/processed/linking_inter_rater_agreement.csv
+
+# step 5: create figure showing sub-theme multiple-choice matching
+reports/figures/linking_subtheme_mc.png : \
+references/data-dictionaries/survey_mc_legend.csv \
+data/interim/desensitized_qualitative-data2018.csv \
+src/visualization/linking_subtheme_mc_matching.R
+	Rscript src/visualization/linking_subtheme_mc_matching.R \
+data/interim/desensitized_qualitative-data2018.csv \
+references/data-dictionaries/survey_mc_legend.csv \
+reports/figures/linking_subtheme_mc.png
+
+# step  6: clean qualitative data
+data/interim/linking_cleaned_qual.csv : \
+data/interim/desensitized_qualitative-data2018.csv \
+src/data/linking_clean_qual.R
+	Rscript src/data/linking_clean_qual.R \
+data/interim/desensitized_qualitative-data2018.csv \
+data/interim/linking_cleaned_qual.csv
+
+# step 7: clean quantitative data
+data/interim/linking_cleaned_quant.csv : \
+data/interim/tidy_quant_questions.csv \
+references/data-dictionaries/survey_mc_legend.csv \
+src/data/linking_clean_quant.R
+	Rscript src/data/linking_clean_quant.R \
+data/interim/tidy_quant_questions.csv \
+references/data-dictionaries/survey_mc_legend.csv \
+data/interim/linking_cleaned_quant.csv
+
+# step 8: join datasets
+data/interim/linking_joined_qual_quant.csv : \
+data/interim/linking_cleaned_qual.csv \
+data/interim/linking_cleaned_quant.csv \
+data/interim/desensitized_qualitative-data2018.csv \
+references/data-dictionaries/theme_subtheme_names.csv \
+src/analysis/linking_join_qual_to_quant.R
+	Rscript src/analysis/linking_join_qual_to_quant.R \
+data/interim/linking_cleaned_qual.csv \
+data/interim/linking_cleaned_quant.csv \
+data/interim/desensitized_qualitative-data2018.csv \
+references/data-dictionaries/theme_subtheme_names.csv \
+data/interim/linking_joined_qual_quant.csv
+
+# step 9: generate subtheme results
+reports/figures/linking_agreement_subtheme.png : \
+data/interim/linking_joined_qual_quant.csv \
+src/visualization/linking_agreement_figure_subtheme.R
+	Rscript src/visualization/linking_agreement_figure_subtheme.R \
+data/interim/linking_joined_qual_quant.csv \
+reports/figures/linking_agreement_subtheme.png
+
+reports/figures/linking_agreement_theme.png : \
+data/interim/linking_joined_qual_quant.csv \
+src/visualization/linking_agreement_figure_theme.R
+	Rscript src/visualization/linking_agreement_figure_theme.R \
+data/interim/linking_joined_qual_quant.csv \
+reports/figures/linking_agreement_theme.png
+
+# step 10: generate theme results
+data/processed/linking_agreement_subtheme.csv : \
+data/interim/linking_joined_qual_quant.csv \
+src/analysis/linking_agreement_results_subtheme.R
+	Rscript src/analysis/linking_agreement_results_subtheme.R \
+data/interim/linking_joined_qual_quant.csv \
+data/processed/linking_agreement_subtheme.csv
+
+data/processed/linking_agreement_theme.csv : \
+data/interim/linking_joined_qual_quant.csv \
+src/analysis/linking_agreement_results_theme.R
+	Rscript src/analysis/linking_agreement_results_theme.R \
+data/interim/linking_joined_qual_quant.csv \
+data/processed/linking_agreement_theme.csv
+
+# step 11: create document to house files
+reports/linking_methodology.html : \
+reports/figures/linking_agreement_theme.png \
+reports/figures/linking_agreement_subtheme.png \
+reports/figures/linking_subtheme_mc.png \
+data/processed/linking_inter_rater_agreement.csv \
+data/processed/linking_agreement_subtheme.csv \
+data/processed/linking_agreement_theme.csv
+	Rscript -e ".libPaths(); rmarkdown::render('reports/linking_methodology.Rmd')"
+
+
+###############################################################################
+# Delete all files outputted from running the analysis												#
+###############################################################################
+
+clean :
+	rm -f references/data-dictionaries/theme_subtheme_names.csv
+	rm -f data/interim/desensitized_qualitative-data2018.csv
+	rm -f data/interim/tidy_quant_questions.csv
+	rm -f data/interim/linking_cleaned_qual.csv
+	rm -f data/interim/linking_cleaned_quant.csv
+	rm -f data/interim/linking_joined_qual_quant.csv
+	rm -f data/processed/linking_inter_rater_agreement.csv
+	rm -f data/processed/linking_agreement_subtheme.csv
+	rm -f data/processed/linking_agreement_theme.csv
+	rm -f reports/figures/linking_agreement_subtheme.png
+	rm -f reports/figures/linking_agreement_theme.png
+	rm -f reports/figures/linking_subtheme_mc.png
+	rm -f reports/linking_methodology.md
+	rm -f reports/linking_methodology.html
+
+
+###############################################################################
+# Delete all figures                                  												#
+###############################################################################
+
+clean_figures :
+	rm -f reports/figures/linking_agreement_subtheme.png
+	rm -f reports/figures/linking_agreement_theme.png
+	rm -f reports/figures/linking_subtheme_mc.png
+
+###############################################################################
+# Delete clean and tidy data                                   								#
+###############################################################################
+
+clean_data:
+	rm -f data/interim/linking_cleaned_qual.csv
+	rm -f data/interim/linking_cleaned_quant.csv
+	rm -f data/interim/linking_joined_qual_quant.csv
+	rm -f data/interim/tidy_quant_questions.csv

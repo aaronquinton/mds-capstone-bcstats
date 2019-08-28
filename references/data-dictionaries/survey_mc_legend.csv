@@ -1,0 +1,1273 @@
+﻿sort,original_column_name,new_column_name,survey_year,Question_ID,category,sub_category,engagement_calculation,subtheme_code,Label
+1,USERID,USERID,ALL,,BC Stats Background,Survey Info,,,USER ID
+2,USERID_check,USERID_check,ALL,,Exclude,Survey Info,,,Copy of USERID to check after sorting dataset
+3,POPULATION07,POPULATION,2007,,Exclude,Survey Info,,,Population 2007 (overall population of 2007 respondents)
+4,BCPUBLICSERVICE07,BCPUBLICSERVICE,2007,,Exclude,Survey Info,,,BC Public Service 2007 (population of respondents who were in BC Public Service in 2007)
+5,COMPLETED07,COMPLETED,2007,,Exclude,Survey Info,,,Completed Survey 2007 (population of respondents who completed the 2007 WES)
+6,OVERALLSCOPE07,OVERALLSCOPE,2007,,Exclude,Survey Info,,,Overall Scope 2007 (population of 2007 respondents who completed the survey and were in the BC Public Service)
+7,POPULATION08,POPULATION,2008,,Exclude,Survey Info,,,Population 2008 (overall population of 2008 respondents)
+8,BCPUBLICSERVICE08,BCPUBLICSERVICE,2008,,Exclude,Survey Info,,,BC Public Service 2008 (population of respondents who were in BC Public Service in 2008)
+9,COMPLETED08,COMPLETED,2008,,Exclude,Survey Info,,,Completed Survey 2008 (population of respondents who completed the 2008 WES)
+10,OVERALLSCOPE08,OVERALLSCOPE,2008,,Exclude,Survey Info,,,Overall Scope 2008 (population of 2008 respondents who completed the survey and were in the BC Public Service)
+11,POPULATION09,POPULATION,2009,,Exclude,Survey Info,,,Population 2009 (overall population of 2009 respondents)
+12,BCPUBLICSERVICE09,BCPUBLICSERVICE,2009,,Exclude,Survey Info,,,BC Public Service 2009 (population of respondents who were in BC Public Service in 2009)
+13,COMPLETED09,COMPLETED,2009,,Exclude,Survey Info,,,Completed Survey 2009 (population of respondents who completed the 2009 WES)
+14,OVERALLSCOPE09,OVERALLSCOPE,2009,,Exclude,Survey Info,,,Overall Scope 2009 (population of 2009 respondents who completed the survey and were in the BC Public Service)
+15,POPULATION10,POPULATION,2010,,Exclude,Survey Info,,,Population 2010 (overall population of 2010 respondents)
+16,BCPUBLICSERVICE10,BCPUBLICSERVICE,2010,,Exclude,Survey Info,,,BC Public Service 2010 (population of respondents who were in BC Public Service in 2010)
+17,COMPLETED10,COMPLETED,2010,,Exclude,Survey Info,,,Completed Survey 2010 (population of respondents who completed the 2010 WES)
+18,OVERALLSCOPE10,OVERALLSCOPE,2010,,Exclude,Survey Info,,,Overall Scope 2010 (population of 2010 respondents who completed the survey and were in the BC Public Service)
+19,POPULATION11,POPULATION,2011,,Exclude,Survey Info,,,Population 2011 (overall population of 2011 respondents)
+20,BCPUBLICSERVICE11,BCPUBLICSERVICE,2011,,Exclude,Survey Info,,,BC Public Service 2011 (population of respondents who were in BC Public Service in 2011)
+21,COMPLETED11,COMPLETED,2011,,Exclude,Survey Info,,,Completed Survey 2011 (population of respondents who completed the 2011 WES)
+22,OVERALLSCOPE11,OVERALLSCOPE,2011,,Exclude,Survey Info,,,Overall Scope 2011 (population of 2011 respondents who completed the survey and were in the BC Public Service)
+23,POPULATION13,POPULATION,2013,,Exclude,Survey Info,,,Population 2013 (overall population of 2013) [description updated for accuracy] 1 = surveyed; 3 = not surveyed b/c not in population
+24,BCPUBLICSERVICE13,BCPUBLICSERVICE,2013,,Exclude,Survey Info,,,BC Public Service 2013 (population who were in BC Public Service in 2013 = 1; FRINGE = NOT in BCPS (2); not surveyed = 3) [desc updated for accuracy]
+25,COMPLETED13,COMPLETED,2013,,Exclude,Survey Info,,,Completed Survey 2013 (population who completed the 2013 WES=1 both fringe and core; NOT complete butsurveyed = 2; not surveyed = 3) [desc updated for accuracy]
+26,OVERALLSCOPE13,OVERALLSCOPE,2013,,Exclude,Survey Info,,,Overall Scope 2013 (population of 2013 respondents who completed the survey and were in the BC Public Service = 1; 3 = not sureyed OR fringe whether completed or not) [desc updated for accuracy]
+27,POPULATION15,POPULATION,2015,,Exclude,Survey Info,,,Population 2015 (overall population of 2015) 1 = in core or fringe in 2015; 3 = not surveyed in 2015
+28,BCPUBLICSERVICE15,BCPUBLICSERVICE,2015,,Exclude,Survey Info,,,BC Public Service 2015 (1 = in BC Public Service in 2015; 2 = FRINGE in 2015 ; 3 = not surveyed in 2015)
+29,COMPLETED15,COMPLETED,2015,,Exclude,Survey Info,,,Completed Survey 2015 (1 = completed survey in 2015 both fringe and core; 2 = NOT complete but surveyed in 2015; 3 =  not surveyed in 2015)
+30,OVERALLSCOPE15,OVERALLSCOPE,2015,,Exclude,Survey Info,,,Overall Scope 2015 (1 = completed survey and were in the BC Public Service in 2015; 0 = not surveyed in 2015 OR 2015 fringe whether completed or not)
+31,POPULATION18,POPULATION,2018,,Exclude,Survey Info,,,Population 2018 (overall population of 2018) 1 = in core or fringe in 2018; 3 = not surveyed in 2018
+32,BCPUBLICSERVICE18,BCPUBLICSERVICE,2018,,Exclude,Survey Info,,,BC Public Service 2018 (1 = in BC Public Service in 2018; 2 = FRINGE in 2018 ; 3 = not surveyed in 2018)
+33,COMPLETED18,COMPLETED,2018,,Exclude,Survey Info,,,Completed Survey 2018 (1 = completed survey in 2018 both fringe and core; 2 = NOT complete but surveyed in 2018; 3 =  not surveyed in 2018)
+34,OVERALLSCOPE18,OVERALLSCOPE,2018,,Exclude,Survey Info,,,Overall Scope 2018 (1 = completed survey and were in the BC Public Service in 2018; 0 = not surveyed in 2018 OR 2018 fringe whether completed or not)
+35,AGE07,AGE,2007,,Sensitive Info,Employee Info,,,Age 2007
+36,AGEGRP07,AGEGRP,2007,,BC Stats Background,Employee Info,,,Age Group 2007 (Calculated from AGE07)
+37,APPTSTAT07,APPTSTAT,2007,,Exclude,Employee Info,,,Appointment Status 2007
+38,CITYGRP07,CITYGRP,2007,,BC Stats Background,Employee Info,,,City Group 2007 (Calculated from WORKCITY07)
+39,CITYGRP07_REC1,CITYGRP_REC1,2007,,Exclude,Employee Info,,,City Group 2007 RECODE (Calculated from CITYGRP07 - groups Other and Vancouver together)
+40,CLASSCODE07,CLASSCODE,2007,,BC Stats Background,Employee Info,,,Class Code 2007 (Actually Job Code - linked to CLASSDESC07 and CLASSTITLE07)
+41,CLASSTITLE07,CLASSTITLE,2007,,BC Stats Background,Employee Info,,,Class Title 2007 (text aggregation of CLASSCODE07)
+42,CURPOSDESC07,CURPOSDESC,2007,,Sensitive Info,Employee Info,,,Current Position Description 2007 (similar to BUSTITLE07)
+43,DEPTDESC07,DEPTDESC,2007,,Sensitive Info,Employee Info,,,Department Description 2007 (linked to DEPTID07)
+44,DEPTID07,DEPTID,2007,,Sensitive Info,Employee Info,,,Department ID 2007 (linked to DEPTDESC07)
+45,GENDER07,GENDER,2007,,BC Stats Background,Employee Info,,,Gender 2007
+46,LEVEL107,LEVEL1_NAME,2007,,BC Stats Background,Employee Info,,,Division
+47,LEVEL207,LEVEL2_NAME,2007,,BC Stats Background,Employee Info,,,Branch
+48,LEVEL307,LEVEL3_NAME,2007,,Sensitive Info,Employee Info,,,Sub-branch
+49,ORGANIZATION07,ORGANIZATION,2007,,BC Stats Background,Employee Info,,,Organization 2007
+50,PSAREGION07,PSAREGION,2007,,BC Stats Background,Employee Info,,,PSA Region 2007 (Calculated from WORKCITY07)
+51,REGHOURS07,REGHOURS,2007,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2007 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+52,SRVCDT07,SRVCDT,2007,,Sensitive Info,Employee Info,,,Service Date 2007 (first date in current benefit program)
+53,SRVCYRS07,SRVCYRS,2007,,BC Stats Background,Employee Info,,,Service Years 2007 (Calculated from SRVCDT07)
+54,SRVCYRSGRP07,SRVCYRSGRP,2007,,BC Stats Background,Employee Info,,,Service Year Group 2007 (Calculated from SRVCYRS07)
+55,UNIONSTATUS07,UNIONSTATUS,2007,,BC Stats Background,Employee Info,,,Union Status 2007 (formerly GROUPS07)
+56,WESJOBCLASGRP07,WESJOBCLASGRP,2007,,BC Stats Background,Employee Info,,,WES Job Class Group 2007
+57,day1_107,Q01,2007,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,"day1_1 2007: [RESPECTFUL ENVIRONMENT B] A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+195,day1_108,Q01,2008,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,"day1_1 2008: [RESPECTFUL ENVIRONMENT B] A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+338,day1_109,Q01,2009,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,"day1_1 2009: [RESPECTFUL ENVIRONMENT B] A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+503,day1_110,Q01,2010,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,"day1_1 2010: [RESPECTFUL ENVIRONMENT R] A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+61,day1_507,NA,2007,,Exclude,Outdated Survey Question/Calc,,,day1_5 2007: [NON-MODEL] I have adequate opportunities to candidly express ideas.
+676,day1_111,Q01,2011,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,"day1_1 2011: [RESPECTFUL ENVIRONMENT B] A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+864,Q5074_04_13,Q01,2013,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,"A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+1010,Q5074_04_15,Q01,2015,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,"A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+65,day2_407,NA,2007,Q5143_15,Exclude,Outdated Survey Question/Calc,,,day2_4 2007: [NON-MODEL] My workplace procedures allow me to be as productive as possible.
+66,day2_507,NA,2007,,Exclude,Outdated Survey Question/Calc,,,day2_5 2007: [NON-MODEL] Appropriate accountability practices are in place in my work unit
+1162,Q5074_04_18,Q01,2018,Q5074_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,34,"A healthy atmosphere (e.g., trust, mutual respect) exists in my work unit."
+59,day1_307,Q02,2007,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_3 2007: [RESPECTFUL ENVIRONMENT B] My work unit values diversity.
+196,day1_208,Q02,2008,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_2 2008: [RESPECTFUL ENVIRONMENT B] My work unit values diversity.
+339,day1_209,Q02,2009,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_2 2009: [RESPECTFUL ENVIRONMENT B] My work unit values diversity.
+504,day1_210,Q02,2010,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_2 2010: [RESPECTFUL ENVIRONMENT R] My work unit values diversity.
+677,day1_211,Q02,2011,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_2 2011: [RESPECTFUL ENVIRONMENT B] My work unit values diversity.
+865,Q8641_13_13,Q02,2013,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,My work unit values diversity in people and backgrounds.
+74,day4_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,day4_1 2007: [NON-MODEL] My work unit gets useful feedback on its level of performance.
+75,day4_207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,day4_2 2007: [NON-MODEL] My work unit strives to improve the quality of its work.
+76,day4_307,NA,2007,Q5335_06,Exclude,Outdated Survey Question/Calc,,,day4_3 2007: [EMPOWERMENT B] I am encouraged to be innovative in my work.
+77,day4_407,NA,2007,,Exclude,Outdated Survey Question/Calc,,,day4_4 2007: [NON-MODEL] My work is interesting.
+1011,Q8641_13_15,Q02,2015,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,My work unit values diversity in people and backgrounds.
+1163,Q8641_13_18,Q02,2018,Q8641_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,35,My work unit values diversity in people and backgrounds.
+80,day4_707,NA,2007,Q8072_04,Exclude,Outdated Survey Question/Calc,,,day4_7 2007: [NON-MODEL] I am proud of the work I do.
+866,Q5704_13_13,Q03,2013,Q5704_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,My work unit values diversity in ideas.
+1012,Q5704_13_15,Q03,2015,Q5704_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,My work unit values diversity in ideas.
+1164,Q5704_13_18,Q03,2018,Q5704_13,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,35,My work unit values diversity in ideas.
+84,day5_407,NA,2007,,Exclude,Outdated Survey Question/Calc,,,day5_4 2007: [NON-MODEL] I feel anxiety as a result of the stress I experience at work.
+85,day5_507,NA,2007,,Exclude,Outdated Survey Question/Calc,,,day5_5 2007: [NON-MODEL] I feel stimulated as a result of the challenges I experience at work.
+60,day1_407,Q04,2007,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_4 2007: [RESPECTFUL ENVIRONMENT B] My work unit is free from discrimination and harassment.
+197,day1_308,Q04,2008,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_3 2008: [RESPECTFUL ENVIRONMENT B] My work unit is free from discrimination and harassment.
+340,day1_309,Q04,2009,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_3 2009: [RESPECTFUL ENVIRONMENT B] My work unit is free from discrimination and harassment.
+89,phy1_207,NA,2007,Q3894_04,Exclude,Outdated Survey Question/Calc,,,phy1_2 2007: [NON-MODEL] The physical security of my workplace is satisfactory.
+90,phy1_307,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"phy1_3 2007: [PHYSICAL ENVIRONMENT & TOOLS B] I have the tools (i.e., technology, equipment, etc.) I need to do my job well."
+91,phy1_407,NA,2007,Q4725_06,Exclude,Outdated Survey Question/Calc,,,phy1_4 2007: [NON-MODEL] I have the information I need to do my job well.
+505,day1_310,Q04,2010,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_3 2010: [RESPECTFUL ENVIRONMENT R] My work unit is free from discrimination and harassment.
+678,day1_311,Q04,2011,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,day1_3 2011: [RESPECTFUL ENVIRONMENT B] My work unit is free from discrimination and harassment.
+867,Q8511_04_13,Q04,2013,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,My work unit is free from discrimination and harassment.
+1013,Q8511_04_15,Q04,2015,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,,My work unit is free from discrimination and harassment.
+96,perf207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,perf2 2007: [NON-MODEL] A) Have you had a performance review in the last 12 months? A performance review may be a formal appraisal and/or an informal conversation with your supervisor about your performance.
+97,perf3_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,perf3_1 2007: [NON-MODEL] B) (If yes): My performance review helps me achieve my performance goals.
+98,cow1_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,cow1_1 2007: [NON-MODEL] Teamwork is encouraged and supported in my work unit.
+1165,Q8511_04_18,Q04,2018,Q8511_04,Raw Survey Question,My Day-to-Day Work,Respectful_Environment,32,My work unit is free from discrimination and harassment.
+100,cow1_307,NA,2007,Q6887_04,Exclude,Outdated Survey Question/Calc,,,cow1_3 2007: [NON-MODEL] My ideas are respected by others in my work unit.
+1014,Q3792_15_15,Q05,2015,Q3792_15,Raw Survey Question,My Day-to-Day Work,,,Employees in my work unit are clear on the ethical values expected in performing their work.
+1166,Q3792_15_18,Q05,2018,Q3792_15,Raw Survey Question,My Day-to-Day Work,,,Employees in my work unit are clear on the ethical values expected in performing their work.
+103,pers1_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,pers1_1 2007: [NON-MODEL] The person I report to communicates effectively with staff.
+104,pers1_207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,pers1_2 2007: [NON-MODEL] The person I report to listens to my suggestions and ideas for improvement.
+1015,Q2397_15_15,Q06,2015,Q2397_15,Raw Survey Question,My Day-to-Day Work,,,"If I am faced with an ethical question or concern, I know where I can go for help in resolving the situation."
+1167,Q2397_15_18,Q06,2018,Q2397_15,Raw Survey Question,My Day-to-Day Work,,,"If I am faced with an ethical question or concern, I know where I can go for help in resolving the situation."
+63,day2_207,Q07,2007,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day2_2 2007: [EMPOWERMENT B] I have opportunities to provide input into decisions that affect my work.
+108,pers2_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,pers2_1 2007: [NON-MODEL] The person I report to is open to flexible work arrangements to accommodate personal needs.
+109,pers2_207,NA,2007,Q2785_04,Exclude,Outdated Survey Question/Calc,,,pers2_2 2007: [NON-MODEL] The person I report to is an effective manager.
+110,pers2_307,NA,2007,,Exclude,Outdated Survey Question/Calc,,,pers2_3 2007: [NON-MODEL] The person I report to is an effective leader.
+199,day1_508,Q07,2008,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_5 2008: [EMPOWERMENT B] I have opportunities to provide input into decisions that affect my work.
+342,day1_509,Q07,2009,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_5 2009: [EMPOWERMENT B] I have opportunities to provide input into decisions that affect my work.
+113,pers2_607,NA,2007,,Exclude,Outdated Survey Question/Calc,,,pers2_6 2007: [NON-MODEL] I have a positive working relationship with the person I report to.
+114,exe1_107,NA,2007,Q7855_08,Exclude,Outdated Survey Question/Calc,,,exe1_1 2007: [EXECUTIVE LEVEL B] Executives in my Ministry/organization make effective and timely decisions.
+506,day1_410,Q07,2010,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_4 2010: [EMPOWERMENT R] I have opportunities to provide input into decisions that affect my work.
+116,exe1_307,NA,2007,,Exclude,Outdated Survey Question/Calc,,,exe1_3 2007: [EXECUTIVE LEVEL B] Executives in my Ministry/organization provide clear direction for the future.
+679,day1_411,Q07,2011,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_4 2011: [EMPOWERMENT B] I have opportunities to provide input into decisions that affect my work.
+868,Q8520_06_13,Q07,2013,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,I have opportunities to provide input into decisions that affect my work.
+1016,Q8520_06_15,Q07,2015,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,I have opportunities to provide input into decisions that affect my work.
+120,org1_407,NA,2007,,Exclude,Outdated Survey Question/Calc,,,org1_4 2007: [NON-MODEL] Essential information flows efficiently from staff to senior leadership.
+1168,Q8520_06_18,Q07,2018,Q8520_06,Raw Survey Question,My Day-to-Day Work,Empowerment,72,I have opportunities to provide input into decisions that affect my work.
+64,day2_307,Q08,2007,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day2_3 2007: [EMPOWERMENT B] I have the freedom to make the decisions necessary to do my job well.
+123,org2_207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,org2_2 2007: [NON-MODEL] I am appreciated for the contribution I make to my Ministry/organization.
+200,day1_608,Q08,2008,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_6 2008: [EMPOWERMENT B] I have the freedom to make the decisions necessary to do my job well.
+125,org2_407,NA,2007,,Exclude,Outdated Survey Question/Calc,,,org2_4 2007: [NON-MODEL] I strive to improve my ministry’s/organization's results.
+126,emp1_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp1_1 2007: [NON-MODEL] I am proud to work for my Ministry/organization.
+343,day1_609,Q08,2009,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_6 2009: [EMPOWERMENT B] I have the freedom to make the decisions necessary to do my job well.
+507,day1_510,Q08,2010,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_5 2010: [EMPOWERMENT R] I have the freedom to make the decisions necessary to do my job well.
+680,day1_511,Q08,2011,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,day1_5 2011: [EMPOWERMENT B] I have the freedom to make the decisions necessary to do my job well.
+130,emp1_507,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"emp1_5 2007: [NON-MODEL] Based on my experience working at this Ministry/organization, I would recommend it as a place to work."
+869,Q8385_06_13,Q08,2013,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,I have the freedom to make the decisions necessary to do my job well.
+1017,Q8385_06_15,Q08,2015,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,,I have the freedom to make the decisions necessary to do my job well.
+133,emp2_207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp2_2 2007: [ORGANIZATION SATISFACTION B] I am satisfied with my ministry/organization.
+1169,Q8385_06_18,Q08,2018,Q8385_06,Raw Survey Question,My Day-to-Day Work,Empowerment,71,I have the freedom to make the decisions necessary to do my job well.
+135,emp3_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"emp3_1 2007: Have you experienced any of the following in the past 12 months? (Yes/No): Recently changed job (e.g; promotion, transfer)"
+136,emp3_207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp3_2 2007: Have you experienced any of the following in the past 12 months? (Yes/No):  A change in your duties or responsibilities in your existing job.
+137,emp3_307,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp3_3 2007: Have you experienced any of the following in the past 12 months? (Yes/No): Change in supervisor or manager.
+138,emp3_407,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp3_4 2007: Have you experienced any of the following in the past 12 months? (Yes/No): Introduction of new employees in your work unit.
+139,emp3_507,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp3_5 2007: Have you experienced any of the following in the past 12 months? (Yes/No): Reduction in the number of employees in your work unit.
+140,emp3_607,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp3_6 2007: Have you experienced any of the following in the past 12 months? (Yes/No): Organizational restructuring in your workplace (such as merging or separating units or changing number of levels in the office).
+141,emp3_707,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp3_7 2007: Have you experienced any of the following in the past 12 months? (Yes/No): Change in organization executive
+142,emp3_807,NA,2007,,Exclude,Outdated Survey Question/Calc,,,emp3_8 2007: Have you experienced any of the following in the past 12 months? (Yes/No): Budget reductions in your department.
+143,Engagement_07,Engagement,2007,,Calculated from Raw,Engagement Model,,,"Engagement 2007 (Calculated from Commitment_07, Job_Satisfaction_07, Org_Satisfaction_07)"
+144,Commitment_07,Commitment,2007,,Calculated from Raw,Engagement Model,Engagement,,"BC Public Service Commitment 2007 (Calculated from emp1_407, emp2_307)"
+145,Job_Satisfaction_07,Job_Satisfaction,2007,,Calculated from Raw,Engagement Model,Engagement,,Job Satisfaction 2007 (Calculated from emp2_107)
+146,Org_Satisfaction_07,Org_Satisfaction,2007,,Calculated from Raw,Engagement Model,Engagement,,Organization Satisfaction 2007 (Calculated from emp2_207)
+147,Empowerment_07,Empowerment,2007,,Calculated from Raw,Engagement Model,,,"Empowerment 2007 (Calculated from day2_207, day2_307, day4_307)"
+148,Stress_and_Workload_07,Stress_Workload,2007,,Calculated from Raw,Engagement Model,,,"Stress & Workload 2007 (Calculated from day5_207, day5_307)"
+149,Vision_Mission_Goals_07,Vision_Mission_Goals,2007,,Calculated from Raw,Engagement Model,,,"Vision, Mission & Goals 2007 ( Calculated from org1_107, org1_207)"
+150,Teamwork_07,Teamwork,2007,,Calculated from Raw,Engagement Model,,,"Teamwork 2007 (Calculated from cow1_207, cow1_407, cow1_507)"
+151,Physical_Environment_Tools_07,Tools_Workspace,2007,,Calculated from Raw,Engagement Model,,,"Physical Environment & Tools 2007 (Calculated from phy1_107, phy1_307)"
+152,Recognition_07,Recognition,2007,,Calculated from Raw,Engagement Model,,,"Recognition 2007 (Calculated from day3_207, day3_307)"
+153,Professional_Development_07,Professional_Development,2007,,Calculated from Raw,Engagement Model,,,"Professional Development 2007 (Calculated from perf1_107, perf1_207, perf1_307)"
+154,Pay_Benefits_07,Pay_Benefits,2007,,Calculated from Raw,Engagement Model,,,"Pay & Benefits 2007 (Calculated from day3_407, day3_507)"
+155,Staffing_Practices_07,Staffing_Practices,2007,,Calculated from Raw,Engagement Model,,,"Staffing Practices 2007 (Calculated from day3_607, day3_707)"
+156,Respectful_Environment_07,Respectful_Environment,2007,,Calculated from Raw,Engagement Model,,,"Respectful Environment 2007 (Calculated from day1_107, day1_307, day1_407)"
+157,Executive_Level_07,Executive_Level,2007,,Calculated from Raw,Engagement Model,,,"Executive Level 2007 (Calculated from exe1_107, exe1_307)"
+158,Supervisory_Level_07,Supervisory_Level,2007,,Calculated from Raw,Engagement Model,,,"Supervisory Level 2007 (Calculated from pers1_407, pers1_507)"
+159,sbc1a07,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"sbc1a07: Based on the definition above, do you deliver services directly to the public?"
+160,sbc1b07,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"sbc1b07: Based on the definition above, do you supervise staff who deliver services directly to the public?"
+161,sbc207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"sbc207: How much of your time is spent providing information or services directly to citizens or businesses (by phone, by email, through personal contact in government offices, through personal contact off-site)?"
+162,sbc3_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc3_107: My work environment enables me to deliver service in timely way.
+163,sbc3_207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"sbc3_207: My work environment enables me to deliver service fairly, regardless of age, gender, ethnicity, etc."
+164,sbc3_307,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc3_307: I have been provided with the appropriate knowledge and skills to deliver service.
+165,sbc3_407,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc3_407: My work environment enables me to provide courteous service.
+166,sbc3_507,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc3_507: My work environment enables me to go the extra mile when providing service.
+167,sbc4_107,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc4_107: Our work environment enables my staff to deliver service in timely way.
+168,sbc4_207,NA,2007,,Exclude,Outdated Survey Question/Calc,,,"sbc4_207: Our work environment enables my staff to deliver service fairly, regardless of age, gender, ethnicity, etc."
+169,sbc4_307,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc4_307: My staff have been provided with the appropriate knowledge and skills to deliver service.
+170,sbc4_407,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc4_407: Our work environment enables my staff to provide courteous service.
+171,sbc4_507,NA,2007,,Exclude,Outdated Survey Question/Calc,,,sbc4_507: Our work environment enables my staff to go the extra mile when providing service.
+172,AGE08,AGE,2008,,Sensitive Info,Employee Info,,,Age 2008
+173,AGEGRP08,AGEGRP,2008,,BC Stats Background,Employee Info,,,Age Group 2008 (Calculated from AGE08)
+174,APPTSTAT08,APPTSTAT,2008,,Exclude,Employee Info,,,Appointment Status 2008
+175,CITYGRP08,CITYGRP,2008,,BC Stats Background,Employee Info,,,City Group 2008 (Calculated from WORKCITY08)
+176,CITYGRP08_REC1,CITYGRP_REC1,2008,,Exclude,Employee Info,,,City Group 2008 RECODE (Calculated from CITYGRP08 - groups Other and Vancouver together)
+177,CLASSCODE08,CLASSCODE,2008,,BC Stats Background,Employee Info,,,Class Code 2008 (Actually Job Code - linked to CLASSDESC08 and CLASSTITLE08)
+178,CLASSTITLE08,CLASSTITLE,2008,,BC Stats Background,Employee Info,,,Class Title 2008 (text aggregation of CLASSCODE08)
+179,CURPOSDESC08,CURPOSDESC,2008,,Sensitive Info,Employee Info,,,Current Position Description 2008 (similar to BUSTITLE08)
+180,DEPTDESC08,DEPTDESC,2008,,Sensitive Info,Employee Info,,,Department Description 2008 (linked to DEPTID08)
+181,DEPTID08,DEPTID,2008,,Sensitive Info,Employee Info,,,Department ID 2008 (linked to DEPTDESC08)
+182,GENDER08,GENDER,2008,,BC Stats Background,Employee Info,,,Gender 2008
+183,LEVEL108,LEVEL1_NAME,2008,,BC Stats Background,Employee Info,,,Division
+184,LEVEL208,LEVEL2_NAME,2008,,BC Stats Background,Employee Info,,,Branch
+185,LEVEL308,LEVEL3_NAME,2008,,Sensitive Info,Employee Info,,,Sub-branch
+186,LEVEL408,LEVEL4_NAME,2008,,Sensitive Info,Employee Info,,,Section
+187,ORGANIZATION08,ORGANIZATION,2008,,BC Stats Background,Employee Info,,,Organization 2008
+188,PSAREGION08,PSAREGION,2008,,BC Stats Background,Employee Info,,,PSA Region 2008 (Calculated from WORKCITY08)
+189,REGHOURS08,REGHOURS,2008,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2008 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+190,SRVCDT08,SRVCDT,2008,,Sensitive Info,Employee Info,,,Service Date 2008 (first date in current benefit program)
+191,SRVCYRS08,SRVCYRS,2008,,BC Stats Background,Employee Info,,,Service Years 2008 (Calculated from SRVCDT08)
+192,SRVCYRSGRP08,SRVCYRSGRP,2008,,BC Stats Background,Employee Info,,,Service Year Group 2008 (Calculated from SRVCYRS08)
+193,UNIONSTATUS08,UNIONSTATUS,2008,,BC Stats Background,Employee Info,,,Union Status 2008 (formerly GROUPS08)
+194,WESJOBCLASGRP08,WESJOBCLASGRP,2008,,BC Stats Background,Employee Info,,,WES Job Class Group 2008
+62,day2_107,Q09,2007,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,day2_1 2007: [NON-MODEL] Innovation is valued in my work.
+201,day2_108,Q09,2008,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,day2_1 2008: [NON-MODEL] Innovation is valued in my work.
+344,day2_109,Q09,2009,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,day2_1 2009: [NON-MODEL] Innovation is valued in my work.
+198,day1_408,NA,2008,,Exclude,Outdated Survey Question/Calc,,,day1_4 2008: [NON-MODEL] I have adequate opportunities to candidly express ideas.
+508,day2_110,Q09,2010,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,day2_1 2010: [NON-MODEL] Innovation is valued in my work.
+681,day2_111,Q09,2011,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,day2_1 2011: [NON-MODEL] Innovation is valued in my work.
+870,Q5892_07_13,Q09,2013,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,Innovation is valued in my work.
+202,day2_208,NA,2008,Q5335_06,Exclude,Outdated Survey Question/Calc,,,day2_2 2008: [EMPOWERMENT R] I am encouraged to be innovative in my work.
+1018,Q5892_07_15,Q09,2015,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,Innovation is valued in my work.
+1170,Q5892_07_18,Q09,2018,Q5892_07,Raw Survey Question,My Day-to-Day Work,,,Innovation is valued in my work.
+203,day2_308,Q10,2008,Q3182_08,Raw Survey Question,My Day-to-Day Work,Empowerment,,day2_3 2008: [EMPOWERMENT M] I have the opportunities I need to implement new ideas.
+206,day3_208,NA,2008,,Exclude,Outdated Survey Question/Calc,,,day3_2 2008: [NON-MODEL] Appropriate accountabilities are in place in my work unit.
+346,day2_309,Q10,2009,Q3182_08,Raw Survey Question,My Day-to-Day Work,Empowerment,,day2_3 2009: [EMPOWERMENT M] I have the opportunities I need to implement new ideas.
+510,day2_310,Q10,2010,Q3182_08,Raw Survey Question,My Day-to-Day Work,Empowerment,,day2_3 2010: [EMPOWERMENT R] I have the opportunities I need to implement new ideas.
+683,day2_311,Q10,2011,Q3182_08,Raw Survey Question,My Day-to-Day Work,Empowerment,,day2_3 2011: [EMPOWERMENT B] I have the opportunities I need to implement new ideas.
+210,day4_108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,day4_1 2008: I am appreciated for the contribution I make to my Ministry/organization.
+872,Q3182_08_13,Q10,2013,Q3182_08,Raw Survey Question,My Day-to-Day Work,Empowerment,,I have the opportunities I need to implement new ideas.
+1019,Q3182_08_15,Q10,2015,Q3182_08,Raw Survey Question,My Day-to-Day Work,Empowerment,,I have the opportunities I need to implement new ideas.
+1171,Q3182_08_18,Q10,2018,Q3182_08,Raw Survey Question,My Day-to-Day Work,Empowerment,72,I have the opportunities I need to implement new ideas.
+124,org2_307,Q11,2007,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,org2_3 2007: [NON-MODEL] I am inspired to give my very best.
+204,day2_408,Q11,2008,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,day2_4 2008: [NON-MODEL] I am inspired to give my very best.
+347,day2_409,Q11,2009,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,day2_4 2009: [NON-MODEL] I am inspired to give my very best.
+217,day5_308,NA,2008,Q8072_04,Exclude,Outdated Survey Question/Calc,,,day5_3 2008: [NON-MODEL] I am proud of the work I do.
+218,day5_408,NA,2008,Q1657_08,Exclude,Outdated Survey Question/Calc,,,day5_4 2008: [NON-MODEL] My workplace procedures allow me to use my time as effectively as possible.
+219,day5_508,NA,2008,,Exclude,Outdated Survey Question/Calc,,,day5_5 2008: [NON-MODEL] The work I do gives citizens good value for their tax dollars.
+511,day2_410,Q11,2010,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,day2_4 2010: [NON-MODEL] I am inspired to give my very best.
+684,day2_411,Q11,2011,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,day2_4 2011: [NON-MODEL] I am inspired to give my very best.
+873,Q8671_06_13,Q11,2013,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,I am inspired to give my very best.
+1021,Q8671_06_15,Q11,2015,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,I am inspired to give my very best.
+1172,Q8671_06_18,Q11,2018,Q8671_06,Raw Survey Question,My Day-to-Day Work,,,I am inspired to give my very best.
+1173,Q4343_18_18,Q12,2018,Q4343_18,Raw Survey Question,My Day-to-Day Work,,,I feel energized by my work.
+58,day1_207,Q13,2007,,Raw Survey Question,My Day-to-Day Work,,,day1_2 2007: [NON-MODEL] My work unit is supported to cope effectively with change.
+227,phy1_208,NA,2008,Q3894_04,Exclude,Outdated Survey Question/Calc,,,phy1_2 2008: [NON-MODEL] The physical security of my workplace is satisfactory.
+228,phy1_308,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"phy1_3 2008: [PHYSICAL ENVIRONMENT & TOOLS B] I have the tools (i.e., technology, equipment, etc.) I need to do my job well."
+229,phy1_408,NA,2008,Q4725_06,Exclude,Outdated Survey Question/Calc,,,phy1_4 2008: [NON-MODEL] I have the information I need to do my job well.
+205,day3_108,Q13,2008,Q4858_08,Raw Survey Question,My Day-to-Day Work,,,day3_1 2008: [NON-MODEL] My work unit is well supported during times of change.
+348,day3_109,Q13,2009,Q4858_08,Raw Survey Question,My Day-to-Day Work,,,day3_1 2009: [NON-MODEL] My work unit is well supported during times of change.
+512,day3_110,Q13,2010,Q4858_08,Raw Survey Question,My Day-to-Day Work,,,day3_1 2010: [NON-MODEL] My work unit is well supported during times of change.
+233,perf1_408,NA,2008,,Exclude,Outdated Survey Question/Calc,,,perf1_4 2008: [NON-MODEL] I regularly receive feedback on my performance.
+685,day3_111,Q13,2011,Q4858_08,Raw Survey Question,My Day-to-Day Work,,,day3_1 2011: [NON-MODEL] My work unit is well supported during times of change.
+235,perf208,NA,2008,,Exclude,Outdated Survey Question/Calc,,,perf2 2008: [NON-MODEL] A) Have you had a performance review in the last 12 months? A performance review may be a formal appraisal and/or an informal conversation with your supervisor about your performance.
+236,perf3_108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,perf3_1 2008: [NON-MODEL] B) (If yes): My performance review helps me achieve my performance goals.
+874,Q4858_08_13,Q13,2013,Q4858_08,Raw Survey Question,My Day-to-Day Work,,,My work unit is well supported during times of change.
+238,cow1_208,NA,2008,Q6887_04,Exclude,Outdated Survey Question/Calc,,,cow1_2 2008: [NON-MODEL] My ideas are respected by others in my work unit.
+1022,Q4858_08_15,Q13,2015,Q4858_08,Raw Survey Question,My Day-to-Day Work,,,My work unit is well supported during times of change.
+1174,Q4858_08_18,Q13,2018,Q4858_08,Raw Survey Question,My Day-to-Day Work,,42,My work unit is well supported during times of change.
+241,pers1_108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,pers1_1 2008: [NON-MODEL] The person I report to listens to my suggestions and ideas for improvement.
+686,day3_211,Q14,2011,Q3344_11,Raw Survey Question,My Day-to-Day Work,,,day3_2 2011: [NON-MODEL] Employees are held accountable in my work unit.
+875,Q3344_11_13,Q14,2013,Q3344_11,Raw Survey Question,My Day-to-Day Work,,,Employees are held accountable in my work unit.
+1023,Q3344_11_15,Q14,2015,Q3344_11,Raw Survey Question,My Day-to-Day Work,,,Employees are held accountable in my work unit.
+245,pers2_108,NA,2008,Q2785_04,Exclude,Outdated Survey Question/Calc,,,pers2_1 2008: [NON-MODEL] The person I report to is an effective manager.
+246,pers2_208,NA,2008,,Exclude,Outdated Survey Question/Calc,,,pers2_2 2008: [NON-MODEL] The person I report to is an effective leader.
+1175,Q3344_11_18,Q14,2018,Q3344_11,Raw Survey Question,My Day-to-Day Work,,82,Employees are held accountable in my work unit.
+248,pers2_408,NA,2008,,Exclude,Outdated Survey Question/Calc,,,pers2_4 2008: [NON-MODEL] The person I report to is open to flexible work arrangements to accommodate personal needs.
+67,day3_107,Q15,2007,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,day3_1 2007: [NON-MODEL] I feel my job is secure.
+207,day3_308,Q15,2008,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,day3_3 2008: [NON-MODEL] I feel my job is secure.
+350,day3_309,Q15,2009,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,day3_3 2009: [NON-MODEL] I feel my job is secure.
+252,exe1_308,NA,2008,,Exclude,Outdated Survey Question/Calc,,,exe1_3 2008: [EXECUTIVE LEVEL B] Executives in my Ministry/organization provide clear direction for the future.
+514,day3_310,Q15,2010,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,day3_3 2010: [NON-MODEL] I feel my job is secure.
+254,exe1_508,NA,2008,Q6870_07,Exclude,Outdated Survey Question/Calc,,,exe1_5 2008: [NON-MODEL] Essential information flows efficiently from staff to senior leadership.
+687,day3_311,Q15,2011,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,day3_3 2011: [NON-MODEL] I feel my job is secure.
+876,Q4911_04_13,Q15,2013,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,I feel my job is secure.
+1024,Q4911_04_15,Q15,2015,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,I feel my job is secure.
+1176,Q4911_04_18,Q15,2018,Q4911_04,Raw Survey Question,My Day-to-Day Work,,,I feel my job is secure.
+73,day3_707,Q16,2007,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_7 2007: [STAFFING PRACTICES B] In my work unit, the process of selecting a person for a position is based on merit."
+208,day3_408,Q16,2008,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_4 2008: [STAFFING PRACTICES B] In my work unit, the selection of a person for a position is based on merit."
+351,day3_409,Q16,2009,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_4 2009: [STAFFING PRACTICES B] In my work unit, the selection of a person for a position is based on merit."
+262,empw1_408,NA,2008,,Exclude,Outdated Survey Question/Calc,,,empw1_4 2008: [ORGANIZATION SATISFACTION B] I am satisfied with my ministry/organization.
+515,day3_410,Q16,2010,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_4 2010: [STAFFING PRACTICES R] In my work unit, the selection of a person for a position is based on merit."
+688,day3_411,Q16,2011,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_4 2011: [STAFFING PRACTICES B] In my work unit, the selection of a person for a position is based on merit."
+877,Q8117_08_13,Q16,2013,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"In my work unit, the selection of a person for a position is based on merit."
+1025,Q8117_08_15,Q16,2015,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"In my work unit, the selection of a person for a position is based on merit."
+1177,Q8117_08_18,Q16,2018,Q8117_08,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,61,"In my work unit, the selection of a person for a position is based on merit."
+268,cha108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"cha1 2008: Thinking of the last 12 months, please indicate how much workplace change you have experienced."
+269,cha2_108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"cha2_1 2008: Thinking of the last 12 months, please indicate the impact these workplace changes have had on you overall."
+270,cha3_108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"cha3_1 2008: Have you experienced changes to (Yes/No/DK):  Your job (e.g., new job, promotion, transfer, etc.)"
+271,cha3_208,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_2 2008: Have you experienced changes to (Yes/No/DK):  Your duties or responsibilities in your existing job
+272,cha3_308,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_3 2008: Have you experienced changes to (Yes/No/DK):  Your workplace procedures or policies
+273,cha3_408,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_4 2008: Have you experienced changes to (Yes/No/DK):  Your workplace budget
+274,cha3_508,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"cha3_5 2008: Have you experienced changes to (Yes/No/DK):  Your physical environment (e.g., office layout, location, security, etc.)"
+275,cha3_608,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_6 2008: Have you experienced changes to (Yes/No/DK):  Your salary and/or benefits
+276,cha3_708,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_7 2008: Have you experienced changes to (Yes/No/DK):  Your executive
+277,cha3_808,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_8 2008: Have you experienced changes to (Yes/No/DK):  The person you report to
+278,cha3_908,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_9 2008: Have you experienced changes to (Yes/No/DK):  Staff resulting in a net loss of talent/experience
+279,cha3_1008,NA,2008,,Exclude,Outdated Survey Question/Calc,,,cha3_10 2008: Have you experienced changes to (Yes/No/DK):  Staff resulting in a net gain of talent/experience
+280,cha3_1108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"cha3_11 2008: Have you experienced changes to (Yes/No/DK):  Organizational structure (e.g., merging or separating units, changing number of levels in workplace)"
+281,ann108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,ann1 2008: Were you informed of the Work Environment Survey [year] results for your organization?
+282,Engagement_08,Engagement,2008,,Calculated from Raw,Engagement Model,,,"Engagement 2008 (Calculated from Commitment_08, Job_Satisfaction_08, Org_Satisfaction_08)"
+283,Commitment_08,Commitment,2008,,Calculated from Raw,Engagement Model,Engagement,,"BC Public Service Commitment 2008 (Calculated from empw1_608, empw1_808)"
+284,Job_Satisfaction_08,Job_Satisfaction,2008,,Calculated from Raw,Engagement Model,Engagement,,Job Satisfaction 2008 (Calculated from empw1_108)
+285,Org_Satisfaction_08,Org_Satisfaction,2008,,Calculated from Raw,Engagement Model,Engagement,,Organization Satisfaction 2008 (Calculated from empw1_408)
+286,Empowerment_08,Empowerment,2008,,Calculated from Raw,Engagement Model,,,"Empowerment 2008 (Calculated from day1_508, day1_608, day2_208)"
+287,Stress_and_Workload_08,Stress_Workload,2008,,Calculated from Raw,Engagement Model,,,"Stress & Workload 2008 (Calculated from day6_208, day6_308)"
+288,Vision_Mission_Goals_08,Vision_Mission_Goals,2008,,Calculated from Raw,Engagement Model,,,"Vision, Mission & Goals 2008 (Calculated from org1_208, org1_308)"
+289,Teamwork_08,Teamwork,2008,,Calculated from Raw,Engagement Model,,,"Teamwork 2008 (Calculated from cow1_108, cow1_308, cow1_408)"
+290,Physical_Environment_Tools_08,Tools_Workspace,2008,,Calculated from Raw,Engagement Model,,,"Physical Environment & Tools 2008 (Calculated from phy1_108, phy1_308)"
+291,Recognition_08,Recognition,2008,,Calculated from Raw,Engagement Model,,,"Recognition 2008 (Calculated from day4_208, day4_308)"
+292,Professional_Development_08,Professional_Development,2008,,Calculated from Raw,Engagement Model,,,"Professional Development 2008 (Calculated from perf1_108, perf1_208, perf1_308)"
+293,Pay_Benefits_08,Pay_Benefits,2008,,Calculated from Raw,Engagement Model,,,"Pay & Benefits 2008 (Calculated from day4_408, day4_508)"
+294,Staffing_Practices_08,Staffing_Practices,2008,,Calculated from Raw,Engagement Model,,,"Staffing Practices 2008 (Calculated from day3_408, day3_508)"
+295,Respectful_Environment_08,Respectful_Environment,2008,,Calculated from Raw,Engagement Model,,,"Respectful Environment 2008 (Calculated from day1_108, day1_208, day1_308)"
+296,Executive_Level_08,Executive_Level,2008,,Calculated from Raw,Engagement Model,,,"Executive Level 2008 (Calculated from exe1_108, exe1_208, exe1_308)"
+297,Supervisory_Level_08,Supervisory_Level,2008,,Calculated from Raw,Engagement Model,,,"Supervisory Level 2008 (Calculated from pers1_308, pers1_408)"
+298,sbc1a08,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"sbc1a08: Based on the definition above, do you deliver services directly to the public?"
+299,sbc1b08,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"sbc1b08: Based on the definition above, do you supervise staff who deliver services directly to the public?"
+300,sbc208,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"sbc208: How much of your time is spent providing information or services directly to citizens or businesses (by phone, by email, through personal contact in government offices, through personal contact off-site)?"
+301,sbc3_108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc3_108: My work environment enables me to deliver service in timely way.
+302,sbc3_208,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"sbc3_208: My work environment enables me to deliver service fairly, regardless of age, gender, ethnicity, etc."
+303,sbc3_308,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc3_308: I have been provided with the appropriate knowledge and skills to deliver service.
+304,sbc3_408,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc3_408: My work environment enables me to provide courteous service.
+305,sbc3_508,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc3_508: My work environment enables me to go the extra mile when providing service.
+306,sbc4_108,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc4_108: Our work environment enables my staff to deliver service in timely way.
+307,sbc4_208,NA,2008,,Exclude,Outdated Survey Question/Calc,,,"sbc4_208: Our work environment enables my staff to deliver service fairly, regardless of age, gender, ethnicity, etc."
+308,sbc4_308,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc4_308: My staff have been provided with the appropriate knowledge and skills to deliver service.
+309,sbc4_408,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc4_408: Our work environment enables my staff to provide courteous service.
+310,sbc4_508,NA,2008,,Exclude,Outdated Survey Question/Calc,,,sbc4_508: Our work environment enables my staff to go the extra mile when providing service.
+311,AGE09,AGE,2009,,Sensitive Info,Employee Info,,,Age 2009
+312,AGEGRP09,AGEGRP,2009,,BC Stats Background,Employee Info,,,Age Group 2009 (Calculated from AGE09)
+313,APPTSTAT09,APPTSTAT,2009,,Exclude,Employee Info,,,Appointment Status 2009
+314,CITYGRP09,CITYGRP,2009,,BC Stats Background,Employee Info,,,City Group 2009 (Calculated from WORKCITY09)
+315,CITYGRP09_REC1,CITYGRP_REC1,2009,,Exclude,Employee Info,,,City Group 2009 RECODE (Calculated from CITYGRP09 - groups Other and Vancouver together)
+316,CLASSCODE09,CLASSCODE,2009,,BC Stats Background,Employee Info,,,Class Code 2009 (Actually Job Code - linked to CLASSDESC09 and CLASSTITLE09)
+317,CLASSTITLE09,CLASSTITLE,2009,,BC Stats Background,Employee Info,,,Class Title 2009 (text aggregation of CLASSCODE09)
+318,CURPOSDESC09,CURPOSDESC,2009,,Sensitive Info,Employee Info,,,Current Position Description 2009 (similar to BUSTITLE09)
+319,CURSUPID09,CURSUPID,2009,,Sensitive Info,Employee Info,,,"Current Supervisors ID 2009 (Used to link a direct report's data with their supervisors - data quality not great, but good enough)"
+320,DEPTDESC09,DEPTDESC,2009,,Sensitive Info,Employee Info,,,Department Description 2009 (linked to DEPTID09)
+321,DEPTID09,DEPTID,2009,,Sensitive Info,Employee Info,,,Department ID 2009 (linked to DEPTDESC09)
+322,DEBTID09_REORG,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Department ID 2009 (ID structure after 2009 reorg)
+323,GENDER09,GENDER,2009,,BC Stats Background,Employee Info,,,Gender 2009
+324,LEVEL009,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Organization
+325,LEVEL109,LEVEL1_NAME,2009,,BC Stats Background,Employee Info,,,Division
+326,LEVEL209,LEVEL2_NAME,2009,,BC Stats Background,Employee Info,,,Branch
+327,LEVEL309,LEVEL3_NAME,2009,,Sensitive Info,Employee Info,,,Sub-branch
+328,LEVEL409,LEVEL4_NAME,2009,,Sensitive Info,Employee Info,,,Section
+329,ORGANIZATION09,ORGANIZATION,2009,,BC Stats Background,Employee Info,,,Organization 2009
+330,PSAREGION09,PSAREGION,2009,,BC Stats Background,Employee Info,,,PSA Region 2009 (Calculated from WORKCITY09)
+331,REGHOURS09,REGHOURS,2009,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2010 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+332,SRVCDT09,SRVCDT,2009,,Sensitive Info,Employee Info,,,Service Date 2009 (first date in current benefit program)
+333,SRVCYRS09,SRVCYRS,2009,,BC Stats Background,Employee Info,,,Service Years 2009 (Calculated from SRVCDT09)
+334,SRVCYRSGRP09,SRVCYRSGRP,2009,,BC Stats Background,Employee Info,,,Service Year Group 2009 (Calculated from SRVCYRS09)
+335,SUPERVISEES09,SUPERVISEES,2009,,BC Stats Background,Employee Info,,,Supervisees 2009: Provides a count of how many supervisees a supervisor is responsible for
+336,UNIONSTATUS09,UNIONSTATUS,2009,,BC Stats Background,Employee Info,,,Union Status 2009 (formerly GROUPS09)
+337,WESJOBCLASGRP09,WESJOBCLASGRP,2009,,BC Stats Background,Employee Info,,,WES Job Class Group 2009
+72,day3_607,Q17,2007,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_6 2007: [STAFFING PRACTICES B] In my work unit, the process of selecting a person for a position is fair."
+209,day3_508,Q17,2008,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_5 2008: [STAFFING PRACTICES B] In my work unit, the process of selecting a person for a position is fair."
+352,day3_509,Q17,2009,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_5 2009: [STAFFING PRACTICES B] In my work unit, the process of selecting a person for a position is fair."
+341,day1_409,NA,2009,,Exclude,Outdated Survey Question/Calc,,,day1_4 2009: [NON-MODEL] I have adequate opportunities to candidly express ideas.
+516,day3_510,Q17,2010,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_5 2010: [STAFFING PRACTICES R] In my work unit, the process of selecting a person for a position is fair."
+689,day3_511,Q17,2011,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"day3_5 2011: [STAFFING PRACTICES B] In my work unit, the process of selecting a person for a position is fair."
+878,Q8260_06_13,Q17,2013,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"In my work unit, the process of selecting a person for a position is fair."
+345,day2_209,NA,2009,Q5335_06,Exclude,Outdated Survey Question/Calc,,,day2_2 2009: [EMPOWERMENT R] I am encouraged to be innovative in my work.
+1026,Q8260_06_15,Q17,2015,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,,"In my work unit, the process of selecting a person for a position is fair."
+1178,Q8260_06_18,Q17,2018,Q8260_06,Raw Survey Question,My Day-to-Day Work,Staffing_Practices,61,"In my work unit, the process of selecting a person for a position is fair."
+68,day3_207,Q18,2007,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,,day3_2 2007: [RECOGNITION B] I receive meaningful recognition for work well done.
+349,day3_209,NA,2009,,Exclude,Outdated Survey Question/Calc,,,day3_2 2009: [NON-MODEL] Appropriate accountabilities are in place in my work unit.
+211,day4_208,Q18,2008,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,,day4_2 2008: [RECOGNITION B] I receive meaningful recognition for work well done.
+354,day4_209,Q18,2009,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,,day4_2 2009: [RECOGNITION B] I receive meaningful recognition for work well done.
+517,day4_110,Q18,2010,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,,day4_1 2010: [RECOGNITION R] I receive meaningful recognition for work well done.
+353,day4_109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,day4_1 2009: [NON-MODEL] I am appreciated for the contribution I make to my Ministry/organization.
+690,day4_111,Q18,2011,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,,day4_1 2011: [RECOGNITION B] I receive meaningful recognition for work well done.
+879,Q5601_06_13,Q18,2013,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,,I receive meaningful recognition for work well done.
+1027,Q5601_06_15,Q18,2015,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,,I receive meaningful recognition for work well done.
+1179,Q5601_06_18,Q18,2018,Q5601_06,Raw Survey Question,My Day-to-Day Work,Recognition,74,I receive meaningful recognition for work well done.
+69,day3_307,Q19,2007,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,,day3_3 2007: [RECOGNITION B] Recognition is based on merit in my work unit.
+212,day4_308,Q19,2008,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,,"day4_3 2008: [RECOGNITION B] In my work unit, recognition is based on performance."
+360,day5_309,NA,2009,Q8072_04,Exclude,Outdated Survey Question/Calc,,,day5_3 2009: [NON-MODEL] I am proud of the work I do.
+361,day5_409,NA,2009,Q1657_08,Exclude,Outdated Survey Question/Calc,,,day5_4 2009: [NON-MODEL] My workplace procedures allow me to use my time as effectively as possible.
+362,day5_509,NA,2009,,Exclude,Outdated Survey Question/Calc,,,day5_5 2009: [NON-MODEL] The work I do gives citizens good value for their tax dollars.
+355,day4_309,Q19,2009,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,,"day4_3 2009: [RECOGNITION B] In my work unit, recognition is based on performance."
+518,day4_210,Q19,2010,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,,"day4_2 2010: [RECOGNITION R] In my work unit, recognition is based on performance."
+691,day4_211,Q19,2011,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,,"day4_2 2011: [RECOGNITION B] In my work unit, recognition is based on performance."
+880,Q4636_08_13,Q19,2013,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,,"In my work unit, recognition is based on performance."
+1028,Q4636_08_15,Q19,2015,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,,"In my work unit, recognition is based on performance."
+1180,Q4636_08_18,Q19,2018,Q4636_08,Raw Survey Question,My Day-to-Day Work,Recognition,74,"In my work unit, recognition is based on performance."
+70,day3_407,Q20,2007,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day3_4 2007: [PAY & BENEFITS B] I am fairly paid for the work I do.
+370,phy1_209,NA,2009,Q3894_04,Exclude,Outdated Survey Question/Calc,,,phy1_2 2009: [NON-MODEL] The physical security of my workplace is satisfactory.
+371,phy1_309,NA,2009,,Exclude,Outdated Survey Question/Calc,,,"phy1_3 2009: [PHYSICAL ENVIRONMENT & TOOLS B] I have the tools (i.e., technology, equipment, etc.) I need to do my job well."
+372,phy1_409,NA,2009,Q4725_06,Exclude,Outdated Survey Question/Calc,,,phy1_4 2009: [NON-MODEL] I have the information I need to do my job well.
+213,day4_408,Q20,2008,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_4 2008: [PAY & BENEFITS B] I am fairly paid for the work I do.
+356,day4_409,Q20,2009,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_4 2009: [PAY & BENEFITS B] I am fairly paid for the work I do.
+519,day4_310,Q20,2010,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_3 2010: [PAY & BENEFITS R] I am fairly paid for the work I do.
+376,perf1_409,NA,2009,,Exclude,Outdated Survey Question/Calc,,,perf1_4 2009: [NON-MODEL] I regularly receive feedback on my performance.
+692,day4_311,Q20,2011,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_3 2011: [PAY & BENEFITS B] I am fairly paid for the work I do.
+378,perf209,NA,2009,,Exclude,Outdated Survey Question/Calc,,,perf2 2009: [NON-MODEL] A) Have you had a performance review in the last 12 months? A performance review may be a formal appraisal and/or an informal conversation with your supervisor about your performance.
+379,perf3_109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,perf3_1 2009: [NON-MODEL] B) (If yes): My performance review helps me achieve my performance goals.
+881,Q1718_06_13,Q20,2013,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,I am fairly paid for the work I do.
+381,cow1_209,NA,2009,Q6887_04,Exclude,Outdated Survey Question/Calc,,,cow1_2 2009: [NON-MODEL] My ideas are respected by others in my work unit.
+1029,Q1718_06_15,Q20,2015,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,I am fairly paid for the work I do.
+1181,Q1718_06_18,Q20,2018,Q1718_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,24,I am fairly paid for the work I do.
+384,pers1_109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,pers1_1 2009: [NON-MODEL] The person I report to listens to my suggestions and ideas for improvement.
+71,day3_507,Q21,2007,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day3_5 2007: [PAY & BENEFITS B] My benefits meet my (and my family's) needs well.
+214,day4_508,Q21,2008,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_5 2008: [PAY & BENEFITS B] My benefits meet my (and my family's) needs well.
+357,day4_509,Q21,2009,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_5 2009: [PAY & BENEFITS B] My benefits meet my (and my family's) needs well.
+388,pers2_109,NA,2009,Q2785_04,Exclude,Outdated Survey Question/Calc,,,pers2_1 2009: [NON-MODEL] The person I report to is an effective manager.
+389,pers2_209,NA,2009,,Exclude,Outdated Survey Question/Calc,,,pers2_2 2009: [NON-MODEL] The person I report to is an effective leader.
+520,day4_410,Q21,2010,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_4 2010: [PAY & BENEFITS R] My benefits meet my (and my family's) needs well.
+391,pers2_409,NA,2009,,Exclude,Outdated Survey Question/Calc,,,pers2_4 2009: [NON-MODEL] The person I report to is open to flexible work arrangements to accommodate personal needs.
+693,day4_411,Q21,2011,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_4 2011: [PAY & BENEFITS B] My benefits meet my (and my family) needs well.
+882,Q2593_06_13,Q21,2013,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,My benefits meet my (and my family's) needs well.
+1030,Q2593_06_15,Q21,2015,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,My benefits meet my (and my family's) needs well.
+395,exe1_309,NA,2009,,Exclude,Outdated Survey Question/Calc,,,exe1_3 2009: [EXECUTIVE LEVEL B] Executives in my Ministry/organization provide clear direction for the future.
+1182,Q2593_06_18,Q21,2018,Q2593_06,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,23,My benefits meet my (and my family's) needs well.
+397,exe1_509,NA,2009,Q6870_07,Exclude,Outdated Survey Question/Calc,,,exe1_5 2009: [NON-MODEL] Essential information flows efficiently from staff to senior leadership.
+694,day4_511,Q22,2011,Q8152_11,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,day4_5 2011: [NON-MODEL] My pay is competitive with similar jobs in the region.
+883,Q8152_11_13,Q22,2013,Q8152_11,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,My pay is competitive with similar jobs in the region.
+1031,Q8152_11_15,Q22,2015,Q8152_11,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,,My pay is competitive with similar jobs in the region.
+1183,Q8152_11_18,Q22,2018,Q8152_11,Raw Survey Question,My Day-to-Day Work,Pay_Benefits,21,My pay is competitive with similar jobs in the region.
+78,day4_507,Q23,2007,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day4_5 2007: [NON-MODEL] My work is meaningful.
+215,day5_108,Q23,2008,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_1 2008: [NON-MODEL] My work is meaningful.
+358,day5_109,Q23,2009,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_1 2009: [NON-MODEL] My work is meaningful.
+405,empw1_409,NA,2009,,Exclude,Outdated Survey Question/Calc,,,empw1_4 2009: [ORGANIZATION SATISFACTION] I am satisfied with my ministry/organization.
+521,day5_110,Q23,2010,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_1 2010: [NON-MODEL] My work is meaningful.
+695,day5_111,Q23,2011,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_1 2011: [JOB SUITABILITY M] My work is meaningful.
+884,Q5079_04_13,Q23,2013,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,My work is meaningful.
+1032,Q5079_04_15,Q23,2015,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,My work is meaningful.
+1184,Q5079_04_18,Q23,2018,Q5079_04,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,My work is meaningful.
+411,cha109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,"cha1 2009: Thinking of the last 12 months, please indicate how much workplace change you have experienced."
+412,cha2_109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,"cha2_1 2009: Thinking of the last 12 months, please indicate the impact these workplace changes have had on you overall."
+413,cha3_109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,"cha3_1 2009: Have you experienced changes to (Yes/No/DK):  Your job (e.g., new job, promotion, transfer, etc.)"
+414,cha3_209,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_2 2009: Have you experienced changes to (Yes/No/DK):  Your duties or responsibilities in your existing job
+415,cha3_309,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_3 2009: Have you experienced changes to (Yes/No/DK):  Your workplace procedures or policies
+416,cha3_409,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_4 2009: Have you experienced changes to (Yes/No/DK):  Your workplace budget
+417,cha3_509,NA,2009,,Exclude,Outdated Survey Question/Calc,,,"cha3_5 2009: Have you experienced changes to (Yes/No/DK):  Your physical environment (e.g., office layout, location, security, etc.)"
+418,cha3_609,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_6 2009: Have you experienced changes to (Yes/No/DK):  Your salary and/or benefits
+419,cha3_709,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_7 2009: Have you experienced changes to (Yes/No/DK):  Your executive
+420,cha3_809,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_8 2009: Have you experienced changes to (Yes/No/DK):  The person you report to
+421,cha3_909,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_9 2009: Have you experienced changes to (Yes/No/DK):  Staff resulting in a net loss of talent/experience
+422,cha3_1009,NA,2009,,Exclude,Outdated Survey Question/Calc,,,cha3_10 2009: Have you experienced changes to (Yes/No/DK):  Staff resulting in a net gain of talent/experience
+423,cha3_1109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,"cha3_11 2009: Have you experienced changes to (Yes/No/DK):  Organizational structure (e.g., merging or separating units, changing number of levels in workplace)"
+424,ann109,NA,2009,,Exclude,Outdated Survey Question/Calc,,,ann1 2009: Were you informed of the Work Environment Survey [year] results for your organization?
+425,Engagement_09,Engagement,2009,,Calculated from Raw,Engagement Model,,,"Engagement 2009 (Calculated from Commitment_09, Job_Satisfaction_09, Org_Satisfaction_09)"
+426,Commitment_09,Commitment,2009,,Calculated from Raw,Engagement Model,Engagement,,"BC Public Service Commitment 2009 (Calculated from empw1_609, empw1_809)"
+427,Job_Satisfaction_09,Job_Satisfaction,2009,,Calculated from Raw,Engagement Model,Engagement,,Job Satisfaction 2009 (Calculated from empw1_109)
+428,Org_Satisfaction_09,Org_Satisfaction,2009,,Calculated from Raw,Engagement Model,Engagement,,Organization Satisfaction 2009 (Calculated from empw1_409)
+429,Empowerment_09,Empowerment,2009,,Calculated from Raw,Engagement Model,,,"Empowerment 2009 (Calculated from day1_509, day1_609, day2_209)"
+430,Stress_and_Workload_09,Stress_Workload,2009,,Calculated from Raw,Engagement Model,,,"Stress & Workload 2009 (Calculated from day6_209, day6_309)"
+431,Vision_Mission_Goals_09,Vision_Mission_Goals,2009,,Calculated from Raw,Engagement Model,,,"Vision, Mission & Goals 2009 (Calculated from org1_109, org1_209)"
+432,Teamwork_09,Teamwork,2009,,Calculated from Raw,Engagement Model,,,"Teamwork 2009 (Calculated from cow1_109, cow1_309, cow1_409)"
+433,Physical_Environment_Tools_09,Tools_Workspace,2009,,Calculated from Raw,Engagement Model,,,"Physical Environment & Tools (Calculated from phy1_109, phy1_309)"
+434,Recognition_09,Recognition,2009,,Calculated from Raw,Engagement Model,,,"Recognition 2009 (Calculated from day4_209, day4_309)"
+435,Professional_Development_09,Professional_Development,2009,,Calculated from Raw,Engagement Model,,,"Professional Development 2009 (Calculated from perf1_109, perf1_209, perf1_309)"
+436,Pay_Benefits_09,Pay_Benefits,2009,,Calculated from Raw,Engagement Model,,,"Pay & Benefits 2009 (Calculated from day4_409, day4_509)"
+437,Staffing_Practices_09,Staffing_Practices,2009,,Calculated from Raw,Engagement Model,,,"Staffing Practices 2009 (Calculated from day3_409, day3_509)"
+438,Respectful_Environment_09,Respectful_Environment,2009,,Calculated from Raw,Engagement Model,,,"Respectful Environment 2009 (Calculated from day1_109, day1_209, day1_309)"
+439,Executive_Level_09,Executive_Level,2009,,Calculated from Raw,Engagement Model,,,"Executive Level 2009 (Calculated from exe1_109, exe1_209, exe1_309)"
+440,Supervisory_Level_09,Supervisory_Level,2009,,Calculated from Raw,Engagement Model,,,"Supervisory Level 2009 (Calculated from pers1_309, pers1_409)"
+441,Executive_Level_09_REC1,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Executive_Level_09_REC1 [Recoded into two groups: High scores (75 and above) versus Non high scores (less than 75)]
+442,Innovation_Groups_09,NA,2009,,Exclude,Other,,,Innovation Groups 2009: Grouping variable for Innovation Results Presentation
+443,Innovation_Mean_09,NA,2009,,Exclude,Other,,,"Innovation Mean Score 2009: (Calculated from day2_209, day2_309)"
+444,Pay_Benefits_09_REC1,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Pay_Benefits_09_REC1 [Recoded into two groups: High scores (75 and above) versus Non high scores (less than 75)]
+445,perf3_109_REC1,NA,2009,,Exclude,Outdated Survey Question/Calc,,,perf3_109_REC1  My performance review helps me achieve my performance goals [Responses recoded into three groups (4+5= Agree; 3=Neutral; and 1+2= Disagree)]
+446,perf1_409_REC1,NA,2009,,Exclude,Outdated Survey Question/Calc,,,perf1_409_REC1 I regularly receive feedback on my performance [Responses recoded into three groups (4+5= Agree; 3=Neutral; and 1+2= Disagree)]
+447,Respectful_Environment_09_REC1,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Respectful_Environment_09_REC1[Recoded into two groups: High scores (75 and above) versus Non high scores (less than 75)]
+448,Satisfaction_Score_09,NA,2009,,Exclude,Outdated Survey Question/Calc,,,"Satisfaction 2009 (Calculated from Job_Satisfaction_09, Org_Satisfaction_09 - used for migration analysis)"
+449,Staffing_Practices_09_REC1,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Staffing_Practices_09_REC1[Recoded into two groups: High scores (75 and above) versus Non high scores (less than 75)]
+450,SUP_INDIVIDUAL_SCORE_09,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Individual Supervisor Score 2009 (Calculated by crossing CURSUPID09 with Supervisory_Level_09 - provides a mean Supervisory-level Management score for each supervisor based on the responses of their direct reports)
+451,SUP_INDIVDIUAL_SCORE_N_09,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Individual Supervisor Score Valid N 2009 (Total number of responses used to calculate SUP_INDIVIDUAL_SCORE_09 - can be used to determine response rate and standard error per supervisor)
+452,SUP_INDIVIDUAL_SCORE_SD_09,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Individual Supervisor Score Standard Deviation 2009 (Standard deviation obtained from SUP_INDIVIDUAL_SCORE_09 calculation - can be used to determine standard error per supervisor)
+453,Supervisory_Level_09_REC1,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Supervisory_Level_09_REC1[Recoded into two groups: High scores (75 and above) versus Non high scores (less than 75)]
+454,TOT_ALLHS_PRODEV09,NA,2009,,Exclude,Other,,,Total of all 5 high-scoring drivers linked to PROFESSIONAL DEVELOPMENT 2009 (calculated by summating: Pay_Benefits_09_REC1+ Staffing_Practices_09_REC1+ Respectful_Environment_09_REC1 + Executive_Level_09_REC1 +  Supervisory_Level_09_REC1)
+455,TOTAL_FOUHS_PRODEV09,NA,2009,,Exclude,Other,,,Total of only 2 high-scoring foundation drivers linked to PROFESSIONAL DEVELOPMENT 2009 (calculated by summating Executive_Level_09_REC1 +  Supervisory_Level_09_REC1)
+456,FILTER_FRINGE09,NA,2009,,Exclude,Other,,,Filter for Fringe Groups 2009 (identifies fringe groups for 2009)
+457,FILTER_PSA09,NA,2009,,Exclude,Other,,,Filter for PSA 2009 (identifies PSA and NON PSA population for 2009)
+458,FILTER_PSSG09,NA,2009,,Exclude,Other,,,Filter for PSSG 2009 (identifies PSSG population through DEPTID09)
+459,FILTER_REORGED09,NA,2009,,Exclude,Other,,,Filter for Reorg 2009 (identifies reorged population for 2009)
+460,FILTER_REORGED09_REC1,NA,2009,,Exclude,Other,,,Filter for Reorg 2009 Recode (identifies reorged and non-reorged population for 2009)
+461,AGE10,AGE,2010,,Sensitive Info,Employee Info,,,Age 2010
+462,AGEGRP10,AGEGRP,2010,,BC Stats Background,Employee Info,,,Age Group 2010 (Calculated from AGE10)
+463,APPTSTAT10,APPTSTAT,2010,,Exclude,Employee Info,,,Appointment Status 2010
+464,CITYGRP10,CITYGRP,2010,,BC Stats Background,Employee Info,,,City Group 2010 (Calculated from WORKCITY10)
+465,CLASSCODE10,CLASSCODE,2010,,BC Stats Background,Employee Info,,,Class Code 2010 (Actually Job Code - linked to CLASSDESC10 and CLASSTITLE10)
+466,CLASSTITLE10,CLASSTITLE,2010,,BC Stats Background,Employee Info,,,Class Title 2010 (text aggregation of CLASSCODE10)
+467,CURPOSDESC10,CURPOSDESC,2010,,Sensitive Info,Employee Info,,,Current Position Description 2010 (similar to BUSTITLE10)
+468,CURSUPID10,CURSUPID,2010,,Sensitive Info,Employee Info,,,"Current Supervisors ID 2010 (Used to link a direct report's data with their supervisors - data quality not great, but good enough)"
+469,DEPTDESC10,DEPTDESC,2010,,Sensitive Info,Employee Info,,,Department Description 2010 (linked to DEPTID10)
+470,newdept10_desc_aug30_2011,NA,2011,,Sensitive Info,Other,,,"Department Description 2010 (reflects reorganization as at Aug 30, 2011)"
+471,DEPTID10,DEPTID,2010,,Sensitive Info,Employee Info,,,Department ID 2010 (linked to DEPTDESC10)
+472,DEPTID10_A,NA,2010,,Exclude,Other,,,"Department ID 2010 A (original name ""mydeptid"" - deptID used in the survey - contains fake deptids to separate out Shared Services - created by Jean)"
+473,newdeptid10_aug30_2011,NA,2011,,Exclude,Other,,,"Department ID 2010 (reflects reorganization as at Aug 30, 2011)"
+474,GENDER10,GENDER,2010,,BC Stats Background,Employee Info,,,Gender 2010
+475,LEVEL1_NAME_10,LEVEL1_NAME,2010,,BC Stats Background,Employee Info,,,Level 1 Name 2010 (contains title for Level 1 Report)
+476,LEVEL1_ID_10,NA,2010,,Exclude,Other,,,Level 1 ID 2010 (unique Level 1 identifier - used by Richard)
+477,LEVEL1_YN_10,NA,2010,,Exclude,Other,,,Level 1 Yes or No 2010 (indicates whether a report was generated or suppressed for a work unit)
+478,LEVEL2_NAME_10,LEVEL2_NAME,2010,,BC Stats Background,Employee Info,,,Level 2 Name 2010 (contains title for Level 2 Report)
+479,LEVEL2_ID_10,NA,2010,,Exclude,Other,,,Level 2 ID 2010 (unique Level 2 identifier - used by Richard)
+480,LEVEL2_YN_10,NA,2010,,Exclude,Other,,,Level 2 Yes or No 2010 (indicates whether a report was generated or suppressed for a work unit)
+481,LEVEL3_NAME_10,LEVEL3_NAME,2010,,Sensitive Info,Employee Info,,,Level 3 Name 2010 (contains title for Level 3 Report)
+482,LEVEL3_ID_10,NA,2010,,Exclude,Other,,,Level 3 ID 2010 (unique Level 3 identifier - used by Richard)
+483,LEVEL3_YN_10,NA,2010,,Exclude,Other,,,Level 3 Yes or No 2010 (indicates whether a report was generated or suppressed for a work unit)
+484,LEVEL4_NAME_10,LEVEL4_NAME,2010,,Sensitive Info,Employee Info,,,Level 4 Name 2010 (contains title for Level 4 Report)
+485,LEVEL4_ID_10,NA,2010,,Exclude,Other,,,Level 4 ID 2010 (unique Level 4 identifier - used by Richard)
+486,LEVEL4_YN_10,NA,2010,,Exclude,Other,,,Level 4 Yes or No 2010 (indicates whether a report was generated or suppressed for a work unit)
+487,LEVEL5_NAME_10,LEVEL5_NAME,2010,,Sensitive Info,Employee Info,,,Level 5 Name 2010 (contains title for Level 5 Report)
+488,LEVEL5_ID_10,NA,2010,,Exclude,Other,,,Level 5 ID 2010 (unique Level 5 identifier - used by Richard)
+489,LEVEL5_YN_10,NA,2010,,Exclude,Other,,,Level 5 Yes or No 2010 (indicates whether a report was generated or suppressed for a work unit)
+490,newministry10_aug30_2011,NA,2011,,Exclude,Other,,,"Ministry 2010 (reflects reorganization as at Aug 30, 2011)"
+491,ORGANIZATION10,ORGANIZATION,2010,,BC Stats Background,Employee Info,,,"Organization 2010 (Tourism BC is separate from Tourism, Culture and the Arts)"
+492,org2010_new,NA,2010,,Exclude,Other,,,"Organization 2010 (reflects reorganization as at Aug 30, 2011)"
+493,ORGID10,ORGID,2010,,Exclude,Employee Info,,,"Organization ID 2010 (Tourism BC is NOT separate from Tourism, Culture and the Arts - string abbreviation of ORGANIZTION10)"
+494,CURPOSNUM10,CURPOSNUM,2010,,Sensitive Info,Employee Info,,,"Position Number 2010 (reflects reorganization as at Aug 30, 2011) [re-named from posnum10]"
+495,PSAREGION10,PSAREGION,2010,,BC Stats Background,Employee Info,,,PSA Region 2010 (Calculated from WORKCITY10)
+496,REGHOURS10,REGHOURS,2010,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2010 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+497,SRVCDT10,SRVCDT,2010,,Sensitive Info,Employee Info,,,Service Date 2010 (first date in current benefit program)
+498,SRVCYRS10,SRVCYRS,2010,,BC Stats Background,Employee Info,,,Service Years 2010 (Calculated from SRVCDT10)
+499,SRVCYRSGRP10,SRVCYRSGRP,2010,,BC Stats Background,Employee Info,,,Service Year Group 2010 (Calculated from SRVCYRS10)
+500,SUPERVISEES10,SUPERVISEES,2010,,BC Stats Background,Employee Info,,,Supervisees 2010: Provides a count of how many supervisees a supervisor is responsible for
+501,UNIONSTATUS10,UNIONSTATUS,2010,,BC Stats Background,Employee Info,,,Union Status 2010 (formerly GROUPS10)
+502,WESJOBCLASGRP10,WESJOBCLASGRP,2010,,BC Stats Background,Employee Info,,,WES Job Class Group 2010
+79,day4_607,Q24,2007,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day4_6 2007: [NON-MODEL] My job is a good fit with my skills and interests.
+216,day5_208,Q24,2008,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_2 2008: [NON-MODEL] My job is a good fit with my skills and interests.
+359,day5_209,Q24,2009,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_2 2009: [NON-MODEL] My job is a good fit with my skills and interests.
+522,day5_210,Q24,2010,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_2 2010: [NON-MODEL] My job is a good fit with my skills and interests.
+696,day5_211,Q24,2011,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,day5_2 2011: [JOB SUITABILITY M] My job is a good fit with my skills and interests.
+885,Q1344_06_13,Q24,2013,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,My job is a good fit with my skills and interests.
+509,day2_210,NA,2010,Q5335_06,Exclude,Outdated Survey Question/Calc,,,day2_2 2010: [NON-MODEL] I am encouraged to be innovative in my work.
+1033,Q1344_06_15,Q24,2015,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,,My job is a good fit with my skills and interests.
+1185,Q1344_06_18,Q24,2018,Q1344_06,Raw Survey Question,My Day-to-Day Work,Job_Suitability,73,My job is a good fit with my skills and interests.
+1186,Q7036_18_18,Q25,2018,Q7036_18,Raw Survey Question,My Day-to-Day Work,,,I enjoy the type of work I do.
+513,day3_210,NA,2010,,Exclude,Outdated Survey Question/Calc,,,day3_2 2010: [NON-MODEL] Appropriate accountabilities are in place in my work unit.
+1034,Q5143_15_15,Q26,2015,Q5143_15,Raw Survey Question,My Day-to-Day Work,,,My workplace processes and procedures enable me to work as effectively as possible.
+1187,Q5143_15_18,Q26,2018,Q5143_15,Raw Survey Question,My Day-to-Day Work,,92,My workplace processes and procedures enable me to work as effectively as possible.
+1035,Q4641_15_15,Q27,2015,Q4641_15,Raw Survey Question,My Day-to-Day Work,,,I regularly go above and beyond the requirements of my role to help my work unit or organization succeed.
+1188,Q4641_15_18,Q27,2018,Q4641_15,Raw Survey Question,My Day-to-Day Work,,,I regularly go above and beyond the requirements of my role to help my work unit or organization succeed.
+81,day5_107,Q28,2007,Q7619_04,Raw Survey Question,My Day-to-Day Work,,,day5_1 2007: [NON-MODEL] Work is distributed fairly in my work unit.
+220,day6_108,Q28,2008,Q7619_04,Raw Survey Question,My Day-to-Day Work,,,day6_1 2008: [NON-MODEL] Work is distributed fairly in my work unit.
+363,day6_109,Q28,2009,Q7619_04,Raw Survey Question,My Day-to-Day Work,,,day6_1 2009: [NON-MODEL] Work is distributed fairly in my work unit.
+526,day6_110,Q28,2010,Q7619_04,Raw Survey Question,My Day-to-Day Work,,,day6_1 2010: [NON-MODEL] Work is distributed fairly in my work unit.
+701,day6_111,Q28,2011,Q7619_04,Raw Survey Question,My Day-to-Day Work,,,day6_1 2011: [NON-MODEL] Work is distributed fairly in my work unit.
+523,day5_310,NA,2010,Q8072_04,Exclude,Outdated Survey Question/Calc,,,day5_3 2010: [NON-MODEL] I am proud of the work I do.
+524,day5_410,NA,2010,Q1657_08,Exclude,Outdated Survey Question/Calc,,,day5_4 2010: [NON-MODEL] My workplace procedures allow me to use my time as effectively as possible.
+525,day5_510,NA,2010,,Exclude,Outdated Survey Question/Calc,,,day5_5 2010: [NON-MODEL] The work I do gives citizens good value for their tax dollars.
+889,Q7619_04_13,Q28,2013,Q7619_04,Raw Survey Question,My Day-to-Day Work,,,Work is distributed fairly in my work unit.
+1036,Q7619_04_15,Q28,2015,Q7619_04,Raw Survey Question,My Day-to-Day Work,,,Work is distributed fairly in my work unit.
+1189,Q7619_04_18,Q28,2018,Q7619_04,Raw Survey Question,My Day-to-Day Work,,93,Work is distributed fairly in my work unit.
+82,day5_207,Q29,2007,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day5_2 2007: [STRESS & WORKLOAD B] My workload is manageable.
+221,day6_208,Q29,2008,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_2 2008: [STRESS & WORKLOAD B] My workload is manageable.
+364,day6_209,Q29,2009,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_2 2009: [STRESS & WORKLOAD B] My workload is manageable.
+527,day6_210,Q29,2010,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_2 2010: [STRESS & WORKLOAD R] My workload is manageable.
+533,phy1_210,NA,2010,Q3894_04,Exclude,Outdated Survey Question/Calc,,,phy1_2 2010: [NON-MODEL] The physical security of my workplace is satisfactory.
+534,phy1_310,NA,2010,,Exclude,Outdated Survey Question/Calc,,,"phy1_3 2010: [PHYSICAL ENVIRONMENT & TOOLS R] I have the tools (i.e., technology, equipment, etc.) I need to do my job well."
+535,phy1_410,NA,2010,Q4725_06,Exclude,Outdated Survey Question/Calc,,,phy1_4 2010: [NON-MODEL] I have the information I need to do my job well.
+702,day6_211,Q29,2011,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_2 2011: [STRESS & WORKLOAD B] My workload is manageable.
+890,Q9958_04_13,Q29,2013,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,My workload is manageable.
+1037,Q9958_04_15,Q29,2015,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,My workload is manageable.
+539,perf1_410,NA,2010,,Exclude,Outdated Survey Question/Calc,,,perf1_4 2010: [NON-MODEL] I regularly receive feedback on my performance.
+1190,Q9958_04_18,Q29,2018,Q9958_04,Raw Survey Question,My Day-to-Day Work,Stress_Workload,93,My workload is manageable.
+541,perf210,NA,2010,,Exclude,Outdated Survey Question/Calc,,,perf2_1 2010: [NON-MODEL] A) Have you had a performance review in the last 12 months? A performance review may be a formal appraisal and/or an informal conversation with your supervisor about your performance.
+542,perf3_110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,perf3_1 2010: [NON-MODEL] My e.Performance (EPDP) helps me achieve my goals.
+83,day5_307,Q30,2007,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day5_3 2007: [STRESS & WORKLOAD B] My work-related stress is manageable.
+544,cow1_210,NA,2010,Q6887_04,Exclude,Outdated Survey Question/Calc,,,cow1_2 2010: [NON-MODEL] My ideas are respected by others in my work unit.
+222,day6_308,Q30,2008,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_3 2008: [STRESS & WORKLOAD B] My work-related stress is manageable.
+365,day6_309,Q30,2009,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_3 2009: [STRESS & WORKLOAD B] My work-related stress is manageable.
+547,pers1_110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,pers1_1 2010: [NON-MODEL] The person I report to listens to my suggestions and ideas for improvement.
+528,day6_310,Q30,2010,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_3 2010: [STRESS & WORKLOAD R] My work-related stress is manageable.
+703,day6_311,Q30,2011,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,day6_3 2011: [STRESS & WORKLOAD B] My work-related stress is manageable.
+891,Q2928_06_13,Q30,2013,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,My work-related stress is manageable.
+551,pers2_110,NA,2010,Q2785_04,Exclude,Outdated Survey Question/Calc,,,pers2_1 2010: [NON-MODEL] The person I report to is an effective manager.
+1038,Q2928_06_15,Q30,2015,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,My work-related stress is manageable.
+1191,Q2928_06_18,Q30,2018,Q2928_06,Raw Survey Question,My Day-to-Day Work,Stress_Workload,,My work-related stress is manageable.
+1192,Q2819_18_18,Q31,2018,Q2819_18,Raw Survey Question,My Day-to-Day Work,,94,My work tends to leave me feeling mentally drained or exhausted.
+223,day6_408,Q32,2008,Q1703_08,Raw Survey Question,My Day-to-Day Work,,,day6_4 2008: [NON-MODEL] My job provides me with the right amount of challenge.
+556,exe1_310,NA,2010,,Exclude,Outdated Survey Question/Calc,,,exe1_3 2010: [EXECUTIVE LEVEL R]Executives in my Ministry/organization provide clear direction for the future.
+366,day6_409,Q32,2009,Q1703_08,Raw Survey Question,My Day-to-Day Work,,,day6_4 2009: [NON-MODEL] My job provides me with the right amount of challenge.
+529,day6_410,Q32,2010,Q1703_08,Raw Survey Question,My Day-to-Day Work,,,day6_4 2010: [NON-MODEL] My job provides me with the right amount of challenge.
+704,day6_411,Q32,2011,Q1703_08,Raw Survey Question,My Day-to-Day Work,,,day6_4 2011: [NON-MODEL] My job provides me with the right amount of challenge.
+892,Q1703_08_13,Q32,2013,Q1703_08,Raw Survey Question,My Day-to-Day Work,,,My job provides me with the right amount of challenge.
+1039,Q1703_08_15,Q32,2015,Q1703_08,Raw Survey Question,My Day-to-Day Work,,,My job provides me with the right amount of challenge.
+1193,Q1703_08_18,Q32,2018,Q1703_08,Raw Survey Question,My Day-to-Day Work,,,My job provides me with the right amount of challenge.
+86,day5_607,Q33,2007,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,day5_6 2007: [NON-MODEL] I have support at work to provide a high level of service.
+224,day6_508,Q33,2008,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,day6_5 2008: [NON-MODEL] I have support at work to provide a high level of service.
+565,empw1_410,NA,2010,,Exclude,Outdated Survey Question/Calc,,,empw1_4 2010: [ORGANIZATION SATISFACTION R] I am satisfied with my ministry/organization.
+367,day6_509,Q33,2009,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,day6_5 2009: [NON-MODEL] I have support at work to provide a high level of service.
+530,day6_510,Q33,2010,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,day6_5 2010: [NON-MODEL] I have support at work to provide a high level of service.
+705,day6_511,Q33,2011,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,day6_5 2011: [NON-MODEL] I have support at work to provide a high level of service.
+893,Q5911_06_13,Q33,2013,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,I have support at work to provide a high level of service.
+1040,Q5911_06_15,Q33,2015,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,I have support at work to provide a high level of service.
+571,ann110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,ann1 2010: Were you informed of the Work Environment Survey [year] results for your organization?
+1194,Q5911_06_18,Q33,2018,Q5911_06,Raw Survey Question,My Day-to-Day Work,,,I have support at work to provide a high level of service.
+573,sex110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,sex1 2010: Please indicate your sex.
+574,abo110,NA,2010,,Sensitive Info,Exclude - captured elsewhere,,,"abo1 2010: Do you identify yourself as an Aboriginal person, that is, First Nations (North American Indian), Métis or Inuit?"
+575,abo2_110,NA,2010,,Sensitive Info,Exclude - captured elsewhere,,,abo2_1 2010: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+576,abo2_210,NA,2010,,Sensitive Info,Exclude - captured elsewhere,,,abo2_2 2010: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+577,abo2_310,NA,2010,,Sensitive Info,Exclude - captured elsewhere,,,abo2_3 2010: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+578,abo2_410,NA,2010,,Sensitive Info,Exclude - captured elsewhere,,,abo2_4 2010: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+579,vis110,NA,2010,,Sensitive Info,Exclude - captured elsewhere,,,vis1 2010: Do you consider yourself to be a member of a visible minority group?
+580,dis110,NA,2010,,Sensitive Info,Exclude - captured elsewhere,,,dis1 2010: Do you consider yourself to be a person with a disability?
+581,serv110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,"serv1 2010: Based on the definition above, how much of your time is spent providing information or services directly to citizens or businesses (by phone, email, or in person)?"
+582,serv210,NA,2010,,Exclude,Outdated Survey Question/Calc,,,"serv2 2010: Based on the definition above, do you supervise staff who deliver services directly to the public?"
+583,serv3_110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_1 2010: Please indicate the type of service(s) you provide (please select all that apply)
+584,serv3_210,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_2 2010: Please indicate the type of service(s) you provide (please select all that apply)
+585,serv3_310,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_3 2010: Please indicate the type of service(s) you provide (please select all that apply)
+586,serv3_410,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_4 2010: Please indicate the type of service(s) you provide (please select all that apply)
+587,serv3_510,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_5 2010: Please indicate the type of service(s) you provide (please select all that apply)
+588,serv3_610,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_6 2010: Please indicate the type of service(s) you provide (please select all that apply)
+589,serv3_710,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_7 2010: Please indicate the type of service(s) you provide (please select all that apply)
+590,serv3_810,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_8 2010: Please indicate the type of service(s) you provide (please select all that apply)
+591,serv3_910,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_9 2010: Please indicate the type of service(s) you provide (please select all that apply)
+592,serv3_1010,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3_10 2010: Please indicate the type of service(s) you provide (please select all that apply)
+593,serv3Specified_110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv3Specified_1 2010: Please indicate the type of service(s) you provide (please select all that apply)
+594,serv4_110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv4_1 2010: My work environment enables me to deliver service in timely way.
+595,serv4_210,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv4_2 2010: My work environment enables me to be flexible to individual needs.
+596,serv4_310,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv4_3 2010: My work environment enables me to go the extra mile when providing service.
+597,serv4_410,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv4_4 2010: I am provided with the appropriate knowledge and skills to deliver service.
+598,serv4_510,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv4_5 2010: I am provided with the appropriate tools and equipment to deliver service.
+599,serv5_110,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv5_1 2010: My work environment enables my staff to deliver service in a timely way.
+600,serv5_210,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv5_2 2010: My work environment enables my staff to be flexible to individual needs.
+601,serv5_310,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv5_3 2010: My work environment enables my staff to go the extra mile when providing service.
+602,serv5_410,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv5_4 2010: My staff are provided with the appropriate knowledge and skills to deliver service.
+603,serv5_510,NA,2010,,Exclude,Outdated Survey Question/Calc,,,serv5_5 2010: My staff are provided with the appropriate tools and equipment to deliver service.
+604,Engagement_10,Engagement,2010,,Calculated from Raw,Engagement Model,,,"Engagement 2010 (Calculated from Commitment_10, Job_Satisfaction_10, Org_Satisfaction_10)"
+605,Commitment_10,Commitment,2010,,Calculated from Raw,Engagement Model,Engagement,,"Commitment 2010 (Calculated from empw1_610, empw1_810)"
+606,Job_Satisfaction_10,Job_Satisfaction,2010,,Calculated from Raw,Engagement Model,Engagement,,Job Satisfaction 2010 (Calculated from empw1_110)
+607,Org_Satisfaction_10,Org_Satisfaction,2010,,Calculated from Raw,Engagement Model,Engagement,,Organization Satisfaction 2010 (Calculated from empw1_410)
+608,Empowerment_10,Empowerment,2010,,Calculated from Raw,Engagement Model,,,"Empowerment 2010 (Calculated from day1_410, day1_510, day2_310)"
+609,Stress_Workload_10,Stress_Workload,2010,,Calculated from Raw,Engagement Model,,,"Stress & Workload 2010 (Calculated from day6_210, day6_310)"
+610,Vision_Mission_Goals_10,Vision_Mission_Goals,2010,,Calculated from Raw,Engagement Model,,,"Vision, Mission & Goals 2010 (Calculated from org1_110, org1_210)"
+611,Teamwork_10,Teamwork,2010,,Calculated from Raw,Engagement Model,,,"Teamwork 2010 (Calculated from cow1_1, cow1_3, cow1_4)"
+612,Physical_Environment_Tools_10,Tools_Workspace,2010,,Calculated from Raw,Engagement Model,,,"Physical Environment & Tools 2010 (Calculated from phy1_1, phy1_3)"
+613,Recognition_10,Recognition,2010,,Calculated from Raw,Engagement Model,,,"Recognition 2010 (Calculated from day4_10, day4_210)"
+614,Professional_Development_10,Professional_Development,2010,,Calculated from Raw,Engagement Model,,,"Professional Development 2010 (Calculated from perf1_1, perf1_2, perf1_3)"
+615,Pay_Benefits_10,Pay_Benefits,2010,,Calculated from Raw,Engagement Model,,,"Pay & Benefits 2010 (Calculated from day4_310, day4_410)"
+616,Staffing_Practices_10,Staffing_Practices,2010,,Calculated from Raw,Engagement Model,,,"Staffing Practices 2010 (Calculated from day3_410, day3_510)"
+617,Respectful_Environment_10,Respectful_Environment,2010,,Calculated from Raw,Engagement Model,,,"Respectful Environment 2010 (Calculated from day1_110, day1_210, day1_310)"
+618,Executive_Level_10,Executive_Level,2010,,Calculated from Raw,Engagement Model,,,"Executive Level 2010 (Calculated from exe1_110, exe1_310)"
+619,Supervisory_Level_10,Supervisory_Level,2010,,Calculated from Raw,Engagement Model,,,"Supervisory Level 2010 (Calculated from pers1_310, pers1_410)"
+620,DAYS_IN_POSITION_10,NA,2010,,Exclude,Other,,,Days In Current Position 2010 (Calculated from START_DATE_IN_POSITION_10)
+621,Satisfaction_Score_10,NA,2010,,Exclude,Outdated Survey Question/Calc,,,"Satisfaction 2010 (Calculated from Job_Satisfaction_10, Org_Satisfaction_10 - used for migration analysis)"
+622,SUP_INDIVIDUAL_SCORE_10,NA,2010,,Exclude,Outdated Survey Question/Calc,,,Individual Supervisor Score 2010 (Calculated by crossing CURSUPID10 with Supervisory_Level_10 - provides a mean Supervisory-level Management score for each supervisor based on the responses of their direct reports)
+623,SUP_INDIVDIUAL_SCORE_N_10,NA,2010,,Exclude,Outdated Survey Question/Calc,,,Individual Supervisor Score Valid N 2010 (Total number of responses used to calculate SUP_INDIVIDUAL_SCORE_10)
+624,SUP_INDIVIDUAL_SCORE_SD_10,NA,2010,,Exclude,Outdated Survey Question/Calc,,,Individual Supervisor Score Standard Deviation 2010 (Standard deviation obtained from SUP_INDIVIDUAL_SCORE_10 calculation - can be used to determine standard error per supervisor)
+625,SUP_GEO_DISPERION_10,NA,2010,,Exclude,Other,,,Geographic Dispersion of Supervisees 2010 (Calculated by crossing CURSUPID10 with postal code data - indicates how many FSA's a supervisor's direct reports are spread across)
+626,SUP_REPORTING_LEVEL_10,NA,2010,,Exclude,Other,,,Supervisor's Reporting Level 2010 (Calculated from CURSUPID10 - indicates how many reporting levels are between a supervisor and the Head of the Public Service - developed by Emilie for the 2010 Organization report)
+627,SECTOR10,NA,2010,,Exclude,Other,,,"Sector 2010 (Based on ORGANIZATION10, provides sector groupings for organizations)"
+628,START_DATE_IN_POSITION_10,NA,2010,,Sensitive Info,Other,,,Start Date In Current Position 2010 (Provides the date for when the respondent began working in their position - based on WES 2010 position values - from Allan O'Neill)
+629,FILTER_PSA10,NA,2010,,Exclude,Other,,,Filter for PSA 2010 (identifies PSA and NON PSA population for 2010)
+630,AGE11,AGE,2011,,Sensitive Info,Employee Info,,,Age 2011
+631,AGEGRP11,AGEGRP,2011,,BC Stats Background,Employee Info,,,Age Group 2011 (Calculated from AGE11)
+632,APPTSTAT11,APPTSTAT,2011,,Exclude,Employee Info,,,Appointment Status 2011
+633,BESTCITY11,NA,2011,,Exclude,Other,,,Best City 2011 (Improved city variable over WORKCITY11 - used to calculate CITYGRP11 and PSAREGION11)
+634,CITYGRP11,CITYGRP,2011,,BC Stats Background,Employee Info,,,City Group 2011 (Calculated from BESTCITY11 - Note that in previous years this variable was based on WORKCITY)
+635,CLASSCODE11,CLASSCODE,2011,,BC Stats Background,Employee Info,,,Class Code 2011 (Actually Job Code - linked to CLASSDESC11 and CLASSTITLE11)
+636,CLASSTITLE11,CLASSTITLE,2011,,BC Stats Background,Employee Info,,,Class Title 2011 (text aggregation of CLASSCODE11)
+637,CURPOSDESC11,CURPOSDESC,2011,,Sensitive Info,Employee Info,,,Current Position Description 2011 (similar to BUSTITLE11) [re-named from CURPOSEDESC11]
+638,CURSUPID11,CURSUPID,2011,,Sensitive Info,Employee Info,,,"Current Supervisors ID 2011 (Used to link a direct report's data with their supervisors - data quality not great, but good enough)"
+639,dept11_desc_aug30,NA,2011,,Sensitive Info,Other,,,"Department Description 2011 (reflects reorganization as at Aug 30, 2011)"
+640,DEPTDESC11,DEPTDESC,2011,,Sensitive Info,Employee Info,,,Department Description 2011 (linked to DEPTID11 - Use this one for the majority of analyses)
+641,DEPTDESC11_A,DEPTDESC,2011,,Sensitive Info,Employee Info,,,Department Description 2011 A (linked to DEPTID11_A - Based on an updated roll up structure from May 2011)
+642,DEPTID11,DEPTID,2011,,Sensitive Info,Employee Info,,,Department ID 2011 (linked to DEPTDESC11 - Use this one for the majority of analyses)
+643,DEPTID11_A,NA,2011,,Exclude,Other,,,Department ID 2011 A (linked to DEPTDESC11 - Based on an updated roll up structure from May 2011)
+644,DEPTID11_POPULATION,DEPTID_POPULATION,2011,,Exclude,Employee Info,,,Department ID Population 2011 (provides population count for DEPTID11)
+645,DEPTID11_RESPONSES,DEPTID_REPSONSES,2011,,Exclude,Employee Info,,,Department ID Responses 2011 (provides response count for DEPTID11)
+646,deptid11_aug30,NA,2011,,Exclude,Other,,,"Department ID 2011 (reflects reorganization as at Aug 30, 2011)"
+647,GENDER11,GENDER,2011,,BC Stats Background,Employee Info,,,Gender 2011
+648,LEVEL1_NAME_11,LEVEL1_NAME,2011,,BC Stats Background,Employee Info,,,Level 1 Name 2011 (contains title for Level 1 Report)
+649,LEVEL1_ID_11,NA,2011,,Exclude,Other,,,Level 1 ID 2011 (unique Level 1 identifier - used by Richard)
+650,LEVEL1_YN_11,NA,2011,,Exclude,Other,,,Level 1 Yes or No 2011 (indicates whether a report was generated or suppressed for a work unit)
+651,LEVEL2_NAME_11,LEVEL2_NAME,2011,,BC Stats Background,Employee Info,,,Level 2 Name 2011 (contains title for Level 2 Report)
+652,LEVEL2_ID_11,NA,2011,,Exclude,Other,,,Level 2 ID 2011 (unique Level 2 identifier - used by Richard)
+653,LEVEL2_YN_11,NA,2011,,Exclude,Other,,,Level 2 Yes or No 2011 (indicates whether a report was generated or suppressed for a work unit)
+654,LEVEL3_NAME_11,LEVEL3_NAME,2011,,Sensitive Info,Employee Info,,,Level 3 Name 2011 (contains title for Level 3 Report)
+655,LEVEL3_ID_11,NA,2011,,Exclude,Other,,,Level 3 ID 2011 (unique Level 3 identifier - used by Richard)
+656,LEVEL3_YN_11,NA,2011,,Exclude,Other,,,Level 3 Yes or No 2011 (indicates whether a report was generated or suppressed for a work unit)
+657,LEVEL4_NAME_11,LEVEL4_NAME,2011,,Sensitive Info,Employee Info,,,Level 4 Name 2011 (contains title for Level 4 Report)
+658,LEVEL4_ID_11,NA,2011,,Exclude,Other,,,Level 4 ID 2011 (unique Level 4 identifier - used by Richard)
+659,LEVEL4_YN_11,NA,2011,,Exclude,Other,,,Level 4 Yes or No 2011 (indicates whether a report was generated or suppressed for a work unit)
+660,LEVEL5_NAME_11,LEVEL5_NAME,2011,,Sensitive Info,Employee Info,,,Level 5 Name 2011 (contains title for Level 5 Report)
+661,LEVEL5_ID_11,NA,2011,,Exclude,Other,,,Level 5 ID 2011 (unique Level 5 identifier - used by Richard)
+662,LEVEL5_YN_11,NA,2011,,Exclude,Other,,,Level 5 Yes or No 2011 (indicates whether a report was generated or suppressed for a work unit)
+663,ministry11_aug30,NA,2011,,Exclude,Other,,,"Ministry 2011 (Reflects reorganization as at Aug 30, 2011)"
+664,ORGANIZATION11,ORGANIZATION,2011,,BC Stats Background,Employee Info,,,Organization 2011
+665,org2011_aug30,NA,2011,,Exclude,Other,,,"Organization 2011 (reflects reorganization as at Aug 30, 2011)"
+666,ORGID11,ORGID,2011,,Exclude,Employee Info,,,Organization ID 2011 (string abbreviation of ORGANIZATION11)
+667,CURPOSNUM11,CURPOSNUM,2011,,Sensitive Info,Employee Info,,,"Position Number (reflects reorganization as at Aug 30, 2011) [re-named from pos_num11]"
+668,PSAREGION11,PSAREGION,2011,,BC Stats Background,Employee Info,,,PSA Region 2011 (Calculated from BESTCITY11 - Note that in previous years this variable was based on WORKCITY)
+669,REGHOURS11,REGHOURS,2011,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2011 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+670,SRVCDT11,SRVCDT,2011,,Sensitive Info,Employee Info,,,Service Date 2011 (first date in current benefit program)
+671,SRVCYRS11,SRVCYRS,2011,,BC Stats Background,Employee Info,,,Service Years 2011 (Calculated from SRVCDT11)
+672,SRVCYRSGRP11,SRVCYRSGRP,2011,,BC Stats Background,Employee Info,,,Service Year Group 2011 (Calculated from SRVCYRS11)
+673,SUPERVISEES11,SUPERVISEES,2011,,BC Stats Background,Employee Info,,,Supervisees 2010: Provides a count of how many supervisees a supervisor is responsible for
+674,UNIONSTATUS11,UNIONSTATUS,2011,,BC Stats Background,Employee Info,,,Union Status 2011 (formerly GROUPS11)
+675,WESJOBCLASGRP11,WESJOBCLASGRP,2011,,BC Stats Background,Employee Info,,,WES Job Class Group 2011
+87,day5_707,Q34,2007,Q7567_06,Raw Survey Question,My Day-to-Day Work,,,day5_7 2007: [NON-MODEL] I have support at work to balance my work and personal life.
+225,day6_608,Q34,2008,Q7567_06,Raw Survey Question,My Day-to-Day Work,,,day6_6 2008: [NON-MODEL] I have support at work to balance my work and personal life.
+368,day6_609,Q34,2009,Q7567_06,Raw Survey Question,My Day-to-Day Work,,,day6_6 2009: [NON-MODEL] I have support at work to balance my work and personal life.
+531,day6_610,Q34,2010,Q7567_06,Raw Survey Question,My Day-to-Day Work,,,day6_6 2010: [NON-MODEL] I have support at work to balance my work and personal life.
+706,day6_611,Q34,2011,Q7567_06,Raw Survey Question,My Day-to-Day Work,,,day6_6 2011: [NON-MODEL] I have support at work to balance my work and personal life.
+894,Q7567_06_13,Q34,2013,Q7567_06,Raw Survey Question,My Day-to-Day Work,,,I have support at work to balance my work and personal life.
+682,day2_211,NA,2011,Q5335_06,Exclude,Outdated Survey Question/Calc,,,day2_2 2011: [NON-MODEL] I am encouraged to be innovative in my work.
+1041,Q7567_06_15,Q34,2015,Q7567_06,Raw Survey Question,My Day-to-Day Work,,,I have support at work to balance my work and personal life.
+1195,Q7567_06_18,Q34,2018,Q7567_06,Raw Survey Question,My Day-to-Day Work,,94,I have support at work to balance my work and personal life.
+1196,Q1287_18_18,Q35,2018,Q1287_18,Raw Survey Question,My Day-to-Day Work,,,I am proud to tell others about the type of work I do.
+1197,Q4702_18_18,Q36,2018,Q4702_18,Raw Survey Question,My Day-to-Day Work,,,I find my work inspiring.
+1198,Q3693_18_18,Q37,2018,Q3693_18,Raw Survey Question,My Day-to-Day Work,,,It is important to me that the BC Public Service has giving and volunteer programs.
+1199,Q4576_18_18,Q38,2018,Q4576_18,Raw Survey Question,My Day-to-Day Work,,,"In general, I am well-informed about the BC Public Service's giving and volunteer programs."
+88,phy1_107,Q39,2007,Q9517_06,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,phy1_1 2007: [PHYSICAL ENVIRONMENT & TOOLS B] My physical work environment is satisfactory.
+226,phy1_108,Q39,2008,Q9517_06,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,phy1_1 2008: [PHYSICAL ENVIRONMENT & TOOLS B] My physical work environment is satisfactory.
+369,phy1_109,Q39,2009,Q9517_06,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,phy1_1 2009: [PHYSICAL ENVIRONMENT & TOOLS B] My physical work environment is satisfactory.
+532,phy1_110,Q39,2010,Q9517_06,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,phy1_1 2010: [PHYSICAL ENVIRONMENT & TOOLS R] My physical work environment is satisfactory.
+707,phy1_111,Q39,2011,Q9517_06,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,phy1_1 2011: [PHYSICAL ENVIRONMENT & TOOLS R] My physical work environment is satisfactory.
+895,Q9517_06_13,Q39,2013,Q9517_06,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,My physical work environment is satisfactory.
+1042,Q7644_15_15,Q39,2015,Q7644_15,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,"My physical work environment (e.g., sound level, lighting, heat, ergonomics, etc.) enables me to work well."
+1200,Q7644_15_18,Q39,2018,Q7644_15,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,"102, 104","My physical work environment (e.g., sound level, lighting, heat, ergonomics, etc.) enables me to work well."
+697,day5_311,NA,2011,Q8072_04,Exclude,Outdated Survey Question/Calc,,,day5_3 2011: [NON-MODEL] I am proud of the work I do.
+698,day5_411,NA,2011,Q1657_08,Exclude,Outdated Survey Question/Calc,,,day5_4 2011: [NON-MODEL] My workplace procedures allow me to use my time as effectively as possible.
+699,day5_511,NA,2011,Q1042_11,Exclude,Outdated Survey Question/Calc,,,"day5_5 2011: [NON-MODEL] I regularly participate in activities that are not necessarily expected of me, to help my organization succeed."
+700,day5_611,NA,2011,,Exclude,Outdated Survey Question/Calc,,,day5_6 2011: [NON-MODEL] The work I do gives citizens good value for their tax dollars.
+1043,Q8036_15_15,Q40,2015,Q8036_15,Raw Survey Question,My Physical Enviornment and Tools,,,The necessary processes and procedures are in place to ensure my safety at work
+1201,Q8036_15_18,Q40,2018,Q8036_15,Raw Survey Question,My Physical Enviornment and Tools,,101,The necessary processes and procedures are in place to ensure my safety at work.
+711,phy1_511,Q41,2011,Q4332_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,"phy1_5 2011: [WORKPLACE TOOLS M] The computer based tools (e.g., hardware, software) I have access to help me excel in my job."
+898,Q4332_11_13,Q41,2013,Q4332_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,"The computer based tools (e.g., hardware, software) I have access to help me excel in my job."
+1044,Q4332_11_15,Q41,2015,Q4332_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,"The computer based tools (e.g., hardware, software) I have access to help me excel in my job."
+1202,Q4332_11_18,Q41,2018,Q4332_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,"105, 106","The computer based tools (e.g., hardware, software) I have access to help me excel in my job."
+712,phy1_611,Q42,2011,Q5113_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,"phy1_6 2011: [WORKPLACE TOOLS M] The non-computer based tools (e.g., office or outdoor equipment) I have access to help me excel in my job."
+708,phy1_211,NA,2011,Q3894_04,Exclude,Outdated Survey Question/Calc,,,phy1_2 2011: [NON-MODEL] The physical security of my workplace is satisfactory.
+709,phy1_311,NA,2011,,Exclude,Outdated Survey Question/Calc,,,phy1_3 2011: [PHYSICAL ENVIRONMENT & TOOLS R] I have the tools I need to do my job well.
+710,phy1_411,NA,2011,Q4725_06,Exclude,Outdated Survey Question/Calc,,,phy1_4 2011: [NON-MODEL] I have the information I need to do my job well.
+899,Q5113_11_13,Q42,2013,Q5113_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,"The non-computer based tools (e.g., office or outdoor equipment) I have access to help me excel in my job."
+1045,Q5113_11_15,Q42,2015,Q5113_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,,"The non-computer based tools (e.g., office or outdoor equipment) I have access to help me excel in my job."
+1203,Q5113_11_18,Q42,2018,Q5113_11,Raw Survey Question,My Physical Enviornment and Tools,Tools_Workspace,103,"The non-computer based tools (e.g., office or outdoor equipment) I have access to help me excel in my job."
+92,perf1_107,Q43,2007,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_1 2007: [PROFESSIONAL DEVELOPMENT B] My organization supports my work related learning and development.
+230,perf1_108,Q43,2008,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_1 2008: [PROFESSIONAL DEVELOPMENT B] My organization supports my work related learning and development.
+373,perf1_109,Q43,2009,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_1 2009: [PROFESSIONAL DEVELOPMENT B] My organization supports my work related learning and development.
+717,perf2_111,NA,2011,Q1092_11,Exclude,Outdated Survey Question/Calc,,,perf2_1 2011: [NON-MODEL] I receive the amount of feedback and support I need from the person I report to.
+718,perf2_211,NA,2011,Q3591_11,Exclude,Outdated Survey Question/Calc,,,perf2_2 2011: [NON-MODEL] I receive the quality of feedback and support I need from the person I report to.
+719,perf2_311,NA,2011,,Exclude,Outdated Survey Question/Calc,,,perf2_3 2011: [NON-MODEL] My EPDP helps me achieve my key work goals.
+720,perf2_411,NA,2011,,Exclude,Outdated Survey Question/Calc,,,perf2_4 2011: [NON-MODEL] My EPDP helps me achieve my career goals.
+536,perf1_110,Q43,2010,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_1 2010: [PROFESSIONAL DEVELOPMENT R] My organization supports my work related learning and development.
+722,cow1_211,NA,2011,Q6887_04,Exclude,Outdated Survey Question/Calc,,,cow1_2 2011: [NON-MODEL] My ideas are respected by others in my work unit.
+713,perf1_111,Q43,2011,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_1 2011: [PROFESSIONAL DEVELOPMENT B] My organization supports my work related learning and development.
+900,Q3437_06_13,Q43,2013,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,,My organization supports my work related learning and development.
+1046,Q3437_06_15,Q43,2015,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,,My organization supports my work related learning and development.
+1204,Q3437_06_18,Q43,2018,Q3437_06,Raw Survey Question,My Development and Performance,Professional_Development,13,My organization supports my work related learning and development.
+93,perf1_207,Q44,2007,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_2 2007: [PROFESSIONAL DEVELOPMENT B] The quality of training and development I have received is satisfactory.
+728,pers2_111,NA,2011,Q2785_04,Exclude,Outdated Survey Question/Calc,,,pers2_1 2011: [NON-MODEL] The person I report to is an effective manager.
+231,perf1_208,Q44,2008,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_2 2008: [PROFESSIONAL DEVELOPMENT B] The quality of training and development I have received is satisfactory.
+374,perf1_209,Q44,2009,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_2 2009: [PROFESSIONAL DEVELOPMENT B] The quality of training and development I have received is satisfactory.
+537,perf1_210,Q44,2010,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_2 2010: [PROFESSIONAL DEVELOPMENT R] The quality of training and development I have received is satisfactory.
+714,perf1_211,Q44,2011,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_2 2011: [PROFESSIONAL DEVELOPMENT B] The quality of training and development I have received is satisfactory.
+733,exe1_311,NA,2011,Q7355_04,Exclude,Outdated Survey Question/Calc,,,exe1_3 2011: [EXECUTIVE LEVEL MANAGEMENT B] Executives in my organization provide clear direction for the future.
+901,Q9183_04_13,Q44,2013,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,,The quality of training and development I have received is satisfactory.
+1047,Q9183_04_15,Q44,2015,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,,The quality of training and development I have received is satisfactory.
+1205,Q9183_04_18,Q44,2018,Q9183_04,Raw Survey Question,My Development and Performance,Professional_Development,13,The quality of training and development I have received is satisfactory.
+94,perf1_307,Q45,2007,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_3 2007: [PROFESSIONAL DEVELOPMENT B] I have adequate opportunities to develop my skills.
+232,perf1_308,Q45,2008,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_3 2008: [PROFESSIONAL DEVELOPMENT B] I have adequate opportunities to develop my skills.
+375,perf1_309,Q45,2009,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_3 2009: [PROFESSIONAL DEVELOPMENT B] I have adequate opportunities to develop my skills.
+538,perf1_310,Q45,2010,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_3 2010: [PROFESSIONAL DEVELOPMENT R] I have adequate opportunities to develop my skills.
+715,perf1_311,Q45,2011,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,,perf1_3 2011: [PROFESSIONAL DEVELOPMENT B] I have adequate opportunities to develop my skills.
+902,Q9292_04_13,Q45,2013,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,,I have adequate opportunities to develop my skills.
+1048,Q9292_04_15,Q45,2015,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,,I have adequate opportunities to develop my skills.
+1206,Q9292_04_18,Q45,2018,Q9292_04,Raw Survey Question,My Development and Performance,Professional_Development,13,I have adequate opportunities to develop my skills.
+95,perf1_407,Q46,2007,Q2592_06,Raw Survey Question,My Development and Performance,,,perf1_4 2007: [NON-MODEL] I have opportunities for career growth within the BC Public Service.
+234,perf1_508,Q46,2008,Q2592_06,Raw Survey Question,My Development and Performance,,,perf1_5 2008: [NON-MODEL] I have opportunities for career growth within the BC Public Service.
+377,perf1_509,Q46,2009,Q2592_06,Raw Survey Question,My Development and Performance,,,perf1_5 2009: [NON-MODEL] I have opportunities for career growth within the BC Public Service.
+540,perf1_510,Q46,2010,Q2592_06,Raw Survey Question,My Development and Performance,,,perf1_5 2010: [NON-MODEL] I have opportunities for career growth within the BC Public Service.
+749,COM2_1_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,com2_1_11: Career and Professional Development
+750,COM2_2_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,com2_2_11: Recognition and Empowerment
+751,COM2_3_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,com2_3_11: Engagement and Workplace Culture
+752,COM2_4_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,com2_4_11: Compensation and Benefits
+753,COM2_5_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,"com2_5_11: Physical Environment, Tools and Equipment"
+754,COM2_6_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,"com2_6_11: Hiring, Promotion and Retention"
+755,COM2_7_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,com2_7_11: Stress and Workload
+756,COM2_8_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,com2_8_11: Supervisors
+757,COM2_9_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,com2_9_11: Executives
+758,COM2_10_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,"com2_10_11: Vision, Mission and Goals of the Organization"
+759,COM3_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+760,COM4_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+761,COM5_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+762,COM6_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+763,COM7_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+764,COM8_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+765,COM9_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+766,COM10_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+767,COM11_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+768,COM12_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,
+769,imp1_11,NA,2011,,Exclude,Other,,,imp1 2011: Last year’s Work Environment Survey results led to improvements in my current workplace
+716,perf1_411,Q46,2011,Q2592_06,Raw Survey Question,My Development and Performance,,,perf1_4 2011: [NON-MODEL] I have opportunities for career growth within the BC Public Service.
+771,sex1_11,NA,2011,,Exclude,Exclude - captured elsewhere,,,sex1 2011: Please indicate your sex. (Only respondents who didn't complete 2010 WES were asked this question)
+772,abo1_11,NA,2011,,Sensitive Info,Exclude - captured elsewhere,,,"abo1 2011: Do you identify yourself as an Aboriginal person, that is, First Nations (North American Indian), Métis or Inuit?"
+773,abo2_1_11,NA,2011,,Sensitive Info,Exclude - captured elsewhere,,,abo2_1 2011: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+774,abo2_2_11,NA,2011,,Sensitive Info,Exclude - captured elsewhere,,,abo2_2 2011: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+775,abo2_3_11,NA,2011,,Sensitive Info,Exclude - captured elsewhere,,,abo2_3 2011: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+776,abo2_4_11,NA,2011,,Sensitive Info,Exclude - captured elsewhere,,,abo2_4 2011: Which of the following Aboriginal groups do you identify with? (Select all that apply)
+777,vis1_11,NA,2011,,Sensitive Info,Exclude - captured elsewhere,,,vis1_11 2011: Do you consider yourself to be a member of a visible minority group?
+778,dis1_11,NA,2011,,Sensitive Info,Exclude - captured elsewhere,,,dis1_11 2011: Do you consider yourself to be a person with a disability?
+779,Engagement_11,Engagement,2011,,Calculated from Raw,Engagement Model,,,"Engagement 2011 (Calculated from Commitment_11, Job_Satisfaction_11, Org_Satisfaction_11)"
+780,Commitment_11,Commitment,2011,,Calculated from Raw,Engagement Model,Engagement,,"Commitment 2011 (Calculated from empw1_611, empw1_811)"
+781,Job_Satisfaction_11,Job_Satisfaction,2011,,Calculated from Raw,Engagement Model,Engagement,,Job Satisfaction 2011 (Calculated from empw1_111)
+782,Org_Satisfaction_11,Org_Satisfaction,2011,,Calculated from Raw,Engagement Model,Engagement,,Organization Satisfaction 2011 (Calculated from empw1_411)
+783,Empowerment_11,Empowerment,2011,,Calculated from Raw,Engagement Model,,,"Empowerment 2011 (Calculated from day1_411, day1_511, day2_311)"
+784,Stress_Workload_11,Stress_Workload,2011,,Calculated from Raw,Engagement Model,,,"Stress & Workload 2011 (Calculated from day6_211, day6_311)"
+785,Vision_Mission_Goals_11,Vision_Mission_Goals,2011,,Calculated from Raw,Engagement Model,,,"Vision, Mission & Goals 2011 (Calculated from org1_111, org1_211)"
+786,Teamwork_11,Teamwork,2011,,Calculated from Raw,Engagement Model,,,"Teamwork 2011 (Calculated from cow1_111, cow1_311, cow1_411)"
+787,Phys_Environment_Tools_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,"Physical Environment & Tools 2011 (Calculated from phy1_111, phy1_311)"
+788,Recognition_11,Recognition,2011,,Calculated from Raw,Engagement Model,,,"Recognition 2011 (Calculated from day4_11, day4_211)"
+789,Professional_Development_11,Professional_Development,2011,,Calculated from Raw,Engagement Model,,,"Professional Development 2011 (Calculated from perf1_111, perf1_211, perf1_311)"
+790,Pay_Benefits_11,Pay_Benefits,2011,,Calculated from Raw,Engagement Model,,,"Pay & Benefits 2011 (Calculated from day4_311, day4_411)"
+791,Staffing_Practices_11,Staffing_Practices,2011,,Calculated from Raw,Engagement Model,,,"Staffing Practices 2011 (Calculated from day3_411, day3_511)"
+792,Respectful_Environment_11,Respectful_Environment,2011,,Calculated from Raw,Engagement Model,,,"Respectful Environment 2011 (Calculated from day1_111, day1_211, day1_311)"
+793,Executive_Level_11,Executive_Level,2011,,Calculated from Raw,Engagement Model,,,"Executive Level 2011 (Calculated from exe1_111, exe1_311)"
+794,Supervisory_Level_11,Supervisory_Level,2011,,Calculated from Raw,Engagement Model,,,"Supervisory Level 2011 (Calculated from pers1_111, pers1_211, pers1_311)"
+795,Job_Suitability_11,Job_Suitability,2011,,Calculated from Raw,Engagement Model,,,"Job Suitability 2011 (Calculated from day5_111, day5_211)"
+796,Workplace_Tools_11,Tools_Workspace,2011,,Calculated from Raw,Engagement Model,,,"Workplace Tools 2011 (Calculated from phy1_511, phy1_611)"
+797,Satisfaction_Score_11,NA,2011,,Exclude,Outdated Survey Question/Calc,,,"Satisfaction 2011 (Calculated from Job_Satisfaction_11, Org_Satisfaction_11 - used for migration analysis)"
+798,Engagement_Status_07_2007_2008_Comp,NA,2007,,Exclude,Outdated Survey Question/Calc,,,Engagement Status 2007 (Calculated from Engagement_07 - Used for 2007-2008 Migration Analysis)
+799,Engagement_Status_08_2007_2008_Comp,NA,2008,,Exclude,Outdated Survey Question/Calc,,,Engagement Status 2008 (Calculated from Engagement_08 - Used for 2007-2008 Migration Analysis)
+800,Engagement_State_08_2008_2009_Comp,NA,2008,,Exclude,Outdated Survey Question/Calc,,,Engagement State 2008 (Calculated from Engagement_08 - Used for 2008-2009 Migration Analysis)
+801,Engagement_State_09_2008_2009_Comp,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Engagement State 2009 (Calculated from Engagement_09 - Used for 2008-2009 Migration Analysis)
+802,Engagement_State_09_2009_2010_Comp,NA,2009,,Exclude,Outdated Survey Question/Calc,,,Engagement State 2009 (Calculated from Engagement_09 - Used for 2009-2010 Migration Analysis)
+803,Engagement_State_10_2009_2010_Comp,NA,2010,,Exclude,Outdated Survey Question/Calc,,,Engagement State 2010 (Calculated from Engagement_10 - Used for 2009-2010 Migration Analysis)
+804,Engagement_State_10_2010_2011_Comp,NA,2010,,Exclude,Outdated Survey Question/Calc,,,Engagement State 2010 (Calculated from Engagement_10 - Used for 2010-2011 Migration Analysis)
+805,Engagement_State_11_2010_2011_Comp,NA,2011,,Exclude,Outdated Survey Question/Calc,,,Engagement State 2011 (Calculated from Engagement_11 - Used for 2010-2011 Migration Analysis)
+806,Engagement_State_Changes_2008_2009,NA,2009,,Exclude,Outdated Survey Question/Calc,,,2008 to 2009 Engagement State Changes (Used for 2008-2009 Migration Analysis)
+807,Engagement_State_Changes_2009_2010,NA,2010,,Exclude,Outdated Survey Question/Calc,,,2009 to 2010 Engagement State Changes (Used for 2009-2010 Migration Analysis)
+808,Engagement_State_Changes_2010_2011,NA,2011,,Exclude,Outdated Survey Question/Calc,,,2010 to 2011 Engagement State Changes (Used for 2010-2011 Migration Analysis)
+809,CombinedSex11,Sex,2011,,Exclude,Demographic,,,"sex (combined from sex11 & sex110, finalized ready to be used, taking into account those who didn't provide info in 2010 but did so in 2011)"
+810,CombinedAbo11,aboriginal_status,2011,,Sensitive Info,Demographic,,,"aboriginal status (combined from abo1_11 & abo110, finalized ready to be used, taking into account those who didn't provide info in 2010 but did so in 2011)"
+811,CombinedVis11,minority_status,2011,,Sensitive Info,Demographic,,,"visible minority status (combined from vis110 and Vis11, finalized ready to be used, taking into account those who didn't provide info in 2010 but did so in 2011)"
+812,CombinedDis11,Disability_status,2011,,Sensitive Info,Demographic,,,"disability status (combined from dis110 and dis1_11, finalized ready to be used, taking into account those who didn't provide info in 2010 but did so in 2011)"
+813,FILTER_PSA13,NA,2013,,Exclude,Other,,,Filter for PSA 2013 (identifies PSA and NON PSA population for 2013)
+814,FRINGE_FLAG13,FRINGE_FLAG,2013,,BC Stats Background,Employee Info,,,Flag that indicates whether respondent is in a CORE (0) or FRINGE (1) organization
+815,ORGID13,ORGID,2013,,Exclude,Employee Info,,,Organization ID 2013 (string abbreviation of ORGANIZATION13)
+816,ORGANIZATION13,ORGANIZATION,2013,,BC Stats Background,Employee Info,,,"Organization 2013 (as of August 1, 2013)"
+817,LEVEL1_NAME_13,LEVEL1_NAME,2013,,BC Stats Background,Employee Info,,,Level 1 Name 2013 (contains title for Level 1 Report)
+818,LEVEL1_ID_13,NA,2013,,Exclude,Other,,,"Level 1 ID 2013 (unique Level 1 identifier - used by Richard, ""REF#"" in work unit reports)"
+819,LEVEL1_YN_13,NA,2013,,Exclude,Other,,,Level 1 Yes or No 2013 (indicates whether a report was generated or suppressed for a work unit)
+820,LEVEL2_NAME_13,LEVEL2_NAME,2013,,BC Stats Background,Employee Info,,,Level 2 Name 2013 (contains title for Level 1 Report)
+821,LEVEL2_ID_13,NA,2013,,Exclude,Other,,,"Level 2 ID 2013 (unique Level 1 identifier - used by Richard, ""REF#"" in work unit reports)"
+822,LEVEL2_YN_13,NA,2013,,Exclude,Other,,,Level 2 Yes or No 2013 (indicates whether a report was generated or suppressed for a work unit)
+823,LEVEL3_NAME_13,LEVEL3_NAME,2013,,Sensitive Info,Employee Info,,,Level 3 Name 2013 (contains title for Level 1 Report)
+824,LEVEL3_ID_13,NA,2013,,Exclude,Other,,,"Level 3 ID 2013 (unique Level 1 identifier - used by Richard, ""REF#"" in work unit reports)"
+825,LEVEL3_YN_13,NA,2013,,Exclude,Other,,,Level 3 Yes or No 2013 (indicates whether a report was generated or suppressed for a work unit)
+826,LEVEL4_NAME_13,LEVEL4_NAME,2013,,Sensitive Info,Employee Info,,,Level 4 Name 2013 (contains title for Level 1 Report)
+827,LEVEL4_ID_13,NA,2013,,Exclude,Other,,,"Level 4 ID 2013 (unique Level 1 identifier - used by Richard, ""REF#"" in work unit reports)"
+828,LEVEL4_YN_13,NA,2013,,Exclude,Other,,,Level 4 Yes or No 2013 (indicates whether a report was generated or suppressed for a work unit)
+829,LEVEL5_NAME_13,LEVEL5_NAME,2013,,Sensitive Info,Employee Info,,,Level 5 Name 2013 (contains title for Level 1 Report)
+830,LEVEL5_ID_13,NA,2013,,Exclude,Other,,,"Level 5 ID 2013 (unique Level 1 identifier - used by Richard, ""REF#"" in work unit reports)"
+831,LEVEL5_YN_13,NA,2013,,Exclude,Other,,,Level 5 Yes or No 2013 (indicates whether a report was generated or suppressed for a work unit)
+832,WU_NAME13,WU_NAME,2013,,Sensitive Info,Employee Info,,,Name associated with WU_NUM
+833,WU_NUM13,WU_NUM,2013,,Sensitive Info,Employee Info,,,Unique 15-digit number for lowest level work unit (mutually exclusive)
+834,WU_NUM13_POPULATION,WU_NUM_POPULATION,2013,,Sensitive Info,Employee Info,,,Work Unit Population 2013 (provides population count for WU_NUM13)
+835,WU_NUM13_RESPONSES,WU_NUM_REPSONSES,2013,,Sensitive Info,Employee Info,,,Work Unit Responses 2013 (provides response count for WU_NUM13)
+836,DEPTDESC13,DEPTDESC,2013,,Sensitive Info,Employee Info,,,Department Description 2013 (linked to DEPTID13)
+837,DEPTID13,DEPTID,2013,,Sensitive Info,Employee Info,,,Department ID 2013 (linked to DEPTDESC13)
+838,DEPTID13_POPULATION,DEPTID_POPULATION,2013,,Exclude,Employee Info,,,Department ID Population 2013 (provides population count for DEPTID13)
+839,DEPTID13_RESPONSES,DEPTID_REPSONSES,2013,,Exclude,Employee Info,,,Department ID Responses 2013 (provides response count for DEPTID13)
+840,AGE13,AGE,2013,,Sensitive Info,Employee Info,,,Age 2013
+841,AGEGRP13,AGEGRP,2013,,BC Stats Background,Employee Info,,,Age Group 2013 (Calculated from AGE13)
+842,BESTCITY13,NA,2013,,Exclude,Other,,,Best City 2013 (Improved city variable over WORKCITY13 - used to calculate CITYGRP13 and PSAREGION13)
+843,CITYGRP13,CITYGRP,2013,,BC Stats Background,Employee Info,,,City Group 2013 (Calculated from BESTCITY13 - Note that before 2011 this variable was based on WORKCITY)
+844,PSAREGION13,PSAREGION,2013,,BC Stats Background,Employee Info,,,PSA Region 2013 (Calculated from BESTCITY13 - Note that before 2011 this variable was based on WORKCITY)
+845,GENDER13,GENDER,2013,,BC Stats Background,Employee Info,,,Gender 2013 (as of CHIPS file)
+846,CombinedSex13,Sex,2013,,Exclude,Demographic,,,Sex (combined from CombinedSex11 (combined info from WES10 & WES11) & sex1_13 (info from WES13 survey))
+847,CombinedAbo13,aboriginal_status,2013,,Sensitive Info,Demographic,,,Aboriginal status (combined from CombinedAbo11 (combined info from WES10 & WES11) & abo1_13 (info from WES13 survey))
+848,CombinedVis13,minority_status,2013,,Sensitive Info,Demographic,,,Visible Minority status (combined from CombinedVis11 (combined info from WES10 & WES11) & vis1_13 (info from WES13 survey))
+849,CombinedDis13,Disability_status,2013,,Sensitive Info,Demographic,,,Disability status (combined from CombinedDis11 (combined info from WES10 & WES11) & dis1_13 (info from WES13 survey))
+850,APPTSTAT13,APPTSTAT,2013,,Exclude,Employee Info,,,Appointment Status 2013
+851,UNIONSTATUS13,UNIONSTATUS,2013,,BC Stats Background,Employee Info,,,Union Status 2013 (formerly GROUPS##)
+852,CLASSCODE13,CLASSCODE,2013,,BC Stats Background,Employee Info,,,Class Code 2013 (Actually Job Code - linked to CLASSDESC13 and CLASSTITLE13)
+853,CLASSTITLE13,CLASSTITLE,2013,,BC Stats Background,Employee Info,,,Class Title 2013 (text aggregation of CLASSCODE13)
+854,WESJOBCLASGRP13,WESJOBCLASGRP,2013,,BC Stats Background,Employee Info,,,WES Job Class Group 2013
+855,REGHOURS13,REGHOURS,2013,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2013 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+856,CURPOSDESC13,CURPOSDESC,2013,,Sensitive Info,Employee Info,,,Current Position Description 2013 (similar to BUSTITLE13)
+857,CURPOSNUM13,CURPOSNUM,2013,,Sensitive Info,Employee Info,,,"Current Position Number 2013 (position number as at Aug 1, 2013)"
+858,BASPOSNUM13,NA,2013,,Sensitive Info,Other,,,"Base Position Number 2013 (position number associated with the position an employee ""owns"" - differs from CURPOSNUM13 if employee is on a TA)"
+859,CURSUPID13,CURSUPID,2013,,Sensitive Info,Employee Info,,,"Current Supervisors ID 2013 (Used to link a direct report's data with their supervisors - data quality not great, but good enough)"
+860,SUPERVISEES13,SUPERVISEES,2013,,BC Stats Background,Employee Info,,,Supervisees 2013 (provides a count of how many supervisees a supervisor is responsible for)
+861,SRVCDT13,SRVCDT,2013,,Sensitive Info,Employee Info,,,Service Date 2013 (first date in current benefit program)
+862,SRVCYRS13,SRVCYRS,2013,,BC Stats Background,Employee Info,,,Service Years 2013 (Calculated from SRVCDT13)
+863,SRVCYRS_GRP13,NA,2013,,Exclude,Other,,,Service Year Group 2013 (Calculated from SRVCYRS13)
+903,Q2592_06_13,Q46,2013,Q2592_06,Raw Survey Question,My Development and Performance,,,I have opportunities for career growth within the BC Public Service.
+1049,Q2592_06_15,Q46,2015,Q2592_06,Raw Survey Question,My Development and Performance,,,I have opportunities for career growth within the BC Public Service.
+1207,Q2592_06_18,Q46,2018,Q2592_06,Raw Survey Question,My Development and Performance,,14,I have opportunities for career growth within the BC Public Service.
+1050,Q9651_15_15,Q47,2015,Q9651_15,Raw Survey Question,My Development and Performance,,,The person I report to provides the feedback I need to do my job well.
+1208,Q9651_15_18,Q47,2018,Q9651_15,Raw Survey Question,My Development and Performance,,12,The person I report to provides the feedback I need to do my job well.
+1051,Q2151_15_15,Q48,2015,Q2151_15,Raw Survey Question,My Development and Performance,,,The person I report to provides the support I need to help me achieve my long-term career goals.
+1209,Q2151_15_18,Q48,2018,Q2151_15,Raw Survey Question,My Development and Performance,,12,The person I report to provides the support I need to help me achieve my long-term career goals.
+871,Q5335_06_13,NA,2013,Q5335_06,Exclude,Outdated Survey Question/Calc,,,I am encouraged to be innovative in my work.
+99,cow1_207,Q49,2007,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,,"cow1_2 2007: [TEAMWORK B] When needed, members of my team help me get the job done."
+237,cow1_108,Q49,2008,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,,"cow1_1 2008: [TEAMWORK B] When needed, members of my team help me get the job done."
+380,cow1_109,Q49,2009,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,,"cow1_1 2009: [TEAMWORK B] When needed, members of my team help me get the job done."
+543,cow1_110,Q49,2010,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,,"cow1_1 2010: [TEAMWORK R] When needed, members of my team help me get the job done."
+721,cow1_111,Q49,2011,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,,"cow1_1 2011: [TEAMWORK B] When needed, members of my team help me get the job done."
+908,Q8179_04_13,Q49,2013,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,,"When needed, members of my team help me get the job done."
+1052,Q8179_04_15,Q49,2015,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,,"When needed, members of my team help me get the job done."
+1210,Q8179_04_18,Q49,2018,Q8179_04,Raw Survey Question,My Co-workers,Teamwork,81,"When needed, members of my team help me get the job done."
+1053,Q5650_15_15,Q50,2015,Q5650_15,Raw Survey Question,My Co-workers,,,I am treated respectfully at work.
+1211,Q5650_15_18,Q50,2018,Q5650_15,Raw Survey Question,My Co-workers,,34,I am treated respectfully at work.
+101,cow1_407,Q51,2007,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,,cow1_4 2007: [TEAMWORK B] Members of my team communicate effectively with each other.
+239,cow1_308,Q51,2008,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,,cow1_3 2008: [TEAMWORK B] Members of my team communicate effectively with each other.
+382,cow1_309,Q51,2009,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,,cow1_3 2009: [TEAMWORK B] Members of my team communicate effectively with each other.
+545,cow1_310,Q51,2010,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,,cow1_3 2010: [TEAMWORK R] Members of my team communicate effectively with each other.
+886,Q8072_04_13,NA,2013,Q8072_04,Exclude,Outdated Survey Question/Calc,,,I am proud of the work I do.
+887,Q1657_08_13,NA,2013,Q1657_08,Exclude,Outdated Survey Question/Calc,,,My workplace procedures allow me to use my time as effectively as possible.
+888,Q1042_11_13,NA,2013,Q1042_11,Exclude,Outdated Survey Question/Calc,,,"I regularly participate in activities that are not necessarily expected of me, to help my organization succeed."
+723,cow1_311,Q51,2011,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,,cow1_3 2011: [TEAMWORK B] Members of my team communicate effectively with each other.
+910,Q8355_04_13,Q51,2013,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,,Members of my team communicate effectively with each other.
+1054,Q8355_04_15,Q51,2015,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,,Members of my team communicate effectively with each other.
+1212,Q8355_04_18,Q51,2018,Q8355_04,Raw Survey Question,My Co-workers,Teamwork,81,Members of my team communicate effectively with each other.
+102,cow1_507,Q52,2007,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,,cow1_5 2007: [TEAMWORK B] I have positive working relationships with my co-workers.
+240,cow1_408,Q52,2008,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,,cow1_4 2008: [TEAMWORK B] I have positive working relationships with my co-workers.
+383,cow1_409,Q52,2009,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,,cow1_4 2009: [TEAMWORK B] I have positive working relationships with my co-workers.
+896,Q3894_04_13,NA,2013,Q3894_04,Exclude,Outdated Survey Question/Calc,,,The physical security of my workplace is satisfactory.
+897,Q4725_06_13,NA,2013,Q4725_06,Exclude,Outdated Survey Question/Calc,,,I have the information I need to do my job well.
+546,cow1_410,Q52,2010,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,,cow1_4 2010: [TEAMWORK R]I have positive working relationships with my co-workers.
+724,cow1_411,Q52,2011,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,,cow1_4 2011: [TEAMWORK B] I have positive working relationships with my co-workers.
+911,Q4882_06_13,Q52,2013,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,,I have positive working relationships with my co-workers.
+1055,Q4882_06_15,Q52,2015,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,,I have positive working relationships with my co-workers.
+1213,Q4882_06_18,Q52,2018,Q4882_06,Raw Survey Question,My Co-workers,Teamwork,33,I have positive working relationships with my co-workers.
+105,pers1_307,Q53,2007,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_3 2007: [NON-MODEL] The person I report to provides clear expectations regarding my work.
+904,Q1092_11_13,NA,2013,Q1092_11,Exclude,Outdated Survey Question/Calc,,,I receive the amount of feedback and support I need from the person I report to.
+905,Q3591_11_13,NA,2013,Q3591_11,Exclude,Outdated Survey Question/Calc,,,I receive the quality of feedback and support I need from the person I report to.
+906,Q7111_13_13,NA,2013,Q7111_13,Exclude,Outdated Survey Question/Calc,,,MyPerformance helps me achieve my key work goals.
+907,Q6892_13_13,NA,2013,Q6892_13,Exclude,Outdated Survey Question/Calc,,,MyPerformance helps me achieve my career goals.
+242,pers1_208,Q53,2008,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_2 2008: [NON-MODEL] The person I report to provides clear expectations regarding my work.
+909,Q6887_04_13,NA,2013,Q6887_04,Exclude,Outdated Survey Question/Calc,,,My ideas are respected by others in my work unit.
+385,pers1_209,Q53,2009,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_2 2009: [NON-MODEL] The person I report to provides clear expectations regarding my work.
+548,pers1_210,Q53,2010,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_2 2010: [NON-MODEL] The person I report to provides clear expectations regarding my work.
+725,pers1_111,Q53,2011,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_1 2011: [SUPERVISORY LEVEL MANAGEMENT B] The person I report to provides clear expectations regarding my work.
+912,Q8227_06_13,Q53,2013,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to provides clear expectations regarding my work.
+1056,Q8227_06_15,Q53,2015,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to provides clear expectations regarding my work.
+915,Q7942_13_13,NA,2013,,Exclude,Outdated Survey Question/Calc,,,"** As a quality check, please select response option N/A for this question. **"
+916,Q2785_04_13,NA,2013,Q2785_04,Exclude,Outdated Survey Question/Calc,,,The person I report to is an effective manager.
+1214,Q8227_06_18,Q53,2018,Q8227_06,Raw Survey Question,The Person I Report to,Supervisory_Level,84,The person I report to provides clear expectations regarding my work.
+106,pers1_407,Q54,2007,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_4 2007: [SUPERVISORY LEVEL B] The person I report to consults me on decisions that affect me.
+243,pers1_308,Q54,2008,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_3 2008: [SUPERVISORY LEVEL B] The person I report to consults me on decisions that affect me.
+386,pers1_309,Q54,2009,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_3 2009: [SUPERVISORY LEVEL B] The person I report to consults me on decisions that affect me.
+549,pers1_310,Q54,2010,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_3 2010: [SUPERVISORY LEVEL R] The person I report to consults me on decisions that affect me.
+726,pers1_211,Q54,2011,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_2 2011: [SUPERVISORY LEVEL MANAGEMENT B] The person I report to consults me on decisions that affect me.
+913,Q1266_06_13,Q54,2013,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to consults me on decisions that affect me.
+1057,Q1266_06_15,Q54,2015,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to consults me on decisions that affect me.
+1215,Q1266_06_18,Q54,2018,Q1266_06,Raw Survey Question,The Person I Report to,Supervisory_Level,72,The person I report to consults me on decisions that affect me.
+107,pers1_507,Q55,2007,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_5 2007: [SUPERVISORY LEVEL B] The person I report to keeps me informed of things I need to know.
+244,pers1_408,Q55,2008,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_4 2008: [SUPERVISORY LEVEL B] The person I report to keeps me informed of things I need to know.
+387,pers1_409,Q55,2009,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_4 2009: [SUPERVISORY LEVEL B] The person I report to keeps me informed of things I need to know.
+550,pers1_410,Q55,2010,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_4 2010: [SUPERVISORY LEVEL R] The person I report to keeps me informed of things I need to know.
+727,pers1_311,Q55,2011,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,pers1_3 2011: [SUPERVISORY LEVEL MANAGEMENT B] The person I report to keeps me informed of things I need to know.
+914,Q4234_06_13,Q55,2013,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to keeps me informed of things I need to know.
+1058,Q4234_06_15,Q55,2015,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to keeps me informed of things I need to know.
+1216,Q4234_06_18,Q55,2018,Q4234_06,Raw Survey Question,The Person I Report to,Supervisory_Level,84,The person I report to keeps me informed of things I need to know.
+1059,Q9806_15_15,Q56,2015,Q9806_15,Raw Survey Question,The Person I Report to,Supervisory_Level,,I feel I am able to have a conversation with the person I report to when I need their perspective or advice.
+1217,Q9806_15_18,Q56,2018,Q9806_15,Raw Survey Question,The Person I Report to,Supervisory_Level,84,I feel I am able to have a conversation with the person I report to when I need their perspective or advice.
+917,Q6979_13_13,Q57,2013,Q6979_13,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to leads with an understanding of others' perspectives.
+1060,Q6979_13_15,Q57,2015,Q6979_13,Raw Survey Question,The Person I Report to,Supervisory_Level,,The person I report to leads with an understanding of others' perspectives.
+938,Q7737_13_13,NA,2013,Q7737_13,Exclude,Outdated Survey Question/Calc,,,Last cycle's Work Environment Survey results led to improvements in my current workplace.
+1218,Q6979_13_18,Q57,2018,Q6979_13,Raw Survey Question,The Person I Report to,Supervisory_Level,83,The person I report to leads with an understanding of others' perspectives.
+940,sex1_13_13,NA,2013,,Exclude,Exclude - captured elsewhere,,,Please indicate your sex.
+941,abo1_13_13,NA,2013,,Sensitive Info,Exclude - captured elsewhere,,,"Do you identify yourself as an Aboriginal person, that is, First Nations (North American Indian), Metis or Inuit?"
+942,abo2_1_13_13,NA,2013,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations (North American Indian), Metis, and/or Inuit"
+943,abo2_2_13_13,NA,2013,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations (North American Indian), Metis, and/or Inuit"
+944,abo2_3_13_13,NA,2013,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations (North American Indian), Metis, and/or Inuit"
+945,vis1_13_13,NA,2013,,Sensitive Info,Exclude - captured elsewhere,,,Do you consider yourself to be a member of a visible minority group?
+946,dis1_13_13,NA,2013,,Sensitive Info,Exclude - captured elsewhere,,,Do you consider yourself to be a person with a disability?
+947,Respectful_Environment_13,Respectful_Environment,2013,,Calculated from Raw,Engagement Model,,,RespectfulEnvironmentDriver=(Q5074_04 + Q8641_13 + Q5704_13 + Q8511_04)/4.
+948,Staffing_Practices_13,Staffing_Practices,2013,,Calculated from Raw,Engagement Model,,,StaffingDriver=(Q8117_08 + Q8260_06)/2.
+949,Empowerment_13,Empowerment,2013,,Calculated from Raw,Engagement Model,,,EmpowermentDriver=(Q8520_06 + Q3182_08 + Q8385_06)/3.
+950,Recognition_13,Recognition,2013,,Calculated from Raw,Engagement Model,,,RecognitionDriver=(Q5601_06 + Q4636_08)/2.
+951,Job_Suitability_13,Job_Suitability,2013,,Calculated from Raw,Engagement Model,,,JobSuitabilityDriver=(Q5079_04 + Q1344_06)/2.
+952,Pay_Benefits_13,Pay_Benefits,2013,,Calculated from Raw,Engagement Model,,,PayDriver=(Q1718_06 + Q2593_06 + Q8152_11)/3.
+953,Stress_Workload_13,Stress_Workload,2013,,Calculated from Raw,Engagement Model,,,StressWorkloadDriver=(Q9958_04 + Q2928_06)/2.
+954,Workplace_Tools_13,Tools_Workspace,2013,,Calculated from Raw,Engagement Model,,,ToolsDriver=(Q4332_11 + Q5113_11)/2.
+955,Professional_Development_13,Professional_Development,2013,,Calculated from Raw,Engagement Model,,,DevelopmentDriver=(Q3437_06+ Q9292_04 + Q9183_04)/3.
+956,Teamwork_13,Teamwork,2013,,Calculated from Raw,Engagement Model,,,TeamDriver=(Q8179_04 + Q8355_04 + Q4882_06)/3.
+957,Supervisory_13,Supervisory_Level,2013,,Calculated from Raw,Engagement Model,,,SupervisorDriver=(Q8227_06 + Q1266_06 + Q4234_06 + Q6979_13)/4.
+958,Executive_13,Executive_Level,2013,,Calculated from Raw,Engagement Model,,,ExecutiveDriver=(Q7855_08 + Q7355_04)/2.
+959,Vision_Mission_Goals_13,Vision_Mission_Goals,2013,,Calculated from Raw,Engagement Model,,,VisionDriver=(Q1782_04 + Q5178_04)/2.
+960,Job_Satisfaction_13,Job_Satisfaction,2013,,Calculated from Raw,Engagement Model,Engagement,,JobSatDriver=Q2327_06.
+961,Org_Satisfaction_13,Org_Satisfaction,2013,,Calculated from Raw,Engagement Model,Engagement,,OrgSatDriver=Q2958_06.
+962,Commitment_13,Commitment,2013,,Calculated from Raw,Engagement Model,Engagement,,CommitmentDriver=(Q3373_06 + Q6957_06)/2.
+963,Engagement_13,Engagement,2013,,Calculated from Raw,Engagement Model,,,Engagement=(JobSatDriver + OrgSatDriver + CommitmentDriver)/3.
+964,ENG_STATE_13,NA,2013,,Exclude,Outdated Survey Question/Calc,,,Index based on combined JOBSAT/ORGSAT score and COMMIT score
+965,FRINGE_FLAG15,FRINGE_FLAG,2015,,BC Stats Background,Employee Info,,,Flag that indicates whether respondent is in a CORE (0) or FRINGE (1) organization
+966,ORGID15,ORGID,2015,,Exclude,Employee Info,,,Organization ID 2015 (string abbreviation of ORGANIZATION15)
+967,ORGANIZATION15,ORGANIZATION,2015,,BC Stats Background,Employee Info,,,"Organization 2015 (as of December 11, 2015)"
+968,LEVEL1_NAME_15,LEVEL1_NAME,2015,,BC Stats Background,Employee Info,,,Level 1 Name 2015 (contains title for Level 1 Report)
+969,LEVEL1_ID_15,NA,2015,,Exclude,Other,,,"Level 1 ID 2015 (unique Level 1 identifier - used by Richard, ""REF#"" in work unit reports)"
+970,LEVEL1_YN_15,NA,2015,,Exclude,Other,,,Level 1 Yes or No 2015 (indicates whether a report was generated or suppressed for a work unit)
+971,LEVEL2_NAME_15,LEVEL2_NAME,2015,,BC Stats Background,Employee Info,,,Level 2 Name 2015 (contains title for Level 2 Report)
+972,LEVEL2_ID_15,NA,2015,,Exclude,Other,,,"Level 2 ID 2015 (unique Level 2 identifier - used by Richard, ""REF#"" in work unit reports)"
+973,LEVEL2_YN_15,NA,2015,,Exclude,Other,,,Level 2 Yes or No 2015 (indicates whether a report was generated or suppressed for a work unit)
+974,LEVEL3_NAME_15,LEVEL3_NAME,2015,,Sensitive Info,Employee Info,,,Level 3 Name 2015 (contains title for Level 3 Report)
+975,LEVEL3_ID_15,NA,2015,,Exclude,Other,,,"Level 3 ID 2015 (unique Level 3 identifier - used by Richard, ""REF#"" in work unit reports)"
+976,LEVEL3_YN_15,NA,2015,,Exclude,Other,,,Level 3 Yes or No 2015 (indicates whether a report was generated or suppressed for a work unit)
+977,LEVEL4_NAME_15,LEVEL4_NAME,2015,,Sensitive Info,Employee Info,,,Level 4 Name 2015 (contains title for Level 4 Report)
+978,LEVEL4_ID_15,NA,2015,,Exclude,Other,,,"Level 4 ID 2015 (unique Level 4 identifier - used by Richard, ""REF#"" in work unit reports)"
+979,LEVEL4_YN_15,NA,2015,,Exclude,Other,,,Level 4 Yes or No 2015 (indicates whether a report was generated or suppressed for a work unit)
+980,WU_NAME15,WU_NAME,2015,,Sensitive Info,Employee Info,,,Name associated with WU_NUM
+981,WU_NUM15,WU_NUM,2015,,Sensitive Info,Employee Info,,,Unique 13-digit number for lowest level work unit (mutually exclusive)
+982,WU_NUM15_POPULATION,WU_NUM_POPULATION,2015,,Sensitive Info,Employee Info,,,Work Unit Population 2015 (provides population count for WU_NUM15)
+983,WU_NUM15_RESPONSES,WU_NUM_REPSONSES,2015,,Sensitive Info,Employee Info,,,Work Unit Responses 2015 (provides response count for WU_NUM15)
+984,DEPTDESC15,DEPTDESC,2015,,Sensitive Info,Employee Info,,,Department Description 2015 (linked to DEPTID15)
+985,DEPTID15,DEPTID,2015,,Sensitive Info,Employee Info,,,Department ID 2015 (linked to DEPTDESC15)
+986,DEPTID15_POPULATION,DEPTID_POPULATION,2015,,Exclude,Employee Info,,,Department ID Population 2015 (provides population count for DEPTID15)
+987,DEPTID15_RESPONSES,DEPTID_REPSONSES,2015,,Exclude,Employee Info,,,Department ID Responses 2015 (provides response count for DEPTID15)
+988,AGE15,AGE,2015,,Sensitive Info,Employee Info,,,Age 2015
+989,AGEGRP15,AGEGRP,2015,,BC Stats Background,Employee Info,,,Age Group 2015 (Calculated from AGE15)
+990,BESTCITY15,NA,2015,,Exclude,Other,,,Best City 2015 (used to calculate CITYGRP15 and PSAREGION15)
+991,CITYGRP15,CITYGRP,2015,,BC Stats Background,Employee Info,,,City Group 2015 (Calculated from BESTCITY15)
+992,PSAREGION15,PSAREGION,2015,,BC Stats Background,Employee Info,,,PSA Region 2015 (Calculated from BESTCITY15)
+993,GENDER15,GENDER,2015,,BC Stats Background,Employee Info,,,Gender 2015 (as of CHIPS file)
+994,CombinedSex15,Sex,2015,,Exclude,Demographic,,,"Sex (combined from CombinedSex13 (combined info from WES10, 11, 13) & sex1_15 (info from WES15 survey))"
+995,CombinedAbo15,aboriginal_status,2015,,Sensitive Info,Demographic,,,"Aboriginal status (combined from CombinedAbo13 (combined info from WES10, 11, 13) & abo1_15 (info from WES15 survey))"
+996,CombinedVis15,minority_status,2015,,Sensitive Info,Demographic,,,"Visible Minority status (combined from CombinedVis13 (combined info from WES10, 11, 13) & vis1_15 (info from WES15 survey))"
+997,APPTSTAT15,APPTSTAT,2015,,Exclude,Employee Info,,,Appointment Status 2015
+998,UNIONSTATUS15,UNIONSTATUS,2015,,BC Stats Background,Employee Info,,,Union Status 2015 (formerly GROUPS##)
+999,CLASSCODE15,CLASSCODE,2015,,BC Stats Background,Employee Info,,,Class Code 2015
+1000,CLASSTITLE15,CLASSTITLE,2015,,BC Stats Background,Employee Info,,,Class title 2015 (text aggregation of CLASSCODE15
+1001,WESJOBCLASGRP15,WESJOBCLASGRP,2015,,BC Stats Background,Employee Info,,,WES Job Class Group 2015 (ClassificationGroup3)
+1002,REGHOURS15,REGHOURS,2015,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2015 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+1003,CURPOSDESC15,CURPOSDESC,2015,,Sensitive Info,Employee Info,,,Current Position Description 2015 (similar to BUSTITLE15)
+1004,CURPOSNUM15,CURPOSNUM,2015,,Sensitive Info,Employee Info,,,"Current Position Number 2015 (position number as at Sept. 25, 2015)"
+1005,CURSUPID15,CURSUPID,2015,,Sensitive Info,Employee Info,,,"Current Supervisors ID 2015 (Used to link a direct report's data with their supervisors - data quality not great, but good enough)"
+1006,SUPERVISEES15,SUPERVISEES,2015,,BC Stats Background,Employee Info,,,Supervisees 2015 (provides a count of how many supervisees a supervisor is responsible for)
+1007,SRVCDT15,SRVCDT,2015,,Sensitive Info,Employee Info,,,Service Date 2015 (first date in current benefit program)
+1008,SRVCYRS15,SRVCYRS,2015,,BC Stats Background,Employee Info,,,Service Years 2015 (Calculated from SRVCDT15)
+1009,SRVCYRS_GRP15,NA,2015,,Exclude,Other,,,Service Years Group 2015 (calculated from SRVCYRS)
+111,pers2_407,Q58,2007,Q8303_04,Raw Survey Question,The Person I Report to,,,pers2_7 2007: [NON-MODEL] The person I report to maintains high standards of honesty and integrity.
+247,pers2_308,Q58,2008,Q8303_04,Raw Survey Question,The Person I Report to,,,pers2_3 2008: [NON-MODEL] The person I report to maintains high standards of honesty and integrity.
+390,pers2_309,Q58,2009,Q8303_04,Raw Survey Question,The Person I Report to,,,pers2_3 2009: [NON-MODEL] The person I report to maintains high standards of honesty and integrity.
+552,pers2_210,Q58,2010,Q8303_04,Raw Survey Question,The Person I Report to,,,pers2_2 2010: [NON-MODEL] The person I report to maintains high standards of honesty and integrity.
+729,pers2_211,Q58,2011,Q8303_04,Raw Survey Question,The Person I Report to,,,pers2_2 2011: [NON-MODEL] The person I report to maintains high standards of honesty and integrity.
+918,Q8303_04_13,Q58,2013,Q8303_04,Raw Survey Question,The Person I Report to,,,The person I report to maintains high standards of honesty and integrity.
+1061,Q8303_04_15,Q58,2015,Q8303_04,Raw Survey Question,The Person I Report to,,,The person I report to maintains high standards of honesty and integrity.
+1219,Q8303_04_18,Q58,2018,Q8303_04,Raw Survey Question,The Person I Report to,,83,The person I report to maintains high standards of honesty and integrity.
+1062,Q9349_15_15,Q59,2015,Q9349_15,Raw Survey Question,The Person I Report to,,,The person I report to supports me and my co-workers in conducting our work in an ethical manner.
+1220,Q9349_15_18,Q59,2018,Q9349_15,Raw Survey Question,The Person I Report to,,83,The person I report to supports me and my co-workers in conducting our work in an ethical manner.
+1020,Q3394_15_15,NA,2015,Q3394_15,Exclude,Outdated Survey Question/Calc,,,My organization actively encourages me to use Lean to improve workplace processes.
+112,pers2_507,Q60,2007,Q2515_07,Raw Survey Question,The Person I Report to,,,pers2_5 2007: [NON-MODEL] I am satisfied with the quality of supervision I receive.
+249,pers2_508,Q60,2008,Q2515_07,Raw Survey Question,The Person I Report to,,,pers2_5 2008: [NON-MODEL] I am satisfied with the quality of supervision I receive.
+392,pers2_509,Q60,2009,Q2515_07,Raw Survey Question,The Person I Report to,,,pers2_5 2009: [NON-MODEL] I am satisfied with the quality of supervision I receive.
+553,pers2_310,Q60,2010,Q2515_07,Raw Survey Question,The Person I Report to,,,pers2_3 2010: [NON-MODEL] I am satisfied with the quality of supervision I receive.
+730,pers2_311,Q60,2011,Q2515_07,Raw Survey Question,The Person I Report to,,,pers2_3 2011: [NON-MODEL] I am satisfied with the quality of supervision I receive.
+919,Q2515_07_13,Q60,2013,Q2515_07,Raw Survey Question,The Person I Report to,,,I am satisfied with the quality of supervision I receive.
+1063,Q2515_07_15,Q60,2015,Q2515_07,Raw Survey Question,The Person I Report to,,,I am satisfied with the quality of supervision I receive.
+1221,Q2515_07_18,Q60,2018,Q2515_07,Raw Survey Question,The Person I Report to,,83,I am satisfied with the quality of supervision I receive.
+250,exe1_108,Q61,2008,Q7855_08,Raw Survey Question,My Executive,Executive_Level,,exe1_1 2008: [EXECUTIVE LEVEL B] Executives in my organization communicate decisions in a timely manner.
+393,exe1_109,Q61,2009,Q7855_08,Raw Survey Question,My Executive,Executive_Level,,exe1_1 2009: [EXECUTIVE LEVEL B] Executives in my organization communicate decisions in a timely manner.
+554,exe1_110,Q61,2010,Q7855_08,Raw Survey Question,My Executive,Executive_Level,,exe1_1 2010: [EXECUTIVE LEVEL R] Executives in my organization communicate decisions in a timely manner.
+731,exe1_111,Q61,2011,Q7855_08,Raw Survey Question,My Executive,Executive_Level,,exe1_1 2011: [EXECUTIVE LEVEL MANAGEMENT B] Executives in my organization communicate decisions in a timely manner.
+920,Q7855_08_13,Q61,2013,Q7855_08,Raw Survey Question,My Executive,Executive_Level,,Executives in my organization communicate decisions in a timely manner.
+1064,Q7855_08_15,Q61,2015,Q7855_08,Raw Survey Question,My Executive,Executive_Level,,Executives in my organization communicate decisions in a timely manner.
+1222,Q7855_08_18,Q61,2018,Q7855_08,Raw Survey Question,My Executive,Executive_Level,41,Executives in my organization communicate decisions in a timely manner.
+115,exe1_207,Q62,2007,Q5812_04,Raw Survey Question,My Executive,,,exe1_2 2007: [NON-MODEL] Executives in my Ministry/organization clearly communicate strategic changes and/or changes in priorities.
+251,exe1_208,Q62,2008,Q5812_04,Raw Survey Question,My Executive,,,exe1_2 2008: [EXECUTIVE LEVEL R] Executives in my Ministry/organization clearly communicate strategic changes and/or changes in priorities.
+394,exe1_209,Q62,2009,Q5812_04,Raw Survey Question,My Executive,,,exe1_2 2009: [EXECUTIVE LEVEL R] Executives in my Ministry/organization clearly communicate strategic changes and/or changes in priorities.
+555,exe1_210,Q62,2010,Q5812_04,Raw Survey Question,My Executive,,,exe1_2 2010: [NON-MODEL] Executives in my Ministry/organization clearly communicate strategic changes and/or changes in priorities.
+732,exe1_211,Q62,2011,Q5812_04,Raw Survey Question,My Executive,,,exe1_2 2011: [NON-MODEL] Executives in my organization clearly communicate strategic changes and/or changes in priorities.
+921,Q5812_04_13,Q62,2013,Q5812_04,Raw Survey Question,My Executive,,,Executives in my organization clearly communicate strategic changes and/or changes in priorities.
+1065,Q5812_04_15,Q62,2015,Q5812_04,Raw Survey Question,My Executive,,,Executives in my organization clearly communicate strategic changes and/or changes in priorities.
+1223,Q5812_04_18,Q62,2018,Q5812_04,Raw Survey Question,My Executive,,41,Executives in my organization clearly communicate strategic changes and/or changes in priorities.
+922,Q7355_04_13,Q63,2013,Q7355_04,Raw Survey Question,My Executive,Executive_Level,,Executives in my organization provide clear direction for the future.
+1066,Q7355_04_15,Q63,2015,Q7355_04,Raw Survey Question,My Executive,Executive_Level,,Executives in my organization provide clear direction for the future.
+1224,Q7355_04_18,Q63,2018,Q7355_04,Raw Survey Question,My Executive,Executive_Level,43,Executives in my organization provide clear direction for the future.
+119,org1_307,Q64,2007,Q6870_07,Raw Survey Question,My Executive,,,org1_3 2007: [NON-MODEL] Essential information flows efficiently from senior leadership to staff.
+253,exe1_408,Q64,2008,Q6870_07,Raw Survey Question,My Executive,,,exe1_4 2008: [NON-MODEL] Essential information flows efficiently from senior leadership to staff.
+396,exe1_409,Q64,2009,Q6870_07,Raw Survey Question,My Executive,,,exe1_4 2009: [NON-MODEL] Essential information flows efficiently from senior leadership to staff.
+557,exe1_410,Q64,2010,Q6870_07,Raw Survey Question,My Executive,,,exe1_4 2010: [NON-MODEL] Essential information flows efficiently from senior leadership to staff.
+734,exe1_411,Q64,2011,Q6870_07,Raw Survey Question,My Executive,,,exe1_4 2011: [NON-MODEL] Essential information flows efficiently from senior leadership to staff.
+923,Q6870_07_13,Q64,2013,Q6870_07,Raw Survey Question,My Executive,,,Essential information flows efficiently from senior leadership to staff.
+1067,Q1705_15_15,Q64,2015,Q1705_15,Raw Survey Question,My Executive,,,Essential information flows effectively from senior leadership to staff.
+1225,Q1705_15_18,Q64,2018,Q1705_15,Raw Survey Question,My Executive,,41,Essential information flows effectively from senior leadership to staff.
+121,org1_507,Q65,2007,Q8902_06,Raw Survey Question,My Executive,,,org1_5 2007: [NON-MODEL] I have confidence in the senior leadership of my Ministry/organization.
+255,exe1_608,Q65,2008,Q8902_06,Raw Survey Question,My Executive,,,exe1_6 2008: [NON-MODEL] I have confidence in the senior leadership of my Ministry/organization.
+398,exe1_609,Q65,2009,Q8902_06,Raw Survey Question,My Executive,,,exe1_6 2009: [NON-MODEL] I have confidence in the senior leadership of my Ministry/organization.
+558,exe1_510,Q65,2010,Q8902_06,Raw Survey Question,My Executive,,,exe1_5 2010: [NON-MODEL] I have confidence in the senior leadership of my Ministry/organization.
+735,exe1_511,Q65,2011,Q8902_06,Raw Survey Question,My Executive,,,exe1_5 2011: [NON-MODEL] I have confidence in the senior leadership of my organization.
+924,Q8902_06_13,Q65,2013,Q8902_06,Raw Survey Question,My Executive,,,I have confidence in the senior leadership of my organization.
+1069,Q8902_06_15,Q65,2015,Q8902_06,Raw Survey Question,My Executive,,,I have confidence in the senior leadership of my organization.
+1226,Q8902_06_18,Q65,2018,Q8902_06,Raw Survey Question,My Executive,,43,I have confidence in the senior leadership of my organization.
+117,org1_107,Q66,2007,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_1 2007: [VISION, MISSION & GOALS B] My Ministry/organization is taking steps to ensure the long-term success of its vision, mission and goals."
+256,org1_108,Q66,2008,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_1 2008: [VISION, MISSION & GOALS B] My Ministry/organization is taking steps to ensure the long-term success of its vision, mission and goals."
+399,org1_109,Q66,2009,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_1 2009: [VISION, MISSION & GOALS B] My Ministry/organization is taking steps to ensure the long-term success of its vision, mission and goals."
+559,org1_110,Q66,2010,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_1 2010: [VISION, MISSION & GOALS R] My Ministry/organization is taking steps to ensure the long-term success of its vision, mission and goals."
+736,org1_111,Q66,2011,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_1 2011: [VISION MISSION & GOALS B] My organization is taking steps to ensure the long-term success of its vision, mission and goals."
+1068,Q6870_07_15,NA,2015,Q6870_07,Exclude,Outdated Survey Question/Calc,,,Essential information flows efficiently from senior leadership to staff. (asked to only small sample as old wording to Q1705_15_15)
+925,Q5178_04_13,Q66,2013,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"My organization is taking steps to ensure the long-term success of its vision, mission and goals."
+1070,Q5178_04_15,Q66,2015,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"My organization is taking steps to ensure the long-term success of its vision, mission and goals."
+1227,Q5178_04_18,Q66,2018,Q5178_04,Raw Survey Question,My Organization,Vision_Mission_Goals,111,"My organization is taking steps to ensure the long-term success of its vision, mission and goals."
+118,org1_207,Q67,2007,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_2 2007: [VISION, MISSION & GOALS B] The vision, mission and goals of my Ministry/organization are communicated well."
+257,org1_208,Q67,2008,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_2 2008: [VISION, MISSION & GOALS B] The vision, mission and goals of my Ministry/organization are communicated well."
+400,org1_209,Q67,2009,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_2 2009: [VISION, MISSION & GOALS B] The vision, mission and goals of my Ministry/organization are communicated well."
+560,org1_210,Q67,2010,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_2 2010: [VISION, MISSION & GOALS R] The vision, mission and goals of my Ministry/organization are communicated well."
+737,org1_211,Q67,2011,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"org1_2 2011: [VISION MISSION & GOALS B] The vision, mission and goals of my organization are communicated well."
+926,Q1782_04_13,Q67,2013,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"The vision, mission and goals of my organization are communicated well."
+1071,Q1782_04_15,Q67,2015,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,,"The vision, mission and goals of my organization are communicated well."
+1228,Q1782_04_18,Q67,2018,Q1782_04,Raw Survey Question,My Organization,Vision_Mission_Goals,111,"The vision, mission and goals of my organization are communicated well."
+122,org2_107,Q68,2007,Q8639_06,Raw Survey Question,My Organization,,,org2_1 2007: [NON-MODEL] I know how my work contributes to the achievement of my Ministry’s/organization's/department's goals.
+258,org1_308,Q68,2008,Q8639_06,Raw Survey Question,My Organization,,,org1_3 2008: [NON-MODEL] I know how my work contributes to the achievement of my Ministry’s/organization's/department's goals.
+401,org1_309,Q68,2009,Q8639_06,Raw Survey Question,My Organization,,,org1_3 2009: [NON-MODEL] I know how my work contributes to the achievement of my Ministry’s/organization's/department's goals.
+561,org1_310,Q68,2010,Q8639_06,Raw Survey Question,My Organization,,,org1_3 2010: [NON-MODEL] I know how my work contributes to the achievement of my Ministry’s/organization's/department's goals.
+1084,Q7737_13_15,NA,2015,Q7737_13,Exclude,Outdated Survey Question/Calc,,,Last cycle's Work Environment Survey results led to improvements in my current workplace.
+738,org1_311,Q68,2011,Q8639_06,Raw Survey Question,My Organization,,,org1_3 2011: [NON-MODEL] I know how my work contributes to the achievement of my organizational goals.
+1086,Q6164_15_15,NA,2015,Q6164_15,Exclude,Outdated Survey Question/Calc,,,Has your work unit adopted Leading Workplace Strategies?
+927,Q8639_06_13,Q68,2013,Q8639_06,Raw Survey Question,My Organization,,,I know how my work contributes to the achievement of my organization's goals.
+1088,sex1_13_15,NA,2015,,Exclude,Exclude - captured elsewhere,,,Please indicate your sex.
+1089,abo1_13_15,NA,2015,,Sensitive Info,Exclude - captured elsewhere,,,"Do you identify yourself as an Aboriginal person, that is, First Nations (North American Indian), Metis or Inuit?"
+1090,abo2_1_13_15,NA,2015,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations (North American Indian), Metis, and/or Inuit"
+1091,abo2_2_13_15,NA,2015,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations (North American Indian), Metis, and/or Inuit"
+1092,abo2_3_13_15,NA,2015,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations (North American Indian), Metis, and/or Inuit"
+1093,vis1_13_15,NA,2015,,Sensitive Info,Exclude - captured elsewhere,,,Do you consider yourself to be a member of a visible minority group?
+1094,dis1_13_15,NA,2015,,Sensitive Info,Exclude - captured elsewhere,,,Do you consider yourself to be a person with a disability?
+1095,Engagement_15,Engagement,2015,,Calculated from Raw,Engagement Model,,,Engagement 2015 =(Job_Satisfaction_15 + Org_Satsfaction_15 + Commitment_15)/3
+1096,Commitment_15,Commitment,2015,,Calculated from Raw,Engagement Model,Engagement,,Commitment 2015 =(Q3373_06_15 + Q6957_06_15)/2
+1097,Job_Satisfaction_15,Job_Satisfaction,2015,,Calculated from Raw,Engagement Model,Engagement,,Job Satisfaction 2015 =Q2327_06_15
+1098,Org_Satisfaction_15,Org_Satisfaction,2015,,Calculated from Raw,Engagement Model,Engagement,,Org Satisfaction 2015 =Q2958_06_15
+1099,Empowerment_15,Empowerment,2015,,Calculated from Raw,Engagement Model,,,Empowerment 2015 =(Q8520_06_15 + Q3182_08_15 + Q8385_06_15)/3
+1100,Stress_Workload_15,Stress_Workload,2015,,Calculated from Raw,Engagement Model,,,Stress & Workload 2015 =(Q9958_04_15 + Q2928_06_15)/2
+1101,Vision_Mission_Goals_15,Vision_Mission_Goals,2015,,Calculated from Raw,Engagement Model,,,"Vision, Mission & Goals 2015 =(Q1782_04_15 + Q5178_04_15)/2"
+1102,Teamwork_15,Teamwork,2015,,Calculated from Raw,Engagement Model,,,Teamwork 2015 =(Q8179_04_15 + Q8355_04_15 + Q4882_06_15)/3
+1103,Recognition_15,Recognition,2015,,Calculated from Raw,Engagement Model,,,Recognition 2015 =(Q5601_06_15 + Q4636_08_15)/2
+1104,Professional_Development_15,Professional_Development,2015,,Calculated from Raw,Engagement Model,,,Professional Development 2015 =(Q3437_06_15+ Q9292_04_15 + Q9183_04_15)/3
+1105,Pay_Benefits_15,Pay_Benefits,2015,,Calculated from Raw,Engagement Model,,,Pay & Benefits 2015 =(Q1718_06_15 + Q2593_06_15 + Q8152_11_15)/3
+1106,Staffing_Practices_15,Staffing_Practices,2015,,Calculated from Raw,Engagement Model,,,Staffing Practices 2015 =(Q8117_08_15 + Q8260_06_15)/2
+1107,Respectful_Environment_15,Respectful_Environment,2015,,Calculated from Raw,Engagement Model,,,Respectful Environment 2015 =(Q5074_04_15 + Q8641_13_15 + Q5704_13_15 + Q8511_04_15)/4
+1108,Executive_Level_15,Executive_Level,2015,,Calculated from Raw,Engagement Model,,,Executive Level 2015 =(Q7855_08_15 + Q7355_04_15)/2
+1109,Supervisory_Level_15,Supervisory_Level,2015,,Calculated from Raw,Engagement Model,,,Supervisory Level 2015 =(Q8227_06_15 + Q1266_06_15 + Q4234_06_15 + Q6979_13_15 + Q9806_15_15)/5
+1110,Job_Suitability_15,Job_Suitability,2015,,Calculated from Raw,Engagement Model,,,Job Suitability 2015 =(Q5079_04_15 + Q1344_06_15)/2
+1111,Tools_Workspace_15,Tools_Workspace,2015,,Calculated from Raw,Engagement Model,,,Tools & Workspace 2015 =(Q4332_11_15 + Q5113_11_15 + Q7644_15_15)/3
+1112,ENG_STATE_15,NA,2015,,Exclude,Outdated Survey Question/Calc,,,Index based on combined JOBSAT/ORGSAT score and COMMIT score
+1113,EEIT_FLAG_15,NA,2015,,Exclude,Other,,,EEIT_FLAG (defines who was asked Q1705_15_15 vs. Q6870_07_15)
+1114,FRINGE_FLAG18,FRINGE_FLAG,2018,,BC Stats Background,Employee Info,,,Flag that indicates whether respondent is in a CORE (0) or FRINGE (1) organization
+1115,ORGID18,ORGID,2018,,Exclude,Employee Info,,,Organization ID 2018 (string abbreviation of ORGANIZATION18)
+1116,ORGANIZATION18,ORGANIZATION,2018,,BC Stats Background,Employee Info,,,Organization 2018
+1117,LEVEL1_NAME_18,LEVEL1_NAME,2018,,BC Stats Background,Employee Info,,,Level 1 Name 2018 (contains title for Level 1 Report)
+1118,LEVEL1_ID_18,NA,2018,,Exclude,Other,,,Level 1 ID 2018 (unique Level 1 identifier - used as Ref# in work unit reports)
+1119,LEVEL1_YN_18,NA,2018,,Exclude,Other,,,Level 1 Yes or No 2018 (indicates whether a report was generated or suppressed for a work unit)
+1120,LEVEL2_NAME_18,LEVEL2_NAME,2018,,BC Stats Background,Employee Info,,,Level 2 Name 2018 (contains title for Level 2 Report)
+1121,LEVEL2_ID_18,NA,2018,,Exclude,Other,,,Level 2 ID 2018 (unique Level 2 identifier - used as Ref# in work unit reports)
+1122,LEVEL2_YN_18,NA,2018,,Exclude,Other,,,Level 2 Yes or No 2018 (indicates whether a report was generated or suppressed for a work unit)
+1123,LEVEL3_NAME_18,LEVEL3_NAME,2018,,Sensitive Info,Employee Info,,,Level 3 Name 2018 (contains title for Level 3 Report)
+1124,LEVEL3_ID_18,NA,2018,,Exclude,Other,,,Level 3 ID 2018 (unique Level 3 identifier - used as Ref# in work unit reports)
+1125,LEVEL3_YN_18,NA,2018,,Exclude,Other,,,Level 3 Yes or No 2018 (indicates whether a report was generated or suppressed for a work unit)
+1126,LEVEL4_NAME_18,LEVEL4_NAME,2018,,Sensitive Info,Employee Info,,,Level 4 Name 2018 (contains title for Level 4 Report)
+1127,LEVEL4_ID_18,NA,2018,,Exclude,Other,,,Level 4 ID 2018 (unique Level 4 identifier - used as Ref# in work unit reports)
+1128,LEVEL4_YN_18,NA,2018,,Exclude,Other,,,Level 4 Yes or No 2018 (indicates whether a report was generated or suppressed for a work unit)
+1129,WU_NAME18,WU_NAME,2018,,Sensitive Info,Employee Info,,,Name associated with WU_NUM
+1130,WU_NUM18,WU_NUM,2018,,Sensitive Info,Employee Info,,,Unique number for lowest level work unit (mutually exclusive)
+1131,WU_NUM18_POPULATION,WU_NUM_POPULATION,2018,,Sensitive Info,Employee Info,,,Work Unit Population 2018 (provides population count for WU_NUM18)
+1132,WU_NUM18_RESPONSES,WU_NUM_REPSONSES,2018,,Sensitive Info,Employee Info,,,Work Unit Responses 2018 (provides response count for WU_NUM18)
+1133,DEPTDESC18,DEPTDESC,2018,,Sensitive Info,Employee Info,,,Department Description 2018 (linked to DEPTID18)
+1134,DEPTID18,DEPTID,2018,,Sensitive Info,Employee Info,,,Department ID 2018 (linked to DEPTDESC18)
+1135,DEPTID18_POPULATION,DEPTID_POPULATION,2018,,Exclude,Employee Info,,,Department ID Population 2018 (provides population count for DEPTID18)
+1136,DEPTID18_RESPONSES,DEPTID_REPSONSES,2018,,Exclude,Employee Info,,,Department ID Responses 2018 (provides response count for DEPTID18)
+1137,AGE18,AGE,2018,,Sensitive Info,Employee Info,,,Age 2018
+1138,AGEGRP18,AGEGRP,2018,,BC Stats Background,Employee Info,,,Age Group 2018 (Calculated from AGE18)
+1139,BESTCITY18,NA,2018,,Exclude,Other,,,Best City 2018 (used to calculate CITYGRP18 and PSAREGION18 and LOCATIONGRP18)
+1140,LOCATIONGRP18,LOCATIONGRP,2018,,BC Stats Background,Employee Info,,,Location Group 2018 (Calculated from BESTCITY18)
+1141,CITYGRP18,CITYGRP,2018,,BC Stats Background,Employee Info,,,City Group 2018 (Calculated from BESTCITY18) - Not reported on in 2018
+1142,PSAREGION18,PSAREGION,2018,,BC Stats Background,Employee Info,,,PSA Region 2018 (Calculated from BESTCITY18) - Not reported on in 2018
+1143,GENDER18,GENDER,2018,,BC Stats Background,Employee Info,,,Gender 2018 (as of CHIPS file)
+1144,CombinedSex18,Sex,2018,,Exclude,Demographic,,,"Sex (combined from CombinedSex15 (combined info from WES10, 11, 13, 15) & sex1_18 (info from WES18 survey))"
+1145,CombinedAbo18,aboriginal_status,2018,,Sensitive Info,Demographic,,,"Aboriginal status (combined from CombinedAbo15 (combined info from WES10, 11, 13, 15) & abo1_18 (info from WES18 survey))"
+1146,CombinedDis18,Disability_status,2018,,Sensitive Info,Demographic,,,"Disability status (combined from CombinedDis13 (combined info from WES10, 11, 13) & dis1_15  & dis1_18)"
+1147,CombinedVis18,minority_status,2018,,Sensitive Info,Demographic,,,"Visible Minority status (combined from CombinedVis15 (combined info from WES10, 11, 13, 15) & vis1_18 (info from WES18 survey))"
+1148,CombinedSexOr18,Sex_Or,2018,,Sensitive Info,Demographic,,,"LGBTQ2S+ status (info from WES18 survey, as first year asked)"
+1149,APPTSTAT18,APPTSTAT,2018,,Exclude,Employee Info,,,Appointment Status 2018
+1150,UNIONSTATUS18,UNIONSTATUS,2018,,BC Stats Background,Employee Info,,,Union Status 2018 (formerly GROUPS##)
+1151,CLASSCODE18,CLASSCODE,2018,,BC Stats Background,Employee Info,,,Class Code 2018
+1152,CLASSTITLE18,CLASSTITLE,2018,,BC Stats Background,Employee Info,,,Class title 2018 (text aggregation of CLASSCODE18)
+1153,WESJOBCLASGRP18,WESJOBCLASGRP,2018,,BC Stats Background,Employee Info,,,WES Job Class Group 2018 (ClassificationGroup3)
+1154,REGHOURS18,REGHOURS,2018,,BC Stats Background,Employee Info,,,Weekly Salaried Hours 2018 (for employees that work a pre-determined salaried work schedule - those who don't show a value of 1.88)
+1155,CURPOSDESC18,CURPOSDESC,2018,,Sensitive Info,Employee Info,,,Current Position Description 2018
+1156,CURPOSNUM18,CURPOSNUM,2018,,Sensitive Info,Employee Info,,,Current Position Number 2018
+1157,CURSUPID18,CURSUPID,2018,,Sensitive Info,Employee Info,,,"Current Supervisors ID 2018 (Used to link a direct report's data with their supervisors - data quality not great, but good enough)"
+1158,SUPERVISEES18,SUPERVISEES,2018,,BC Stats Background,Employee Info,,,Supervisees 2018 (provides a count of how many supervisees a supervisor is responsible for)
+1159,HIREDATE18,HIREDATE,2018,,Sensitive Info,Employee Info,,,This is the first hire date.
+1160,HIREYRS18,HIREYRS,2018,,BC Stats Background,Employee Info,,,Years to date based on HIREDATE18
+1161,HIREYRS_GRP18,HIREYRS_GRP,2018,,BC Stats Background,Employee Info,,,Service Years Group 2018 (calculated from HIREYRS)
+1072,Q8639_06_15,Q68,2015,Q8639_06,Raw Survey Question,My Organization,,,I know how my work contributes to the achievement of my organization's goals.
+1229,Q8639_06_18,Q68,2018,Q8639_06,Raw Survey Question,My Organization,,,I know how my work contributes to the achievement of my organization's goals.
+1230,Q6610_18_18,Q69,2018,Q6610_18,Raw Survey Question,My Organization,,,I am motivated by my organization to help achieve its objectives.
+1231,Q1912_18_18,Q70,2018,Q1912_18,Raw Survey Question,My Organization,,,I find my organization inspiring to work for.
+132,emp2_107,Q71,2007,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,emp2_1 2007: [JOB SATISFACTION B] I am satisfied with my job.
+259,empw1_108,Q71,2008,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,empw1_1 2008: [JOB SATISFACTION B] I am satisfied with my job.
+402,empw1_109,Q71,2009,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,empw1_1 2009: [JOB SATISFACTION] I am satisfied with my job.
+562,empw1_110,Q71,2010,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,empw1_1 2010: [JOB SATISFACTION R] I am satisfied with my job.
+739,empw1_111,Q71,2011,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,empw1_1 2011: [JOB SATISFACTION B] I am satisfied with my job.
+928,Q2327_06_13,Q71,2013,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,I am satisfied with my job.
+1073,Q2327_06_15,Q71,2015,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,I am satisfied with my job.
+1232,Q2327_06_18,Q71,2018,Q2327_06,Raw Survey Question,Employment as a BC Public Servant,Job_Satisfaction,,I am satisfied with my job.
+260,empw1_208,Q72,2008,Q7750_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_2 2008: [NON-MODEL] I am satisfied with my work unit.
+403,empw1_209,Q72,2009,Q7750_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_2 2009: [NON-MODEL] I am satisfied with my work unit.
+563,empw1_210,Q72,2010,Q7750_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_2 2010: [NON-MODEL] I am satisfied with my work unit.
+740,empw1_211,Q72,2011,Q7750_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_2 2011: [NON-MODEL] I am satisfied with my work unit.
+929,Q7750_08_13,Q72,2013,Q7750_08,Raw Survey Question,Employment as a BC Public Servant,,,I am satisfied with my work unit.
+1074,Q7750_08_15,Q72,2015,Q7750_08,Raw Survey Question,Employment as a BC Public Servant,,,I am satisfied with my work unit.
+1233,Q7750_08_18,Q72,2018,Q7750_08,Raw Survey Question,Employment as a BC Public Servant,,,I am satisfied with my work unit.
+261,empw1_308,Q73,2008,Q1277_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_3 2008: [NON-MODEL] I would prefer to remain with my work unit even if a comparable job was available elsewhere in the BC Public Service.
+404,empw1_309,Q73,2009,Q1277_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_3 2009: [NON-MODEL] I would prefer to remain with my work unit even if a comparable job was available elsewhere in the BC Public Service.
+564,empw1_310,Q73,2010,Q1277_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_3 2010: [NON-MODEL] I would prefer to remain with my work unit even if a comparable job was available elsewhere in the BC Public Service.
+741,empw1_311,Q73,2011,Q1277_08,Raw Survey Question,Employment as a BC Public Servant,,,empw1_3 2011: [NON-MODEL] I would prefer to remain with my work unit even if a comparable job was available elsewhere in the BC Public Service.
+930,Q1277_08_13,Q73,2013,Q1277_08,Raw Survey Question,Employment as a BC Public Servant,,,"I would prefer to remain with my work unit, even if a comparable job was available in another organization."
+1075,Q1277_08_15,Q73,2015,Q1277_08,Raw Survey Question,Employment as a BC Public Servant,,,"I would prefer to remain with my work unit, even if a comparable job was available elsewhere in the BC Public Service."
+1234,Q1277_08_18,Q73,2018,Q1277_08,Raw Survey Question,Employment as a BC Public Servant,,,"I would prefer to remain with my work unit, even if a comparable job was available elsewhere in the BC Public Service."
+742,empw1_411,Q74,2011,Q2958_06,Raw Survey Question,Employment as a BC Public Servant,Org_Satisfaction,,empw1_4 2011: [ORGANIZATION SATISFACTION B] I am satisfied with my organization.
+931,Q2958_06_13,Q74,2013,Q2958_06,Raw Survey Question,Employment as a BC Public Servant,Org_Satisfaction,,I am satisfied with my organization.
+1076,Q2958_06_15,Q74,2015,Q2958_06,Raw Survey Question,Employment as a BC Public Servant,Org_Satisfaction,,I am satisfied with my organization.
+1235,Q2958_06_18,Q74,2018,Q2958_06,Raw Survey Question,Employment as a BC Public Servant,Org_Satisfaction,,I am satisfied with my organization.
+128,emp1_307,Q75,2007,Q8033_04,Raw Survey Question,Employment as a BC Public Servant,,,"emp1_3 2007: [NON-MODEL] At present, I would prefer to remain with my organization even if a comparable job was available in another organization."
+263,empw1_508,Q75,2008,Q8033_04,Raw Survey Question,Employment as a BC Public Servant,,,"empw1_5 2008: [NON-MODEL] At present, I would prefer to remain with my organization even if a comparable job was available in another organization."
+406,empw1_509,Q75,2009,Q8033_04,Raw Survey Question,Employment as a BC Public Servant,,,"empw1_5 2009: [NON-MODEL] At present, I would prefer to remain with my organization even if a comparable job was available in another organization."
+566,empw1_510,Q75,2010,Q8033_04,Raw Survey Question,Employment as a BC Public Servant,,,"empw1_5 2010: [NON-MODEL] At present, I would prefer to remain with my organization even if a comparable job was available in another organization."
+743,empw1_511,Q75,2011,Q8033_04,Raw Survey Question,Employment as a BC Public Servant,,,"empw1_5 2011: [NON-MODEL] At present, I would prefer to remain with my organization even if a comparable job was available in another organization."
+932,Q8033_04_13,Q75,2013,Q8033_04,Raw Survey Question,Employment as a BC Public Servant,,,"At present, I would prefer to remain with my organization even if a comparable job was available in another organization."
+1077,Q3786_15_15,Q75,2015,Q3786_15,Raw Survey Question,Employment as a BC Public Servant,,,"I would prefer to remain with my organization, even if a comparable job was available in the BC Public Service."
+1236,Q3786_15_18,Q75,2018,Q3786_15,Raw Survey Question,Employment as a BC Public Servant,,,"I would prefer to remain with my organization, even if a comparable job was available elsewhere in the BC Public Service."
+134,emp2_307,Q76,2007,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"emp2_3 2007: [BC PUBLIC SERVICE COMMITMENT B] Overall, I am satisfied in my work as a BC Public Service employee."
+264,empw1_608,Q76,2008,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_6 2008: [BC PUBLIC SERVICE COMMITMENT B] Overall, I am satisfied in my work as a BC Public Service employee."
+407,empw1_609,Q76,2009,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_6 2009: [BC PUBLIC SERVICE COMMITMENT] Overall, I am satisfied in my work as a BC Public Service employee."
+567,empw1_610,Q76,2010,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_6 2010: [BC PUBLIC SERVICE COMMITMENT] Overall, I am satisfied in my work as a BC Public Service employee."
+744,empw1_611,Q76,2011,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_6 2011: [BC PUBLIC SERVICE COMMITMENT B] Overall, I am satisfied in my work as a BC Public Service employee."
+933,Q3373_06_13,Q76,2013,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"Overall, I am satisfied in my work as a BC Public Service employee."
+1078,Q3373_06_15,Q76,2015,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"Overall, I am satisfied in my work as a BC Public Service employee."
+1237,Q3373_06_18,Q76,2018,Q3373_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"Overall, I am satisfied in my work as a BC Public Service employee."
+1079,Q4906_15_15,Q77,2015,Q4906_15,Raw Survey Question,Employment as a BC Public Servant,,,"Overall, I feel valued as a BC Public Service employee."
+1238,Q4906_15_18,Q77,2018,Q4906_15,Raw Survey Question,Employment as a BC Public Servant,,,"Overall, I feel valued as a BC Public Service employee."
+127,emp1_207,Q78,2007,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,emp1_2 2007: [NON-MODEL] I am proud to tell people I work for the BC Public Service.
+265,empw1_708,Q78,2008,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_7 2008: [NON-MODEL] I am proud to tell people I work for the BC Public Service.
+408,empw1_709,Q78,2009,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_7 2009: [NON-MODEL] I am proud to tell people I work for the BC Public Service.
+568,empw1_710,Q78,2010,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_7 2010: [NON-MODEL] I am proud to tell people I work for the BC Public Service.
+745,empw1_711,Q78,2011,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_7 2011: [NON-MODEL] I am proud to tell people I work for the BC Public Service.
+934,Q6458_06_13,Q78,2013,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,I am proud to tell people I work for the BC Public Service.
+1080,Q6458_06_15,Q78,2015,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,I am proud to tell people I work for the BC Public Service.
+1239,Q6458_06_18,Q78,2018,Q6458_06,Raw Survey Question,Employment as a BC Public Servant,,,I am proud to tell people I work for the BC Public Service.
+129,emp1_407,Q79,2007,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"emp1_4 2007: [BC PUBLIC SERVICE COMMITMENT B] I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+266,empw1_808,Q79,2008,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_8 2008: [NON-MODEL] I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere.[BC PUBLIC SERVICE COMMITMENT]"
+409,empw1_809,Q79,2009,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_8 2009: [BC PUBLIC SERVICE COMMITMENT] I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+569,empw1_810,Q79,2010,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_8 2010: [BC PUBLIC SERVICE COMMITMENT] I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+746,empw1_811,Q79,2011,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"empw1_8 2011: [BC PUBLIC SERVICE COMMITMENT B] I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+935,Q6957_06_13,Q79,2013,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+1081,Q6957_06_15,Q79,2015,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+1240,Q6957_06_18,Q79,2018,Q6957_06,Raw Survey Question,Employment as a BC Public Servant,Commitment,,"I would prefer to stay with the BC Public Service, even if offered a similar job elsewhere."
+131,emp1_607,Q80,2007,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,emp1_6 2007: [NON-MODEL] I would recommend the BC Public Service as a great place to work.
+267,empw1_908,Q80,2008,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_9 2008: [NON-MODEL] I would recommend the BC Public Service as a great place to work.
+410,empw1_909,Q80,2009,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_9 2009: [NON-MODEL] I would recommend the BC Public Service as a great place to work.
+570,empw1_910,Q80,2010,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_9 2010: [NON-MODEL] I would recommend the BC Public Service as a great place to work.
+747,empw1_911,Q80,2011,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,empw1_9 2011: [NON-MODEL] I would recommend the BC Public Service as a great place to work.
+936,Q9042_06_13,Q80,2013,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,I would recommend the BC Public Service as a great place to work.
+1082,Q9042_06_15,Q80,2015,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,I would recommend the BC Public Service as a great place to work.
+1241,Q9042_06_18,Q80,2018,Q9042_06,Raw Survey Question,Employment as a BC Public Servant,,,I would recommend the BC Public Service as a great place to work.
+572,com110,Q82,2010,Q3345_13,Raw Survey Question,Comments,,,com1 2010: What one thing would you like your organization to focus on in the next 12 months to improve your work environment?
+748,COM1_11,Q82,2011,Q3345_13,Raw Survey Question,Comments,,,com1_11: What one thing would you like your organization to focus on in the next 12 months to improve your work environment?
+937,Q3345_13_13,Q82,2013,Q3345_13,Raw Survey Question,Comments,,,What one thing would you like your organization to focus on to improve your work environment?
+1083,Q3345_13_15,Q82,2015,Q3345_13,Raw Survey Question,Comments,,,What one thing would you like your organization to focus on to improve your work environment?
+1242,Q2830_18_18,Q83,2018,Q2830_18,Raw Survey Question,Workplace Improvements,,,I have seen improvements in my current workplace since the last Work Environment Survey.
+770,imp2_11,Q84,2011,Q4981_11,Raw Survey Question,Workplace Improvements,,,imp2 2011: Please describe the improvement(s) made in your workplace.
+939,Q4981_11_13,Q84,2013,Q4981_11,Raw Survey Question,Workplace Improvements,,,Please describe the improvement(s) made in your workplace.
+1085,Q4981_11_15,Q84,2015,Q4981_11,Raw Survey Question,Workplace Improvements,,,Please describe the improvement(s) made in your workplace.
+1243,Q6164_15_18,Q85,2018,Q6164_15,Raw Survey Question,My Mode of Work,,,Are you currently working in an LWS workplace?
+1087,Q5370_15_15,Q86,2015,Q5370_15,Raw Survey Question,My Mode of Work,,,"There are various workstyles, ranging from assigned residents to fully mobile workers. For this survey, four main workstyles are identified (with some variations). Please indicate your current workstyle."
+1244,Q5370_15_18,Q86,2018,Q5370_15,Raw Survey Question,My Mode of Work,,,"There are various workstyles, ranging from assigned residents to fully mobile workers. For this survey, four main workstyles are identified. Please indicate your current workstyle."
+1245,sex1_18_18,NA,2018,,Exclude,Exclude - captured elsewhere,,,Which of the following genders do you most closely identify with?
+1246,asex1_18_18,NA,2018,,Exclude,Exclude - captured elsewhere,,,Self described: Which of the following genders do you most closely identify with?
+1247,sexor2_18_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,"Do you self-identify as a person on the LGBTQ2S+ (Lesbian, Gay, Bisexual, Trans, Queer, Two Spirit, and other) spectrum?"
+1248,asexor1_18_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,"Self described: Do you self-identify as a person on the LGBTQ2S+ (Lesbian, Gay, Bisexual, Trans, Queer, Two Spirit, and other) spectrum?"
+1249,abo1_18_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,"Do you identify yourself as an Indigenous person, that is, First Nations (status or non-status), Métis or Inuit?"
+1250,abo2_1_13_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations, Metis, and/or Inuit"
+1251,abo2_2_13_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations, Metis, and/or Inuit"
+1252,abo2_3_13_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,"Self-identified as First Nations, Metis, and/or Inuit"
+1253,vis1_13_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,Do you consider yourself to be a member of a visible minority group?
+1254,dis1_13_18,NA,2018,,Sensitive Info,Exclude - captured elsewhere,,,Do you consider yourself to be a person with a disability?
+1255,Engagement_18,Engagement,2018,,Calculated from Raw,Engagement Model,,,Engagement 2018 =(Job_Satisfaction_18 + Org_Satsfaction_18 + Commitment_18)/3
+1256,Commitment_18,Commitment,2018,,Calculated from Raw,Engagement Model,Engagement,,Commitment 2018 =(Q3373_06_18 + Q6957_06_18)/2
+1257,Job_Satisfaction_18,Job_Satisfaction,2018,,Calculated from Raw,Engagement Model,Engagement,,Job Satisfaction 2018 =Q2327_06_18
+1258,Org_Satisfaction_18,Org_Satisfaction,2018,,Calculated from Raw,Engagement Model,Engagement,,Org Satisfaction 2018 =Q2958_06_18
+1259,Empowerment_18,Empowerment,2018,,Calculated from Raw,Engagement Model,,,Empowerment 2018 =(Q8520_06_18 + Q3182_08_18 + Q8385_06_18)/3
+1260,Stress_Workload_18,Stress_Workload,2018,,Calculated from Raw,Engagement Model,,,Stress & Workload 2018 =(Q9958_04_18 + Q2928_06_18)/2
+1261,Vision_Mission_Goals_18,Vision_Mission_Goals,2018,,Calculated from Raw,Engagement Model,,,"Vision, Mission & Goals 2018 =(Q1782_04_18 + Q5178_04_18)/2"
+1262,Teamwork_18,Teamwork,2018,,Calculated from Raw,Engagement Model,,,Teamwork 2018 =(Q8179_04_18 + Q8355_04_18 + Q4882_06_18)/3
+1263,Recognition_18,Recognition,2018,,Calculated from Raw,Engagement Model,,,Recognition 2018 =(Q5601_06_18 + Q4636_08_18)/2
+1264,Professional_Development_18,Professional_Development,2018,,Calculated from Raw,Engagement Model,,,Professional Development 2018 =(Q3437_06_18+ Q9292_04_18 + Q9183_04_18)/3
+1265,Pay_Benefits_18,Pay_Benefits,2018,,Calculated from Raw,Engagement Model,,,Pay & Benefits 2018 =(Q1718_06_18 + Q2593_06_18 + Q8152_11_18)/3
+1266,Staffing_Practices_18,Staffing_Practices,2018,,Calculated from Raw,Engagement Model,,,Staffing Practices 2018 =(Q8117_08_18 + Q8260_06_18)/2
+1267,Respectful_Environment_18,Respectful_Environment,2018,,Calculated from Raw,Engagement Model,,,Respectful Environment 2018 =(Q5074_04_18 + Q8641_13_18 + Q5704_13_18 + Q8511_04_18)/4
+1268,Executive_Level_18,Executive_Level,2018,,Calculated from Raw,Engagement Model,,,Executive Level 2018 =(Q7855_08_18 + Q7355_04_18)/2
+1269,Supervisory_Level_18,Supervisory_Level,2018,,Calculated from Raw,Engagement Model,,,Supervisory Level 2018 =(Q8227_06_18 + Q1266_06_18 + Q4234_06_18 + Q6979_13_18 + Q9806_15_18)/5
+1270,Job_Suitability_18,Job_Suitability,2018,,Calculated from Raw,Engagement Model,,,Job Suitability 2018 =(Q5079_04_18 + Q1344_06_18)/2
+1271,Tools_Workspace_18,Tools_Workspace,2018,,Calculated from Raw,Engagement Model,,,Tools & Workspace 2018 =(Q4332_11_18 + Q5113_11_18 + Q7644_15_18)/3
+1272,ENG_STATE_18,NA,2018,,Exclude,Outdated Survey Question/Calc,,,Index based on combined JOBSAT/ORGSAT score and COMMIT score

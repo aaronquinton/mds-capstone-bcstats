@@ -1,0 +1,196 @@
+# MakefileModel
+# Authors: Fan Nie
+# Date: June 2019
+#
+# Purpose: This script is use to automate our data analysis project pipline
+# Useage:
+# 		- To run individual script -- 'make <specific file name> -f MakefileModel'
+#		- To run the entire analysis -- 'make all -f MakefileModel'
+#		- To clean all items -- 'make clean -f MakefileModel'
+
+
+############################################################################
+# Run all scripts at once
+############################################################################
+
+all: data/output/test_predictions.pickle
+
+###########################################################################
+# Run the two scripts step by step to prepare datasets for modelling
+###########################################################################
+
+# full_input  =  data/raw/2018\ WES\ Qual\ Coded\ -\ Final\ Comments\ and\ Codes.xlsx
+
+# 1. Desensitization text - identify sensitive text (people's names) and remove the comments entirely
+# usage: make data/interim/desensitized_qualitative-data2018.csv -f MakefileModel
+data/interim/desensitized_qualitative-data2018.csv : $(full_input) src/data/sensitive_text.py
+	python src/data/sensitive_text.py \
+-i data/raw/2018\ WES\ Qual\ Coded\ -\ Final\ Comments\ and\ Codes.xlsx \
+-o data/interim/desensitized_qualitative-data2018.csv \
+-s 1
+
+# 2. Read 2018 desensitized qualitative data. Split for test/train
+# usage: make data/interim/test_2018-qualitative-data.csv data/interim/train_2018-qualitative-data.csv -f MakefileModel
+data/interim/test_2018-qualitative-data.csv data/interim/train_2018-qualitative-data.csv : \
+data/interim/desensitized_qualitative-data2018.csv \
+src/data/split_qual_data.py
+	python src/data/split_qual_data.py \
+-i data/interim/desensitized_qualitative-data2018.csv \
+-o data/interim/test_2018-qualitative-data.csv \
+-o2 data/interim/train_2018-qualitative-data.csv
+
+###########################################################################
+# Run the these scripts step by step to build baseline model
+# for text classification -- Bag of Words with LinearSVC
+###########################################################################
+
+# 1. Preprocess text and fit Bag of Words Vectorizer
+# usage: make models/bow_vectorizer.pickle -f MakefileModel
+models/bow_vectorizer.pickle : data/interim/train_2018-qualitative-data.csv src/features/bow_vectorizer.py
+	python src/features/bow_vectorizer.py \
+-i data/interim/train_2018-qualitative-data.csv \
+-o models/bow_vectorizer.pickle
+
+# 2. Transform comments to a matrix of token counts for training data
+# usage: make data/processed/X_train_bow.npz -f MakefileModel
+data/processed/X_train_bow.npz : data/interim/train_2018-qualitative-data.csv \
+models/bow_vectorizer.pickle \
+src/features/vectorize_comments.py
+	python src/features/vectorize_comments.py \
+-i data/interim/train_2018-qualitative-data.csv \
+-i2 models/bow_vectorizer.pickle \
+-o data/processed/X_train_bow.npz
+
+# 3. Transform comments to a matrix of token counts for test data
+# usage: make data/processed/X_test_bow.npz -f MakefileModel
+data/processed/X_test_bow.npz : data/interim/test_2018-qualitative-data.csv \
+models/bow_vectorizer.pickle \
+src/features/vectorize_comments.py
+	python src/features/vectorize_comments.py \
+-i data/interim/test_2018-qualitative-data.csv \
+-i2 models/bow_vectorizer.pickle \
+-o data/processed/X_test_bow.npz
+
+# 4. Train Lienar Classifer
+# usage: make models/linearsvc_model.pickle -f MakefileModel
+models/linearsvc_model.pickle : data/interim/train_2018-qualitative-data.csv \
+data/processed/X_train_bow.npz \
+src/models/linearsvc.py
+	python src/models/linearsvc.py \
+-i data/interim/train_2018-qualitative-data.csv \
+-i2 data/processed/X_train_bow.npz \
+-o models/linearsvc_model.pickle
+
+
+###########################################################################
+# Run the these scripts step by step to build deep learning model with
+# pre-trained embeddings for text classification -- ensamble method
+###########################################################################
+
+
+# 1. Preprocess text, fit tokenizers, and build embedding matrices
+# usage: make models/embed_tokenizers.pickle models/embed_matrices.pickle -f MakefileModel
+models/embed_tokenizers.pickle models/embed_matrices.pickle : \
+data/interim/train_2018-qualitative-data.csv \
+src/features/keras_embeddings.py
+	python src/features/keras_embeddings.py \
+-i data/interim/train_2018-qualitative-data.csv \
+--input_embed_glove_crawl references/pretrained_embeddings.nosync/glove/glove.840B.300d.w2v.txt \
+--input_embed_glove_wiki  references/pretrained_embeddings.nosync/glove/glove.6B.300d.w2v.txt \
+--input_embed_fasttext_crawl  references/pretrained_embeddings.nosync/fasttext/crawl-300d-2M.vec \
+-o1 models/embed_tokenizers.pickle \
+-o2 models/embed_matrices.pickle
+
+
+# 2. Transform comments into coded numbers for training data
+# usage: make data/processed/X_train_encoded.pickle -f MakefileModel
+data/processed/X_train_encoded.pickle : data/interim/train_2018-qualitative-data.csv \
+models/embed_tokenizers.pickle  \
+src/features/encode_comments.py
+	python src/features/encode_comments.py \
+-i data/interim/train_2018-qualitative-data.csv \
+-i2 models/embed_tokenizers.pickle \
+-o data/processed/X_train_encoded.pickle
+
+
+# 3. Transform comments into coded numbers for test data
+# usage: make data/processed/X_test_encoded.pickle -f MakefileModel
+data/processed/X_test_encoded.pickle : data/interim/test_2018-qualitative-data.csv models/embed_tokenizers.pickle  src/features/encode_comments.py
+	python src/features/encode_comments.py -i data/interim/test_2018-qualitative-data.csv -i2 models/embed_tokenizers.pickle -o data/processed/X_test_encoded.pickle
+
+
+# 4. Train Bidirectonal GRU
+# usage: make models/biGRU_glove_crawl.h5 models/biGRU_glove_wiki.h5 models/biGRU_fasttext_crawl.h5 -f MakefileModel
+smake models/biGRU_glove_crawl.h5 models/biGRU_glove_wiki.h5 models/biGRU_fasttext_crawl.h5 :\
+data/interim/train_2018-qualitative-data.csv \
+models/embed_matrices.pickle \
+data/processed/X_train_encoded.pickle \
+models/embed_matrices.pickle \
+src/models/biGRU.py
+	python src/models/biGRU.py \
+-i data/interim/train_2018-qualitative-data.csv \
+-i2 models/embed_matrices.pickle \
+-i3 data/processed/X_train_encoded.pickle \
+-o models/biGRU_glove_crawl.h5 \
+-o2 models/biGRU_glove_wiki.h5 \
+-o3 models/biGRU_fasttext_crawl.h5
+
+
+# 5. Train convulutional neural net
+# usage: make models/conv1d_models.h5 -f MakefileModel
+models/conv1d_models.h5 : data/interim/train_2018-qualitative-data.csv \
+models/embed_matrices.pickle \
+data/processed/X_train_encoded.pickle \
+src/models/conv1d.py
+	python src/models/conv1d.py \
+-i data/interim/train_2018-qualitative-data.csv \
+-i2 models/embed_matrices.pickle \
+-i3 data/processed/X_train_encoded.pickle \
+-o models/conv1d_models.h5
+
+###########################################################################
+# Generate themem predictions for test data
+###########################################################################
+
+# 1. Predict themems for test data
+# usage: make data/output/test_predictions.pickle -f MakefileModel
+data/output/test_predictions.pickle : models/linearsvc_model.pickle \
+data/processed/X_test_encoded.pickle \
+data/processed/X_test_bow.npz \
+models/conv1d_models.h5 \
+models/biGRU_glove_crawl.h5 \
+models/biGRU_glove_wiki.h5 \
+models/biGRU_fasttext_crawl.h5 \
+src/models/theme_classification.py
+	python src/models/theme_classification.py \
+-i1 models/linearsvc_model.pickle \
+-i2 data/processed/X_test_encoded.pickle \
+-i3 data/processed/X_test_bow.npz \
+-i4 models/conv1d_models.h5 \
+-i5 models/biGRU_glove_crawl.h5 \
+-i6 models/biGRU_glove_wiki.h5 \
+-i7 models/biGRU_fasttext_crawl.h5 \
+-o data/output/test_predictions.pickle
+
+
+###########################################################################
+# Remove all files
+###########################################################################
+
+clean:
+	rm -f data/interim/desensitized_qualitative-data2018.csv
+	rm -f data/interim/test_2018-qualitative-data.csv
+	rm -f data/interim/train_2018-qualitative-data.csv
+	rm -f models/bow_vectorizer.pickle
+	rm -f data/processed/X_train_bow.npz
+	rm -f data/processed/X_test_bow.npz
+	rm -f models/linearsvc_model.pickle
+	rm -f models/embed_tokenizers.pickle
+	rm -f models/embed_matrices.pickle
+	rm -f data/processed/X_train_encoded.pickle
+	rm -f data/processed/X_test_encoded.pickle
+	rm -f models/biGRU_glove_crawl.h5
+	rm -f models/biGRU_glove_wiki.h5
+	rm -f models/biGRU_fasttext_crawl.h5
+	rm -f models/conv1d_models.h5
+	rm -f data/output/test_predictions.pickle
