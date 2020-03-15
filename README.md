@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://github.com/UBC-MDS/DSCI_591_capstone-BCStats/blob/master/reports/figures/img_readme_cover.png" alt="Project logo"></a>
+ <img width=200px height=200px src="reports/figures/img_readme_cover.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">BC Stats Capstone | Quantifying the Responses to Open-Ended Survey Questions</h3>
@@ -187,9 +187,9 @@ The folder structure and project organization has been adapted from [Cookiecutte
 
 |Report|Description|
 |---|---|
-|[Final Report](https://github.com/UBC-MDS/DSCI_591_capstone-BCStats/blob/master/reports/BCStats_Final_Report.pdf)| Final BC Stats Capstone Report |
-|[Linking Methodology](https://github.com/UBC-MDS/DSCI_591_capstone-BCStats/blob/master/reports/linking_methodology.md)| Detailed Methodology for Linking Quantitative and Qualitative Data |
-|[Test Results](https://github.com/UBC-MDS/DSCI_591_capstone-BCStats/blob/master/notebooks/evaluate_results.ipynb)| Theme classification results notebook on test data |
+|[Final Report](https://github.com/aaronquinton/mds-capstone-bcstats/blob/master/reports/BCStats_Final_Report.pdf)| Final BC Stats Capstone Report |
+|[Linking Methodology](https://github.com/aaronquinton/mds-capstone-bcstats/blob/master/reports/linking_methodology.md)| Detailed Methodology for Linking Quantitative and Qualitative Data |
+|[Test Results](https://github.com/aaronquinton/mds-capstone-bcstats/blob/master/notebooks/evaluate_results.ipynb)| Theme classification results notebook on test data |
 
 
 ## Authors <a name = "authors"></a>
